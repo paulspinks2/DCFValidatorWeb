@@ -20,13 +20,40 @@ namespace DCFValidatorWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            LoadRules();
+            LoadDCFSchema();
+        }
+
+        protected void LoadRules()
+        {
             try
             {
-                string json = System.IO.File.ReadAllText(System.Configuration.ConfigurationManager.AppSettings["rulesPath"]);
+                //string json = System.IO.File.ReadAllText(System.Configuration.ConfigurationManager.AppSettings["rulesPath"]);
+                string json = System.IO.File.ReadAllText(HttpRuntime.AppDomainAppPath + "\\Custom_Files\\rules.json");
                 loadedRules = JsonConvert.DeserializeObject<RulesDataSet>(json);
-            } catch
+            }
+            catch (Exception ex)
             {
-                OutputText.Text = "Error: Unable to Load Rules";
+                OutputText.Text = "Error: Unable to Load Rules: " + ex.Message;
+                OutputText.CssClass = "alert-danger";
+            }
+        }
+
+        protected void LoadDCFSchema()
+        {
+            try
+            {
+                // load JSchema directly from a file
+                //string schemaPath = System.Configuration.ConfigurationManager.AppSettings["schemaPath"];
+                string schemaPath = HttpRuntime.AppDomainAppPath + "\\Custom_Files\\First Hearing DCF Schema 100.json";
+                using (StreamReader file = File.OpenText(schemaPath))
+                using (JsonTextReader reader = new JsonTextReader(file))
+
+                    schema = JSchema.Load(reader);
+            } catch (Exception ex)
+            {
+                OutputText.Text = "Error: Unable to Load Rules: " + ex.Message;
+                OutputText.CssClass = "alert-danger";
             }
 
         }
@@ -34,20 +61,9 @@ namespace DCFValidatorWeb
         protected void ValidateDCF_OnClick(object sender, EventArgs e)
         {
             OutputText.Text = "";
+            OutputText.CssClass = "alert-info";
 
-            LoadDCFSchema();
-            ValidateJSON();  
-        }
-
-        protected void LoadDCFSchema()
-        {
-            // load JSchema directly from a file
-            string schemaPath = System.Configuration.ConfigurationManager.AppSettings["schemaPath"];
-
-            using (StreamReader file = File.OpenText(schemaPath))
-            using (JsonTextReader reader = new JsonTextReader(file))
-
-            schema = JSchema.Load(reader);
+            ValidateJSON();
         }
 
         protected void ValidateJSON()
@@ -64,13 +80,23 @@ namespace DCFValidatorWeb
             IList<string> messages;
             bool valid = inputJson.IsValid(schema, out messages);
 
-            //Valid
-            OutputText.Text = "The file provided is well form and matches the JSON Schema \n";
-
-            // invalid
-            foreach (string message in messages)
+            if (valid)
             {
-                OutputText.Text = message;
+                //Valid
+                OutputText.Text = "The file provided is well form and matches the JSON Schema \n";
+                OutputText.CssClass = "alert-success";
+            }
+            else
+            {
+                //Valid
+                OutputText.Text = "DCF Schema 1.1.0 Validation Error. Errors Below: \n";
+                OutputText.CssClass = "alert-danger";
+
+                // invalid
+                foreach (string message in messages)
+                {
+                    OutputText.Text = message;
+                }
             }
 
             //Business Rule Validation
@@ -154,6 +180,7 @@ namespace DCFValidatorWeb
                             {
                                 OutputText.Text += "Business Rule Validation error: " + match.DependantAttribute + " not found when " + match.SourceAttribute
                                     + " is " + match.SourceCondition;
+                                OutputText.CssClass = "alert-danger";
                             }
                         }
                     }
@@ -194,6 +221,7 @@ namespace DCFValidatorWeb
                     foreach (var match in query)
                     {
                         OutputText.Text += "Business rule validation error: This DCF Should be prepared as GAP, but contains " + reader.Path + "\n";
+                        OutputText.CssClass = "alert-danger";
                     }
                 }
             }

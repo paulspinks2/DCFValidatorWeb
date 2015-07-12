@@ -1,0 +1,15 @@
+{
+  "DependantFields": [
+    {
+      "DependantAttribute": "pnc_hc",
+      "Rule": "REQUIRED",
+      "SourceAttribute": "pnc_dv",
+      "SourceCondition": "True"
+    }
+  ],
+  "NGAPOnly": [
+    {
+      "Attribute": "special_measures"
+    }
+  ]
+}

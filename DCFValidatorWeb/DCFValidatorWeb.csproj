@@ -184,10 +184,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
-    <Content Include="First Hearing DCF Schema 100.json" />
+    <Content Include="Custom_Files\First Hearing DCF Schema 100.json" />
     <Content Include="RulesDataSet.xsc">
       <DependentUpon>RulesDataSet.xsd</DependentUpon>
     </Content>
+    <Content Include="Custom_Files\rules.json" />
     <None Include="RulesDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
