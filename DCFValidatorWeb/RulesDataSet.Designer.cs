@@ -24,7 +24,7 @@ namespace DCFValidatorWeb {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class RulesDataSet : global::System.Data.DataSet {
         
-        private DependantFieldsDataTable tableDependantFields;
+        private DependantAttributesDataTable tableDependantAttributes;
         
         private NGAPOnlyDataTable tableNGAPOnly;
         
@@ -56,8 +56,8 @@ namespace DCFValidatorWeb {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["DependantFields"] != null)) {
-                    base.Tables.Add(new DependantFieldsDataTable(ds.Tables["DependantFields"]));
+                if ((ds.Tables["DependantAttributes"] != null)) {
+                    base.Tables.Add(new DependantAttributesDataTable(ds.Tables["DependantAttributes"]));
                 }
                 if ((ds.Tables["NGAPOnly"] != null)) {
                     base.Tables.Add(new NGAPOnlyDataTable(ds.Tables["NGAPOnly"]));
@@ -84,9 +84,9 @@ namespace DCFValidatorWeb {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DependantFieldsDataTable DependantFields {
+        public DependantAttributesDataTable DependantAttributes {
             get {
-                return this.tableDependantFields;
+                return this.tableDependantAttributes;
             }
         }
         
@@ -167,8 +167,8 @@ namespace DCFValidatorWeb {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["DependantFields"] != null)) {
-                    base.Tables.Add(new DependantFieldsDataTable(ds.Tables["DependantFields"]));
+                if ((ds.Tables["DependantAttributes"] != null)) {
+                    base.Tables.Add(new DependantAttributesDataTable(ds.Tables["DependantAttributes"]));
                 }
                 if ((ds.Tables["NGAPOnly"] != null)) {
                     base.Tables.Add(new NGAPOnlyDataTable(ds.Tables["NGAPOnly"]));
@@ -206,10 +206,10 @@ namespace DCFValidatorWeb {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableDependantFields = ((DependantFieldsDataTable)(base.Tables["DependantFields"]));
+            this.tableDependantAttributes = ((DependantAttributesDataTable)(base.Tables["DependantAttributes"]));
             if ((initTable == true)) {
-                if ((this.tableDependantFields != null)) {
-                    this.tableDependantFields.InitVars();
+                if ((this.tableDependantAttributes != null)) {
+                    this.tableDependantAttributes.InitVars();
                 }
             }
             this.tableNGAPOnly = ((NGAPOnlyDataTable)(base.Tables["NGAPOnly"]));
@@ -228,15 +228,15 @@ namespace DCFValidatorWeb {
             this.Namespace = "http://tempuri.org/RulesDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableDependantFields = new DependantFieldsDataTable();
-            base.Tables.Add(this.tableDependantFields);
+            this.tableDependantAttributes = new DependantAttributesDataTable();
+            base.Tables.Add(this.tableDependantAttributes);
             this.tableNGAPOnly = new NGAPOnlyDataTable();
             base.Tables.Add(this.tableNGAPOnly);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeDependantFields() {
+        private bool ShouldSerializeDependantAttributes() {
             return false;
         }
         
@@ -302,7 +302,7 @@ namespace DCFValidatorWeb {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void DependantFieldsRowChangeEventHandler(object sender, DependantFieldsRowChangeEvent e);
+        public delegate void DependantAttributesRowChangeEventHandler(object sender, DependantAttributesRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void NGAPOnlyRowChangeEventHandler(object sender, NGAPOnlyRowChangeEvent e);
@@ -312,20 +312,22 @@ namespace DCFValidatorWeb {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DependantFieldsDataTable : global::System.Data.TypedTableBase<DependantFieldsRow> {
+        public partial class DependantAttributesDataTable : global::System.Data.TypedTableBase<DependantAttributesRow> {
+            
+            private global::System.Data.DataColumn columnRuleName;
             
             private global::System.Data.DataColumn columnDependantAttribute;
-            
-            private global::System.Data.DataColumn columnRule;
             
             private global::System.Data.DataColumn columnSourceAttribute;
             
             private global::System.Data.DataColumn columnSourceCondition;
             
+            private global::System.Data.DataColumn columnAndRuleName;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DependantFieldsDataTable() {
-                this.TableName = "DependantFields";
+            public DependantAttributesDataTable() {
+                this.TableName = "DependantAttributes";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -333,7 +335,7 @@ namespace DCFValidatorWeb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal DependantFieldsDataTable(global::System.Data.DataTable table) {
+            internal DependantAttributesDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -350,9 +352,17 @@ namespace DCFValidatorWeb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected DependantFieldsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected DependantAttributesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RuleNameColumn {
+                get {
+                    return this.columnRuleName;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -360,14 +370,6 @@ namespace DCFValidatorWeb {
             public global::System.Data.DataColumn DependantAttributeColumn {
                 get {
                     return this.columnDependantAttribute;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn RuleColumn {
-                get {
-                    return this.columnRule;
                 }
             }
             
@@ -389,6 +391,14 @@ namespace DCFValidatorWeb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AndRuleNameColumn {
+                get {
+                    return this.columnAndRuleName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -398,48 +408,49 @@ namespace DCFValidatorWeb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DependantFieldsRow this[int index] {
+            public DependantAttributesRow this[int index] {
                 get {
-                    return ((DependantFieldsRow)(this.Rows[index]));
+                    return ((DependantAttributesRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DependantFieldsRowChangeEventHandler DependantFieldsRowChanging;
+            public event DependantAttributesRowChangeEventHandler DependantAttributesRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DependantFieldsRowChangeEventHandler DependantFieldsRowChanged;
+            public event DependantAttributesRowChangeEventHandler DependantAttributesRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DependantFieldsRowChangeEventHandler DependantFieldsRowDeleting;
+            public event DependantAttributesRowChangeEventHandler DependantAttributesRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DependantFieldsRowChangeEventHandler DependantFieldsRowDeleted;
+            public event DependantAttributesRowChangeEventHandler DependantAttributesRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddDependantFieldsRow(DependantFieldsRow row) {
+            public void AddDependantAttributesRow(DependantAttributesRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DependantFieldsRow AddDependantFieldsRow(string DependantAttribute, string Rule, string SourceAttribute, string SourceCondition) {
-                DependantFieldsRow rowDependantFieldsRow = ((DependantFieldsRow)(this.NewRow()));
+            public DependantAttributesRow AddDependantAttributesRow(string RuleName, string DependantAttribute, string SourceAttribute, string SourceCondition, string AndRuleName) {
+                DependantAttributesRow rowDependantAttributesRow = ((DependantAttributesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        RuleName,
                         DependantAttribute,
-                        Rule,
                         SourceAttribute,
-                        SourceCondition};
-                rowDependantFieldsRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDependantFieldsRow);
-                return rowDependantFieldsRow;
+                        SourceCondition,
+                        AndRuleName};
+                rowDependantAttributesRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDependantAttributesRow);
+                return rowDependantAttributesRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DependantFieldsDataTable cln = ((DependantFieldsDataTable)(base.Clone()));
+                DependantAttributesDataTable cln = ((DependantAttributesDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -447,55 +458,58 @@ namespace DCFValidatorWeb {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DependantFieldsDataTable();
+                return new DependantAttributesDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+                this.columnRuleName = base.Columns["RuleName"];
                 this.columnDependantAttribute = base.Columns["DependantAttribute"];
-                this.columnRule = base.Columns["Rule"];
                 this.columnSourceAttribute = base.Columns["SourceAttribute"];
                 this.columnSourceCondition = base.Columns["SourceCondition"];
+                this.columnAndRuleName = base.Columns["AndRuleName"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+                this.columnRuleName = new global::System.Data.DataColumn("RuleName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRuleName);
                 this.columnDependantAttribute = new global::System.Data.DataColumn("DependantAttribute", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDependantAttribute);
-                this.columnRule = new global::System.Data.DataColumn("Rule", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRule);
                 this.columnSourceAttribute = new global::System.Data.DataColumn("SourceAttribute", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSourceAttribute);
                 this.columnSourceCondition = new global::System.Data.DataColumn("SourceCondition", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSourceCondition);
+                this.columnAndRuleName = new global::System.Data.DataColumn("AndRuleName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAndRuleName);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DependantFieldsRow NewDependantFieldsRow() {
-                return ((DependantFieldsRow)(this.NewRow()));
+            public DependantAttributesRow NewDependantAttributesRow() {
+                return ((DependantAttributesRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DependantFieldsRow(builder);
+                return new DependantAttributesRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DependantFieldsRow);
+                return typeof(DependantAttributesRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DependantFieldsRowChanged != null)) {
-                    this.DependantFieldsRowChanged(this, new DependantFieldsRowChangeEvent(((DependantFieldsRow)(e.Row)), e.Action));
+                if ((this.DependantAttributesRowChanged != null)) {
+                    this.DependantAttributesRowChanged(this, new DependantAttributesRowChangeEvent(((DependantAttributesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -503,8 +517,8 @@ namespace DCFValidatorWeb {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DependantFieldsRowChanging != null)) {
-                    this.DependantFieldsRowChanging(this, new DependantFieldsRowChangeEvent(((DependantFieldsRow)(e.Row)), e.Action));
+                if ((this.DependantAttributesRowChanging != null)) {
+                    this.DependantAttributesRowChanging(this, new DependantAttributesRowChangeEvent(((DependantAttributesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -512,8 +526,8 @@ namespace DCFValidatorWeb {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DependantFieldsRowDeleted != null)) {
-                    this.DependantFieldsRowDeleted(this, new DependantFieldsRowChangeEvent(((DependantFieldsRow)(e.Row)), e.Action));
+                if ((this.DependantAttributesRowDeleted != null)) {
+                    this.DependantAttributesRowDeleted(this, new DependantAttributesRowChangeEvent(((DependantAttributesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -521,14 +535,14 @@ namespace DCFValidatorWeb {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DependantFieldsRowDeleting != null)) {
-                    this.DependantFieldsRowDeleting(this, new DependantFieldsRowChangeEvent(((DependantFieldsRow)(e.Row)), e.Action));
+                if ((this.DependantAttributesRowDeleting != null)) {
+                    this.DependantAttributesRowDeleting(this, new DependantAttributesRowChangeEvent(((DependantAttributesRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveDependantFieldsRow(DependantFieldsRow row) {
+            public void RemoveDependantAttributesRow(DependantAttributesRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -555,7 +569,7 @@ namespace DCFValidatorWeb {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DependantFieldsDataTable";
+                attribute2.FixedValue = "DependantAttributesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -846,15 +860,31 @@ namespace DCFValidatorWeb {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DependantFieldsRow : global::System.Data.DataRow {
+        public partial class DependantAttributesRow : global::System.Data.DataRow {
             
-            private DependantFieldsDataTable tableDependantFields;
+            private DependantAttributesDataTable tableDependantAttributes;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal DependantFieldsRow(global::System.Data.DataRowBuilder rb) : 
+            internal DependantAttributesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDependantFields = ((DependantFieldsDataTable)(this.Table));
+                this.tableDependantAttributes = ((DependantAttributesDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string RuleName {
+                get {
+                    try {
+                        return ((string)(this[this.tableDependantAttributes.RuleNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RuleName\' in table \'DependantAttributes\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDependantAttributes.RuleNameColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -862,30 +892,15 @@ namespace DCFValidatorWeb {
             public string DependantAttribute {
                 get {
                     try {
-                        return ((string)(this[this.tableDependantFields.DependantAttributeColumn]));
+                        return ((string)(this[this.tableDependantAttributes.DependantAttributeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DependantAttribute\' in table \'DependantFields\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'DependantAttribute\' in table \'DependantAttributes\' is DBNul" +
+                                "l.", e);
                     }
                 }
                 set {
-                    this[this.tableDependantFields.DependantAttributeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Rule {
-                get {
-                    try {
-                        return ((string)(this[this.tableDependantFields.RuleColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Rule\' in table \'DependantFields\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDependantFields.RuleColumn] = value;
+                    this[this.tableDependantAttributes.DependantAttributeColumn] = value;
                 }
             }
             
@@ -894,14 +909,14 @@ namespace DCFValidatorWeb {
             public string SourceAttribute {
                 get {
                     try {
-                        return ((string)(this[this.tableDependantFields.SourceAttributeColumn]));
+                        return ((string)(this[this.tableDependantAttributes.SourceAttributeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SourceAttribute\' in table \'DependantFields\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SourceAttribute\' in table \'DependantAttributes\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDependantFields.SourceAttributeColumn] = value;
+                    this[this.tableDependantAttributes.SourceAttributeColumn] = value;
                 }
             }
             
@@ -910,63 +925,91 @@ namespace DCFValidatorWeb {
             public string SourceCondition {
                 get {
                     try {
-                        return ((string)(this[this.tableDependantFields.SourceConditionColumn]));
+                        return ((string)(this[this.tableDependantAttributes.SourceConditionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SourceCondition\' in table \'DependantFields\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SourceCondition\' in table \'DependantAttributes\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDependantFields.SourceConditionColumn] = value;
+                    this[this.tableDependantAttributes.SourceConditionColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string AndRuleName {
+                get {
+                    try {
+                        return ((string)(this[this.tableDependantAttributes.AndRuleNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AndRuleName\' in table \'DependantAttributes\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDependantAttributes.AndRuleNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRuleNameNull() {
+                return this.IsNull(this.tableDependantAttributes.RuleNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRuleNameNull() {
+                this[this.tableDependantAttributes.RuleNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsDependantAttributeNull() {
-                return this.IsNull(this.tableDependantFields.DependantAttributeColumn);
+                return this.IsNull(this.tableDependantAttributes.DependantAttributeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDependantAttributeNull() {
-                this[this.tableDependantFields.DependantAttributeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsRuleNull() {
-                return this.IsNull(this.tableDependantFields.RuleColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetRuleNull() {
-                this[this.tableDependantFields.RuleColumn] = global::System.Convert.DBNull;
+                this[this.tableDependantAttributes.DependantAttributeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsSourceAttributeNull() {
-                return this.IsNull(this.tableDependantFields.SourceAttributeColumn);
+                return this.IsNull(this.tableDependantAttributes.SourceAttributeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetSourceAttributeNull() {
-                this[this.tableDependantFields.SourceAttributeColumn] = global::System.Convert.DBNull;
+                this[this.tableDependantAttributes.SourceAttributeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsSourceConditionNull() {
-                return this.IsNull(this.tableDependantFields.SourceConditionColumn);
+                return this.IsNull(this.tableDependantAttributes.SourceConditionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetSourceConditionNull() {
-                this[this.tableDependantFields.SourceConditionColumn] = global::System.Convert.DBNull;
+                this[this.tableDependantAttributes.SourceConditionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAndRuleNameNull() {
+                return this.IsNull(this.tableDependantAttributes.AndRuleNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAndRuleNameNull() {
+                this[this.tableDependantAttributes.AndRuleNameColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1017,22 +1060,22 @@ namespace DCFValidatorWeb {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class DependantFieldsRowChangeEvent : global::System.EventArgs {
+        public class DependantAttributesRowChangeEvent : global::System.EventArgs {
             
-            private DependantFieldsRow eventRow;
+            private DependantAttributesRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DependantFieldsRowChangeEvent(DependantFieldsRow row, global::System.Data.DataRowAction action) {
+            public DependantAttributesRowChangeEvent(DependantAttributesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DependantFieldsRow Row {
+            public DependantAttributesRow Row {
                 get {
                     return this.eventRow;
                 }

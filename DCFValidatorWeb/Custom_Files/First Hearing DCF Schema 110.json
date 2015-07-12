@@ -48,7 +48,8 @@
       }
     },
     "brief_description_of_case": {
-      "type": "string"
+      "type": "string",
+      "maximum": 1200
     },
     "defendants": {
       "type": "array",
@@ -232,7 +233,7 @@
           ]
         },
         "evidential_value": {
-          "type": "boolean"
+          "enum": [ true ]
         },
         "relied_upon_trial": {
           "type": "boolean"
@@ -282,7 +283,7 @@
           "$ref": "#/definitions/Arrest"
         },
         "conditional_caution_considered": {
-          "type": "boolean"
+          "enum": [ true ]
         },
         "cc_not_suitable_reasons": {
           "type": "array",
@@ -809,14 +810,10 @@
           "items": { "$ref": "#/definitions/RetailTheftOffence" },
           "minItems": 1,
           "uniqueItems": true
-        },
-        "retail_theft_interview_extension": {
-          "$ref": "#/definitions/RetailTheftInterviewExtension"
         }
       },
       "required": [
-        "retail_theft_offences",
-        "retail_theft_interview_extension"
+        "retail_theft_offences"
       ],
       "additionalProperties": false
     },
@@ -832,20 +829,20 @@
         "offence": {
           "$ref": "#/definitions/Offence"
         },
-        "property": {
+        "property_ids": {
           "type": "array",
-          "items": { "$ref": "#/definitions/Property" },
+          "items": { "type": "number" },
           "minItems": 1
         },
-        "cash_possessed_on_arrest": {
-          "type": "number"
+        "retail_theft_interview_extension": {
+          "$ref": "#/definitions/RetailTheftInterviewExtension"
         }
       },
       "required": [
         "type",
         "cjs_offence_code",
-        "property",
-        "cash_possessed_on_arrest"
+        "property_ids",
+        "retail_theft_interview_extension"
       ],
       "additionalProperties": false
     },
@@ -853,6 +850,9 @@
     "Property": {
       "type": "object",
       "properties": {
+        "propery_id": {
+          "type": "string"
+        },
         "property_action": {
           "enum": [
             "stolen_not_recovered",
@@ -878,6 +878,7 @@
         }
       },
       "required": [
+        "propery_id",
         "property_action",
         "description",
         "value"
@@ -887,20 +888,20 @@
 
     "Injuries": {
       "properties": {
-        "name_of_victim": {
-          "type": "string"
+        "names_of_defendants_causing_injuries": {
+          "$ref": "#/definitions/PersonName"
         },
         "description_of_injuries": {
           "type": "string"
         },
-        "photos_taken": {
+        "images_taken": {
           "type": "boolean"
         },
-        "photo_evidence_urls": {
+        "image_urls": {
           "type": "array",
           "items": { "type": "string" }
         },
-        "photos_description": {
+        "images_description": {
           "type": "string"
         },
         "reason_photos_not_taken": {
@@ -917,9 +918,9 @@
         }
       },
       "required": [
-        "name_of_victim",
+        "names_of_defendants_causing_injuries",
         "description_of_injuries",
-        "photos_taken",
+        "images_taken",
         "received_medical_treatment",
         "injuries_visible"
       ],
@@ -969,7 +970,7 @@
         "defendant_comments_if_shown": {
           "type": "string"
         },
-        "defendant_arrested_following_mme": {
+        "is_defendant_believed_to_be_in_the_mme": {
           "type": "boolean"
         },
         "defendant_admits_being_in_mme": {
@@ -984,7 +985,7 @@
         "id",
         "mme_type",
         "defendant_shown",
-        "defendant_arrested_following_mme",
+        "is_defendant_believed_to_be_in_the_mme",
         "defendant_admits_being_in_mme"
       ]
     },
@@ -1057,14 +1058,8 @@
       "type": "object",
       "properties": {
         "type": { "enum": [ "DomesticViolence" ] },
-        "assault_interview_extension": {
-          "$ref": "#/definitions/AssaultInterviewExtension"
-        },
-        "children_present": {
-          "type": "boolean"
-        },
-        "ages_of_children": {
-          "type": "string"
+        "victim_name": {
+          "$ref": "#/definitions/PersonName"
         },
         "relationship_between_parties": {
           "type": "boolean"
@@ -1075,8 +1070,7 @@
       },
       "additionalProperties": false,
       "required": [
-        "standard_interview",
-        "children_present",
+        "victim_name",
         "relationship_between_parties",
         "lenth_of_relationship"
       ]
@@ -1102,12 +1096,16 @@
         },
         "admit_being_dishonest": {
           "type": "boolean"
+        },
+        "admit_intending_to_permanently_deprive": {
+          "type": "boolean"
         }
       },
       "additionalProperties": false,
       "required": [
         "admit_taking_property",
-        "admit_being_dishonest"
+        "admit_being_dishonest",
+        "admit_intending_to_permanently_deprive"
       ]
     },
 
@@ -1120,30 +1118,24 @@
         "admits_assaulting_victim": {
           "type": "boolean"
         },
-        "admits_causing_the_injury": {
+        "admits_causing_the_injuries": {
           "type": "boolean"
         },
         "accepts_victims_version_of_events": {
           "type": "boolean"
-        },
-        "name_of_victim": {
-          "type": "string"
         },
         "position_of_trust": {
           "type": "boolean"
         },
         "self_defence_put_forward": {
           "type": "boolean"
-        },
-        "other_explaination_of_assault_put_forward": {
-          "type": "string"
         }
       },
       "additionalProperties": false,
       "required": [
         "admits_involvement_in_incident",
         "admits_assaulting_victim",
-        "admits_causing_the_injury",
+        "admits_causing_the_injuries",
         "accepts_victims_version_of_events",
         "position_of_trust",
         "self_defence_put_forward"
@@ -1181,12 +1173,6 @@
         "witness_id": {
           "type": "string"
         },
-        "name": {
-          "oneOf": [
-            { "$ref": "#/definitions/PersonName" },
-            { "$ref": "#/definitions/OrganisationName" }
-          ]
-        },
         "nature_of_involvement": {
           "type": "string"
         },
@@ -1207,7 +1193,6 @@
         }
       },
       "required": [
-        "name",
         "nature_of_involvement",
         "evidence_they_can_give",
         "wish_to_provide_evidence_via_video_link"
@@ -1218,7 +1203,6 @@
     "Victim": {
       "type": "object",
       "properties": {
-        "type": { "enum": [ "Victim" ] },
         "witness_type": {
           "type": "array",
           "items": {
@@ -1238,14 +1222,10 @@
         "witness": {
           "$ref": "#/definitions/Witness"
         },
-        "date_of_birth": {
-          "description": "ISO 8601 Conformant Datetime",
-          "type": "string"
-        },
-        "reason_dob_not_provided": {
-          "type": "string"
-        },
         "victim_code_requirements_met": {
+          "type": "boolean"
+        },
+        "has_the_victim_made_a_vps_isb": {
           "type": "boolean"
         },
         "victim_wish_to_attend_court": {
@@ -1264,22 +1244,78 @@
             "no_cps_to_disclose_and_not_to_read"
           ]
         },
-        "retracted_in_past": {
+        "retraction_statement": {
           "type": "boolean"
         },
         "compensation_applications": {
           "type": "array",
-          "items": { "$ref": "#/definitions/Witness" },
+          "items": { "$ref": "#/definitions/CompensationApplication" },
           "uniqueItems": true
         }
       },
       "additionalProperties": false,
       "required": [
-        "type",
+        "witness_type",
         "witness",
         "victim_code_requirements_met",
+        "has_the_victim_made_a_vps_isb",
         "victim_wish_to_attend_court"
       ]
+    },
+
+    "PersonVictim": {
+      "properties": {
+        "type": { "enum": [ "PersonVictim" ] },
+        "victim": {
+          "$ref": "#/definitions/Victim"
+        },
+        "name": {
+          "$ref": "#/definitions/PersonName"
+        },
+        "date_of_birth": {
+          "description": "ISO 8601 Conformant Datetime",
+          "type": "string"
+        },
+        "reason_dob_not_provided": {
+          "type": "string"
+        },
+        "visually_recorded_interview": {
+          "type": "boolean"
+        },
+        "url": {
+          "type": "string"
+        },
+        "special_measures": {
+          "type": "boolean"
+        },
+        "interpreter_required": {
+          "type": "boolean"
+        },
+        "interpreter_language_or_dialect": {
+          "type": "boolean"
+        },
+        "wish_to_provide_evidence_via_video_link": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "name",
+        "visually_recorded_interview"
+      ]
+    },
+
+    "OrganisationVictim": {
+      "properties": {
+        "type": { "enum": [ "OrganisationVictim" ] },
+        "victim": {
+          "$ref": "#/definitions/Victim"
+        },
+        "name": {
+          "$ref": "#/definitions/PersonName"
+        }
+      }
     },
 
     "CompensationApplication": {
@@ -1329,6 +1365,12 @@
       "type": "object",
       "properties": {
         "type": { "enum": [ "StatementWitness" ] },
+        "witness": {
+          "$ref": "#/definitions/Witness"
+        },
+        "name": {
+          "$ref": "#/definitions/PersonName"
+        },
         "witness_type": {
           "type": "array",
           "items": {
@@ -1351,9 +1393,6 @@
             "minItems": 1
           }
         },
-        "witness": {
-          "$ref": "#/definitions/Witness"
-        },
         "date_of_birth": {
           "description": "ISO 8601 Conformant Datetime",
           "type": "string"
@@ -1365,6 +1404,9 @@
           "type": "boolean"
         },
         "url": {
+          "type": "string"
+        },
+        "rank": {
           "type": "string"
         }
       },
@@ -1381,6 +1423,9 @@
       "type": "object",
       "properties": {
         "type": { "enum": [ "NgapOtherWitness" ] },
+        "witness": {
+          "$ref": "#/definitions/Witness"
+        },
         "witness_type": {
           "type": "array",
           "items": {
@@ -1402,8 +1447,8 @@
             "minItems": 1
           }
         },
-        "witness": {
-          "$ref": "#/definitions/Witness"
+        "name": {
+          "$ref": "#/definitions/PersonName"
         },
         "number": {
           "type": "string"
@@ -1422,16 +1467,19 @@
     "ExpertWitness": {
       "properties": {
         "type": { "enum": [ "NgapOtherWitness" ] },
+        "witness": {
+          "$ref": "#/definitions/Witness"
+        },
         "witness_type": {
           "type": "array",
           "items": {
             "enum": [ "expert" ],
             "uniqueItems": true,
             "minItems": 1
+          },
+          "name": {
+            "$ref": "#/definitions/PersonName"
           }
-        },
-        "witness": {
-          "$ref": "#/definitions/Witness"
         }
       }
     },
@@ -1562,6 +1610,6 @@
       ]
     }
   }
-}
+  }
 
 

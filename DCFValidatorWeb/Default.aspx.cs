@@ -28,14 +28,14 @@ namespace DCFValidatorWeb
         {
             try
             {
-                //string json = System.IO.File.ReadAllText(System.Configuration.ConfigurationManager.AppSettings["rulesPath"]);
-                string json = System.IO.File.ReadAllText(HttpRuntime.AppDomainAppPath + "\\Custom_Files\\rules.json");
+                string json = System.IO.File.ReadAllText(HttpRuntime.AppDomainAppPath + "\\Custom_Files\\Business Rules.json");
                 loadedRules = JsonConvert.DeserializeObject<RulesDataSet>(json);
             }
             catch (Exception ex)
             {
                 OutputText.Text = "Error: Unable to Load Rules: " + ex.Message;
                 OutputText.CssClass = "alert-danger";
+                ValidateDCF.Enabled = false;
             }
         }
 
@@ -44,16 +44,16 @@ namespace DCFValidatorWeb
             try
             {
                 // load JSchema directly from a file
-                //string schemaPath = System.Configuration.ConfigurationManager.AppSettings["schemaPath"];
-                string schemaPath = HttpRuntime.AppDomainAppPath + "\\Custom_Files\\First Hearing DCF Schema 100.json";
+                string schemaPath = HttpRuntime.AppDomainAppPath + "\\Custom_Files\\First Hearing DCF Schema 110.json";
                 using (StreamReader file = File.OpenText(schemaPath))
                 using (JsonTextReader reader = new JsonTextReader(file))
 
                     schema = JSchema.Load(reader);
             } catch (Exception ex)
             {
-                OutputText.Text = "Error: Unable to Load Rules: " + ex.Message;
+                OutputText.Text = "Error: Unable to Load Schema: " + ex.Message;
                 OutputText.CssClass = "alert-danger";
+                ValidateDCF.Enabled = false;
             }
 
         }
@@ -85,26 +85,25 @@ namespace DCFValidatorWeb
                 //Valid
                 OutputText.Text = "The file provided is well form and matches the JSON Schema \n";
                 OutputText.CssClass = "alert-success";
+
+                //Business Rule Validation
+                bool isGap = true;
+                FirstPass(ref isGap);
+                if (isGap)
+                {
+                    CheckGap();
+                }
             }
             else
             {
-                //Valid
+                //Invalid
                 OutputText.Text = "DCF Schema 1.1.0 Validation Error. Errors Below: \n";
                 OutputText.CssClass = "alert-danger";
 
-                // invalid
                 foreach (string message in messages)
                 {
-                    OutputText.Text = message;
+                    OutputText.Text += message + "\n";
                 }
-            }
-
-            //Business Rule Validation
-            bool isGap = true;
-            FirstPass(ref isGap);
-            if (isGap)
-            {
-                CheckGap();
             }
         }
 
@@ -118,70 +117,159 @@ namespace DCFValidatorWeb
                     OutputDebug.Text += reader.Path + "->" + reader.Value + " Type:" + reader.TokenType + "\n";
                 }
                 else
+                {
                     OutputDebug.Text += reader.Path + " Type:" + reader.TokenType + "\n";
-
-                //Check Rules
-
-                //Determine the path and attribute name
-                String path = reader.Path;
-                String attributeName;
-
-                if (path.IndexOf(".") > 0)
-                {
-                    attributeName = path.Substring(path.LastIndexOf(".") + 1);
-                    path = path.Substring(0, path.LastIndexOf(".")) + ".";
-                }
-                else
-                {
-                    //Root Object
-                    path = "";
-                    attributeName = reader.Path;
                 }
 
-                //Check to see if this field is Anticpated Plea. If Anticipated Plea
-                if (attributeName == "anticipated_plea") {
-                    string value = reader.Value.ToString();
-                    if (value == "not_guilty") {
-                    isGap = false;
-                    }
-                }
-
-                //See if this is a Source Field for checking other dependancy conditions
-
-                    if (attributeName != "")
+                //Check Business Rules if the tokens are of the correct types
+                if (reader.TokenType == JsonToken.String || reader.TokenType == JsonToken.Float || reader.TokenType == JsonToken.Boolean)
                 {
-                    var query = from loadedDependantField in loadedRules.DependantFields.AsEnumerable()
-                                where loadedDependantField.SourceAttribute == attributeName
-                                select new
-                                {
-                                    loadedDependantField.DependantAttribute,
-                                    loadedDependantField.Rule,
-                                    loadedDependantField.SourceAttribute,
-                                    loadedDependantField.SourceCondition
-                                };
-
-                    //For each dependant field rule check that it is obeyed by objects at the same path level
-                    foreach (var match in query)
                     {
-                        //Check that the condition is met
-                        string value = reader.Value.ToString();
-                        if (value == match.SourceCondition)
+                        //Determine the path and attribute name
+                        String path = reader.Path;
+                        String attributeName;
+
+                        if (path.IndexOf(".") > 0)
                         {
-                            OutputDebug.Text += "Found rule match condition on SourceField " + reader.Path + "\n";
+                            attributeName = path.Substring(path.LastIndexOf(".") + 1);
+                            path = path.Substring(0, path.LastIndexOf(".")) + ".";
+                        }
+                        else
+                        {
+                            //Root Object
+                            path = "";
+                            attributeName = reader.Path;
+                        }
 
-                            //Try and Find Target Attribute at same path
+                        //Clean off any array counts on the attribute name
+                        if (attributeName.Contains("["))
+                        {
+                            attributeName = attributeName.Substring(0, attributeName.IndexOf("["));
+                        }
 
-                            try
+                        //Check to see if this field is Anticpated Plea. If Anticipated Plea
+                        if (attributeName == "anticipated_plea")
+                        {
+                            string value = "";
+                            value = reader.Value.ToString();
+                            if (value == "not_guilty")
                             {
-                                String text = inputJson.SelectToken(path + match.DependantAttribute).ToString();
-                                OutputDebug.Text += "Found associated TargetField: " + text + "\n";
+                                isGap = false;
                             }
-                            catch
+                        }
+
+                        //See if this is a Source Field for checking other dependancy conditions. If so, Check that those conditions are met.
+
+                        if (attributeName != "")
+                        {
+                            var query = from loadedDependantAttribute in loadedRules.DependantAttributes.AsEnumerable()
+                                        where loadedDependantAttribute.SourceAttribute == attributeName
+                                        select new
+                                        {
+                                            loadedDependantAttribute.RuleName,
+                                            loadedDependantAttribute.DependantAttribute,
+                                            loadedDependantAttribute.SourceAttribute,
+                                            loadedDependantAttribute.SourceCondition,
+                                            loadedDependantAttribute.AndRuleName
+                                        };
+
+                            //For each dependant field rule check that it is obeyed by objects at the same path level
+                            foreach (var match in query)
                             {
-                                OutputText.Text += "Business Rule Validation error: " + match.DependantAttribute + " not found when " + match.SourceAttribute
-                                    + " is " + match.SourceCondition;
-                                OutputText.CssClass = "alert-danger";
+                                bool needTofind = true;
+                                //Check that the condition is met
+                                string value = reader.Value.ToString();
+                                if (value == match.SourceCondition.ToString())
+                                {
+
+                                    OutputDebug.Text += "Found rule match condition on SourceField " + reader.Path + "\n";
+
+                                    //Check to see if this condition has an "AND" condition
+                                    if (match.AndRuleName.ToString() != "")
+                                    {
+
+                                        //Load the Related Rule
+                                        var andQuery = from loadedDependantField in loadedRules.DependantAttributes.AsEnumerable()
+                                                       where loadedDependantField.RuleName == match.AndRuleName.ToString()
+                                                       select new
+                                                       {
+                                                           loadedDependantField.RuleName,
+                                                           loadedDependantField.DependantAttribute,
+                                                           loadedDependantField.SourceAttribute,
+                                                           loadedDependantField.SourceCondition,
+                                                           loadedDependantField.AndRuleName
+                                                       };
+
+                                        //Check the Value of the AND Condition attribute
+                                        foreach (var andMatch in andQuery)
+                                        {
+                                            try
+                                            {
+                                                String andValue = inputJson.SelectToken(path + andMatch.SourceAttribute).ToString();
+
+                                                if (andMatch.SourceCondition == andValue)
+                                                {
+                                                    needTofind = true;
+                                                }
+
+                                            }
+                                            catch
+                                            {
+                                                //The and condition was not found
+                                                needTofind = false;
+                                            }
+                                        }
+
+                                    }
+
+                                    //Try and Find Target Attribute at same path
+                                    if (needTofind)
+                                    {
+                                        try
+                                        {
+                                            String text = inputJson.SelectToken(path + match.DependantAttribute).ToString();
+                                            OutputDebug.Text += "Found associated TargetField: " + text + "\n";
+                                        }
+                                        catch
+                                        {
+                                            OutputText.Text += "Business Rule Validation error: " + match.DependantAttribute + " not found when " + match.SourceAttribute
+                                                + " is " + match.SourceCondition + "\n";
+                                            OutputText.CssClass = "alert-danger";
+                                        }
+                                    }
+                                }
                             }
+
+                            ////Check if this field is Dependent on the value of a Parent field
+                            //var parentQuery = from loadedDependantAttribute in loadedRules.DependantAttributes.AsEnumerable()
+                            //            where loadedDependantAttribute.DependantAttribute == attributeName
+                            //            select new
+                            //            {
+                            //                loadedDependantAttribute.RuleName,
+                            //                loadedDependantAttribute.DependantAttribute,
+                            //                loadedDependantAttribute.SourceAttribute,
+                            //                loadedDependantAttribute.SourceCondition,
+                            //                loadedDependantAttribute.AndRuleName
+                            //            };
+                            //foreach (var match in parentQuery)
+                            //{
+                            //    //Check that the condition is met
+
+                            //    OutputDebug.Text += "Found rule match condition on DependantField " + reader.Path + "\n";
+
+                            //    //Try and find the parent attribute on the same path 
+                            //    try
+                            //    {
+                            //        String text = inputJson.SelectToken(path + match.SourceAttribute).ToString();
+                            //        OutputDebug.Text += "Found associated SourceAttribute: " + text + "\n";
+
+                            //        //Need to check the value of the parent field here!!!!
+                            //    }
+                            //    catch
+                            //    {
+                            //        OutputText.Text += "Business Rule Validation error: " + match.DependantAttribute + " not found when " + match.SourceAttribute
+                            //            + " is " + match.SourceCondition + "\n";
+                            //        OutputText.CssClass = "alert-danger";
                         }
                     }
                 }
@@ -210,7 +298,7 @@ namespace DCFValidatorWeb
                     attributeName = reader.Path;
                 }
 
-                if (attributeName != "")
+                if (attributeName != "" & reader.TokenType != JsonToken.PropertyName)
                 {
                     var query = from loadedNGAPAttribute in loadedRules.NGAPOnly.AsEnumerable()
                                 where loadedNGAPAttribute.Attribute == attributeName
@@ -220,7 +308,7 @@ namespace DCFValidatorWeb
                                 };
                     foreach (var match in query)
                     {
-                        OutputText.Text += "Business rule validation error: This DCF Should be prepared as GAP, but contains " + reader.Path + "\n";
+                        OutputText.Text += "Business rule validation error: This DCF should be prepared as GAP, but contains " + reader.Path + "\n";
                         OutputText.CssClass = "alert-danger";
                     }
                 }
