@@ -189,6 +189,11 @@
     </Content>
     <Content Include="Custom_Files\Business Rules.json" />
     <Content Include="Custom_Files\First Hearing DCF Schema 110.json" />
+    <Content Include="Custom_Files\First Hearing Example 2 - Invalid Schema.json" />
+    <Content Include="Custom_Files\First Hearing Example 1 - Single Defendant 110.json" />
+    <Content Include="Custom_Files\First Hearing Example 3 - Missing Fields.json" />
+    <Content Include="Custom_Files\First Hearing Example 4 - Additional Fields %28Dependant%29.json" />
+    <Content Include="Custom_Files\First Hearing Example 5 - NGAP Violation %28when GAP%29 - Copy.json" />
     <None Include="RulesDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>

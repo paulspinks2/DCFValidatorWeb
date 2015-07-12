@@ -68,59 +68,52 @@ namespace DCFValidatorWeb
 
         protected void ValidateJSON()
         {
+            bool valid = false;
+            IList<string> messages;
             try
             {
                 inputJson = JObject.Parse(JsonSrc.Text);
+
+                valid = inputJson.IsValid(schema, out messages);
+
+                if (valid)
+                {
+                    //Valid
+                    OutputText.Text = "The file provided is well form and matches the JSON Schema \n";
+                    OutputText.CssClass = "alert-success";
+
+                    //Business Rule Validation
+                    bool isGap = true;
+                    FirstPass(ref isGap);
+                    if (isGap)
+                    {
+                        CheckGap();
+                    }
+                }
+                else
+                {
+                    //Invalid
+                    OutputText.Text = "DCF Schema 1.1.0 Validation Error. Errors Below: \n";
+                    OutputText.CssClass = "alert-danger";
+
+                    foreach (string message in messages)
+                    {
+                        OutputText.Text += message + "\n";
+                    }
+                }
             }
             catch (Exception e)
             {
-                OutputText.Text = e.ToString();
-            }
-
-            IList<string> messages;
-            bool valid = inputJson.IsValid(schema, out messages);
-
-            if (valid)
-            {
-                //Valid
-                OutputText.Text = "The file provided is well form and matches the JSON Schema \n";
-                OutputText.CssClass = "alert-success";
-
-                //Business Rule Validation
-                bool isGap = true;
-                FirstPass(ref isGap);
-                if (isGap)
-                {
-                    CheckGap();
-                }
-            }
-            else
-            {
-                //Invalid
-                OutputText.Text = "DCF Schema 1.1.0 Validation Error. Errors Below: \n";
+                OutputText.Text = e.Message;
                 OutputText.CssClass = "alert-danger";
-
-                foreach (string message in messages)
-                {
-                    OutputText.Text += message + "\n";
-                }
             }
         }
 
-        protected void FirstPass(ref bool isGap)
+    protected void FirstPass(ref bool isGap)
         {
             JsonTextReader reader = new JsonTextReader(new StringReader(JsonSrc.Text));
             while (reader.Read())
             {
-                if (reader.Value != null)
-                {
-                    OutputDebug.Text += reader.Path + "->" + reader.Value + " Type:" + reader.TokenType + "\n";
-                }
-                else
-                {
-                    OutputDebug.Text += reader.Path + " Type:" + reader.TokenType + "\n";
-                }
-
                 //Check Business Rules if the tokens are of the correct types
                 if (reader.TokenType == JsonToken.String || reader.TokenType == JsonToken.Float || reader.TokenType == JsonToken.Boolean)
                 {
@@ -182,8 +175,6 @@ namespace DCFValidatorWeb
                                 if (value == match.SourceCondition.ToString())
                                 {
 
-                                    OutputDebug.Text += "Found rule match condition on SourceField " + reader.Path + "\n";
-
                                     //Check to see if this condition has an "AND" condition
                                     if (match.AndRuleName.ToString() != "")
                                     {
@@ -228,11 +219,10 @@ namespace DCFValidatorWeb
                                         try
                                         {
                                             String text = inputJson.SelectToken(path + match.DependantAttribute).ToString();
-                                            OutputDebug.Text += "Found associated TargetField: " + text + "\n";
                                         }
                                         catch
                                         {
-                                            OutputText.Text += "Business Rule Validation error: " + match.DependantAttribute + " not found when " + match.SourceAttribute
+                                            OutputText.Text += "Business Rule Validation error: Missing Attribute " + match.DependantAttribute + " not found when " + match.SourceAttribute
                                                 + " is " + match.SourceCondition + "\n";
                                             OutputText.CssClass = "alert-danger";
                                         }
@@ -240,36 +230,40 @@ namespace DCFValidatorWeb
                                 }
                             }
 
-                            ////Check if this field is Dependent on the value of a Parent field
-                            //var parentQuery = from loadedDependantAttribute in loadedRules.DependantAttributes.AsEnumerable()
-                            //            where loadedDependantAttribute.DependantAttribute == attributeName
-                            //            select new
-                            //            {
-                            //                loadedDependantAttribute.RuleName,
-                            //                loadedDependantAttribute.DependantAttribute,
-                            //                loadedDependantAttribute.SourceAttribute,
-                            //                loadedDependantAttribute.SourceCondition,
-                            //                loadedDependantAttribute.AndRuleName
-                            //            };
-                            //foreach (var match in parentQuery)
-                            //{
-                            //    //Check that the condition is met
+                            //Check if this field is Dependent on the value of a Parent field
+                            var parentQuery = from loadedDependantAttribute in loadedRules.DependantAttributes.AsEnumerable()
+                                              where loadedDependantAttribute.DependantAttribute == attributeName
+                                              select new
+                                              {
+                                                  loadedDependantAttribute.RuleName,
+                                                  loadedDependantAttribute.DependantAttribute,
+                                                  loadedDependantAttribute.SourceAttribute,
+                                                  loadedDependantAttribute.SourceCondition,
+                                                  loadedDependantAttribute.AndRuleName
+                                              };
+                            foreach (var match in parentQuery)
+                            {
+                                //Check that the condition is met
+                                //Try and find the parent attribute on the same path 
+                                try
+                                {
+                                    String text = inputJson.SelectToken(path + match.SourceAttribute).ToString();
 
-                            //    OutputDebug.Text += "Found rule match condition on DependantField " + reader.Path + "\n";
-
-                            //    //Try and find the parent attribute on the same path 
-                            //    try
-                            //    {
-                            //        String text = inputJson.SelectToken(path + match.SourceAttribute).ToString();
-                            //        OutputDebug.Text += "Found associated SourceAttribute: " + text + "\n";
-
-                            //        //Need to check the value of the parent field here!!!!
-                            //    }
-                            //    catch
-                            //    {
-                            //        OutputText.Text += "Business Rule Validation error: " + match.DependantAttribute + " not found when " + match.SourceAttribute
-                            //            + " is " + match.SourceCondition + "\n";
-                            //        OutputText.CssClass = "alert-danger";
+                                    //If the parent is found, check the value is correct.
+                                    if (match.SourceCondition != text) {
+                                        OutputText.Text += "Business Rule Validation error: Additional Attribute " + match.DependantAttribute + " present when " + match.SourceAttribute
+                                        + " " + text;
+                                        OutputText.CssClass = "alert-danger";
+                                    }
+                                }
+                                catch
+                                {
+                                    //If the parent can't be found, the child shouldn't be present either.
+                                    OutputText.Text += "Business Rule Validation error: Additional Attribute " + match.DependantAttribute + " present when " + match.SourceAttribute
+                                        +  match.SourceCondition + "not present" + "\n";
+                                    OutputText.CssClass = "alert-danger";
+                                }
+                            }
                         }
                     }
                 }

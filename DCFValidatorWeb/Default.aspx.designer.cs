@@ -38,14 +38,5 @@ namespace DCFValidatorWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox OutputText;
-        
-        /// <summary>
-        /// OutputDebug control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox OutputDebug;
     }
 }
