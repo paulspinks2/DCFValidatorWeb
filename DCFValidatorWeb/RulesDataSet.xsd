@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RulesDataSet" targetNamespace="http://tempuri.org/RulesDataSet.xsd" xmlns:mstns="http://tempuri.org/RulesDataSet.xsd" xmlns="http://tempuri.org/RulesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RulesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RulesDataSet" msprop:Generator_UserDSName="RulesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DependantFields" msprop:Generator_TableClassName="DependantFieldsDataTable" msprop:Generator_TableVarName="tableDependantFields" msprop:Generator_TablePropName="DependantFields" msprop:Generator_RowDeletingName="DependantFieldsRowDeleting" msprop:Generator_RowChangingName="DependantFieldsRowChanging" msprop:Generator_RowEvHandlerName="DependantFieldsRowChangeEventHandler" msprop:Generator_RowDeletedName="DependantFieldsRowDeleted" msprop:Generator_UserTableName="DependantFields" msprop:Generator_RowChangedName="DependantFieldsRowChanged" msprop:Generator_RowEvArgName="DependantFieldsRowChangeEvent" msprop:Generator_RowClassName="DependantFieldsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DependantAttribute" msprop:Generator_ColumnVarNameInTable="columnDependantAttribute" msprop:Generator_ColumnPropNameInRow="DependantAttribute" msprop:Generator_ColumnPropNameInTable="DependantAttributeColumn" msprop:Generator_UserColumnName="DependantAttribute" type="xs:string" minOccurs="0" />
+              <xs:element name="Rule" msprop:Generator_ColumnVarNameInTable="columnRule" msprop:Generator_ColumnPropNameInRow="Rule" msprop:Generator_ColumnPropNameInTable="RuleColumn" msprop:Generator_UserColumnName="Rule" type="xs:string" minOccurs="0" />
+              <xs:element name="SourceAttribute" msprop:Generator_ColumnVarNameInTable="columnSourceAttribute" msprop:Generator_ColumnPropNameInRow="SourceAttribute" msprop:Generator_ColumnPropNameInTable="SourceAttributeColumn" msprop:Generator_UserColumnName="SourceAttribute" type="xs:string" minOccurs="0" />
+              <xs:element name="SourceCondition" msprop:Generator_ColumnVarNameInTable="columnSourceCondition" msprop:Generator_ColumnPropNameInRow="SourceCondition" msprop:Generator_ColumnPropNameInTable="SourceConditionColumn" msprop:Generator_UserColumnName="SourceCondition" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NGAPOnly" msprop:Generator_TableClassName="NGAPOnlyDataTable" msprop:Generator_TableVarName="tableNGAPOnly" msprop:Generator_TablePropName="NGAPOnly" msprop:Generator_RowDeletingName="NGAPOnlyRowDeleting" msprop:Generator_RowChangingName="NGAPOnlyRowChanging" msprop:Generator_RowEvHandlerName="NGAPOnlyRowChangeEventHandler" msprop:Generator_RowDeletedName="NGAPOnlyRowDeleted" msprop:Generator_UserTableName="NGAPOnly" msprop:Generator_RowChangedName="NGAPOnlyRowChanged" msprop:Generator_RowEvArgName="NGAPOnlyRowChangeEvent" msprop:Generator_RowClassName="NGAPOnlyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Attribute" msprop:Generator_ColumnVarNameInTable="columnAttribute" msprop:Generator_ColumnPropNameInRow="Attribute" msprop:Generator_ColumnPropNameInTable="AttributeColumn" msprop:Generator_UserColumnName="Attribute" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
