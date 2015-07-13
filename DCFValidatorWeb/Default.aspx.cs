@@ -8,6 +8,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Schema;
 using Newtonsoft.Json.Linq;
+using System.Xml.Linq;
 
 namespace DCFValidatorWeb
 {
@@ -48,14 +49,14 @@ namespace DCFValidatorWeb
                 using (StreamReader file = File.OpenText(schemaPath))
                 using (JsonTextReader reader = new JsonTextReader(file))
 
-                    schema = JSchema.Load(reader);
+                schema = JSchema.Load(reader);
+
             } catch (Exception ex)
             {
                 OutputText.Text = "Error: Unable to Load Schema: " + ex.Message;
                 OutputText.CssClass = "alert-danger";
                 ValidateDCF.Enabled = false;
             }
-
         }
 
         protected void ValidateDCF_OnClick(object sender, EventArgs e)
@@ -66,10 +67,16 @@ namespace DCFValidatorWeb
             ValidateJSON();
         }
 
+        protected void DCFPreview_OnClick(object sender, EventArgs e)
+        {
+            
+        }
+
         protected void ValidateJSON()
         {
             bool valid = false;
             IList<string> messages;
+
             try
             {
                 inputJson = JObject.Parse(JsonSrc.Text);

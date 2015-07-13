@@ -1,17 +1,19 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="DCFValidatorWeb._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
         <div class="jumbotron">
         <p class="lead">This DCF validator checks a Digtal Case File to ensure it is both well formed against the JSON Schema version 1.1.0 and complies with the additional business rules.</p>
          <a class="btn btn-default" href="#Capabilities">Learn more &raquo;</a>
         </div>
             <h3>Copy DCF JSON file here:</h3>
         <p>
+            
             <asp:TextBox ID="JsonSrc" runat="server" Height="223px" style="margin-top: 0px" Width="100%" Rows="100" TextMode="MultiLine"></asp:TextBox>
+
         </p>
         <p>
-            <asp:LinkButton ID="ValidateDCF" runat="server"  class="btn btn-primary btn-lg" OnClick="ValidateDCF_OnClick">Validate</asp:LinkButton>
+            <asp:LinkButton ID="ValidateDCF" runat="server"  class="btn btn-primary btn-lg" OnClick="ValidateDCF_OnClick">Validate</asp:LinkButton>&nbsp
+            <asp:LinkButton ID="Preview" runat="server"  class="btn btn-danger btn-lg" OnClick="DCFPreview_OnClick" PostBackUrl="~/DCF Preview.aspx">Preview</asp:LinkButton>
         </p>
         <p></p>
         <h3>Results:</h3>
