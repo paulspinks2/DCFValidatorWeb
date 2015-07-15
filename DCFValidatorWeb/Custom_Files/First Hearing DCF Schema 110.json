@@ -84,7 +84,8 @@
       ]
     },
     "multimedia_evidence": {
-      "$ref": "#/definitions/Mme"
+      "type": "array",
+      "items": { "$ref": "#/definitions/Mme" }
     },
     "is_hearsay": {
       "type": "boolean"
@@ -381,11 +382,13 @@
           "type": "string"
         },
         "multimedia_evidence_response": {
-          "type": "object",
-          "oneOf": [
-            { "$ref": "#/definitions/MmeRecordedResponse" },
-            { "$ref": "#/definitions/MmeNotRecordedResponse" }
-          ]
+          "type": "array",
+          "items": {
+            "oneOf": [
+              { "$ref": "#/definitions/MmeRecordedResponse" },
+              { "$ref": "#/definitions/MmeNotRecordedResponse" }
+            ]
+          }
         },
         "notice_to_provide_bad_character_evidence": {
           "type": "boolean"
@@ -659,7 +662,7 @@
           "type": "string"
         },
         "anticipated_plea": {
-          "enum": ["guilty", "not_guilty"]
+          "enum": [ "guilty", "not_guilty" ]
         },
         "committed_on_bail": {
           "type": "boolean"
@@ -952,15 +955,6 @@
         "id": {
           "type": "string"
         },
-        "mme_type": {
-          "enum": [
-            "cctv",
-            "facewatch",
-            "body_worn_video",
-            "surveillance_camera",
-            "999_call"
-          ]
-        },
         "defendant_shown": {
           "type": "boolean"
         },
@@ -983,7 +977,6 @@
       "additionalProperties": false,
       "required": [
         "id",
-        "mme_type",
         "defendant_shown",
         "is_defendant_believed_to_be_in_the_mme",
         "defendant_admits_being_in_mme"
