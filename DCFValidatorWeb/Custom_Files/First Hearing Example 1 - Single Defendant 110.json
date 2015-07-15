@@ -31,7 +31,7 @@
                 "to_date": "2014-01-01",
                 "offence_title": "Offence Title from PNLD",
                 "charge_wording": "This is the charge wording",
-                "points_to_prove_met_by": "description of how the points to prove have been met.",
+                "points_to_prove_met_by": "Description of how the points to prove have been met.",
                 "anticipated_plea": "guilty",
                 "committed_on_bail": false
               },
@@ -115,15 +115,16 @@
 
       ],
       "interpreter_required": false,
-      "multimedia_evidence_response": {
-        "id": "1",
-        "type": "MmeRecordedResponse",
-        "mme_type": "cctv",
-        "defendant_shown": true,
-        "defendant_comments_if_shown": "These are the defendant comments if shown.",
-        "is_defendant_believed_to_be_in_the_mme": true,
-        "defendant_admits_being_in_mme": true
-      },
+      "multimedia_evidence_response": [
+        {
+          "id": "1",
+          "type": "MmeRecordedResponse",
+          "defendant_shown": true,
+          "defendant_comments_if_shown": "These are the defendant comments if shown.",
+          "is_defendant_believed_to_be_in_the_mme": true,
+          "defendant_admits_being_in_mme": true
+        }
+      ],
       "dealt_with_in_welsh": false,
       "person_remand_status": "custody",
       "given_charges": true,
@@ -162,42 +163,44 @@
       }
     }
   ],
-    "witnesses": [
-        {
-          "type": "StatementWitness",
-          "witness_type": [ "eye" ],
-          "name": {
-            "given_name": [ "Jennie", "Claire" ],
-            "surname": "Jones"
-          },
-          "witness": {
-            "nature_of_involvement": "Nature of involvement",
-            "evidence_they_can_give": "Evidence they can give",
-            "wish_to_provide_evidence_via_video_link": false
-          },
+  "witnesses": [
+    {
+      "type": "StatementWitness",
+      "witness_type": [ "eye" ],
+      "name": {
+        "given_name": [ "Jennie", "Claire" ],
+        "surname": "Jones"
+      },
+      "witness": {
+        "nature_of_involvement": "Nature of involvement",
+        "evidence_they_can_give": "Evidence they can give",
+        "wish_to_provide_evidence_via_video_link": false
+      },
 
-            "date_of_birth": "1980-08-01T12:00Z",
-            "visually_recorded_interview": false
-        }
-    ],
-    "common_law_disclosure": {
-        "reporting_officer": {
-            "surname": "Collins",
-            "given_name": [ "Simon" ]
-        },
-        "reporting_officer_signature_date": "2014-01-01"
+      "date_of_birth": "1980-08-01T12:00Z",
+      "visually_recorded_interview": false
+    }
+  ],
+  "common_law_disclosure": {
+    "reporting_officer": {
+      "surname": "Collins",
+      "given_name": [ "Simon" ]
     },
-    "multimedia_evidence": {
-        "id": "1",
-        "date": "2014-01-01",
-        "type": "cctv",
-        "description_of_what_is_contained_in_multimedia_evidence": "Description goes here",
-        "evidential_value": true,
-        "relied_upon_trial": true,
-        "relied_upon_sentence": true,
-        "total_duration": "01:02",
-        "url": "http://test.gov.uk/askdasdjds/asds"
-    },
+    "reporting_officer_signature_date": "2014-01-01"
+  },
+  "multimedia_evidence": [
+    {
+      "id": "1",
+      "date": "2014-01-01",
+      "type": "cctv",
+      "description_of_what_is_contained_in_multimedia_evidence": "Description goes here",
+      "evidential_value": true,
+      "relied_upon_trial": true,
+      "relied_upon_sentence": true,
+      "total_duration": "01:02",
+      "url": "http://test.gov.uk/askdasdjds/asds"
+    }
+  ],
     "expert_evidence": false,
     "test_code": "full_code_test",
     "pca_cps": false,

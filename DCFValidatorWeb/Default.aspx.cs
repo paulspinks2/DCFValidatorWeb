@@ -23,6 +23,7 @@ namespace DCFValidatorWeb
         {
             LoadRules();
             LoadDCFSchema();
+            
         }
 
         protected void LoadRules()
@@ -69,7 +70,7 @@ namespace DCFValidatorWeb
 
         protected void DCFPreview_OnClick(object sender, EventArgs e)
         {
-            
+            Server.Transfer("DCF Preview.aspx");
         }
 
         protected void ValidateJSON()

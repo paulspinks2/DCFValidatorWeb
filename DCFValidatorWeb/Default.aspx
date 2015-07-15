@@ -13,7 +13,7 @@
         </p>
         <p>
             <asp:LinkButton ID="ValidateDCF" runat="server"  class="btn btn-primary btn-lg" OnClick="ValidateDCF_OnClick">Validate</asp:LinkButton>&nbsp
-            <asp:LinkButton ID="Preview" runat="server"  class="btn btn-danger btn-lg" OnClick="DCFPreview_OnClick" PostBackUrl="~/DCF Preview.aspx">Preview</asp:LinkButton>
+            <asp:LinkButton ID="Preview" runat="server"  class="btn btn-danger btn-lg" OnClick="DCFPreview_OnClick" Visible="False">Preview</asp:LinkButton>
         </p>
         <p></p>
         <h3>Results:</h3>
@@ -68,7 +68,7 @@
                 <a class="btn btn-default" href="Custom_Files/First Hearing Example 2 - Invalid Schema.json" target="_blank">Invalid: Fail's to comply with DCF Json Schema &raquo;</a>
                 <a class="btn btn-default" href="Custom_Files/First Hearing Example 3 - Missing Fields.json" target="_blank">Invalid: Has missing Dependant fields &raquo;</a>
                 <a class="btn btn-default" href="Custom_Files/First Hearing Example 4 - Additional Fields (Dependant).json" target="_blank">Invalid: Has additional fields &raquo;</a>
-                <a class="btn btn-default" href="Custom_Files/First Hearing Example 5 - NGAP Violation (when GAP) - Copy.json" target="_blank">Invalid: Is a GAP file which contains NGAP fields &raquo;</a>
+                <a class="btn btn-default" href="Custom_Files/First Hearing Example 5 - NGAP Violation (when GAP).json" target="_blank">Invalid: Is a GAP file which contains NGAP fields &raquo;</a>
             </p>
         </div>
 </asp:Content>

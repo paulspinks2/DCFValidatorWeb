@@ -4833,7 +4833,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .label-default {
-  background-color: #999999;
+    background-color: #DFDFDF;
 }
 
 .label-default[href]:hover,

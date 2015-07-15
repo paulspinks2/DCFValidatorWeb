@@ -179,6 +179,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DCF Preview.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -193,7 +194,9 @@
     <Content Include="Custom_Files\First Hearing Example 1 - Single Defendant 110.json" />
     <Content Include="Custom_Files\First Hearing Example 3 - Missing Fields.json" />
     <Content Include="Custom_Files\First Hearing Example 4 - Additional Fields %28Dependant%29.json" />
-    <Content Include="Custom_Files\First Hearing Example 5 - NGAP Violation %28when GAP%29 - Copy.json" />
+    <Content Include="Custom_Files\First Hearing Example 5 - NGAP Violation %28when GAP%29.json" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="XSLT\DCF XSLT.xslt" />
     <None Include="RulesDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -375,6 +378,13 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DCF Preview.aspx.cs">
+      <DependentUpon>DCF Preview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DCF Preview.aspx.designer.cs">
+      <DependentUpon>DCF Preview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RulesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -413,6 +423,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
