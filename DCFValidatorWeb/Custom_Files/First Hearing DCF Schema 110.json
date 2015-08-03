@@ -1,5 +1,5 @@
 ﻿{
-  "description": "First Hearing Digital Case File 1.1.0",
+  "description": "First Hearing Digital Case File 1.1.0 Draft 2",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -577,7 +577,8 @@
       "type": "object",
       "properties": {
         "original_charge_wording": {
-          "type": "string"
+          "type": "array",
+          "items": { "type": "string" }
         },
         "bailed_from": {
           "$ref": "#/definitions/OrganisationLocation"
@@ -633,7 +634,8 @@
         "grounds",
         "condition",
         "reason"
-      ]
+      ],
+      "additionalProperties": false
     },
 
     "Offence": {
@@ -1000,7 +1002,7 @@
         "legal_representative_firm": {
           "type": "string"
         },
-        "interpretors": {
+        "interpreters": {
           "type": "array",
           "items": { "$ref": "#/definitions/PersonName" },
           "minItems": 1
@@ -1532,7 +1534,7 @@
     "CourtOrderTitle": {
       "type": "object",
       "properties": {
-        "title": {
+        "court_order_title": {
           "enum": [
             "antisocial_behaviour_order",
             "application_for_costs_against_convicted_defendant",
@@ -1599,10 +1601,11 @@
       },
       "additionalProperties": false,
       "required": [
-        "title"
+        "court_order_title"
       ]
     }
   }
-  }
+}
+
 
 

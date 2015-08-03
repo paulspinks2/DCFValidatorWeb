@@ -268,7 +268,7 @@ namespace DCFValidatorWeb
                                 {
                                     //If the parent can't be found, the child shouldn't be present either.
                                     OutputText.Text += "Business Rule Validation error: Additional Attribute " + match.DependantAttribute + " present when " + match.SourceAttribute
-                                        +  match.SourceCondition + "not present" + "\n";
+                                        + " " + match.SourceCondition + " not present \n";
                                     OutputText.CssClass = "alert-danger";
                                 }
                             }
