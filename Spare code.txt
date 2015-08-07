@@ -1,0 +1,16 @@
+        protected void TestButton_OnClick(object sender, EventArgs e)
+        {
+            RulesDataSet.RulesRow rulesrow = loadedRules.Rules.NewRulesRow();
+            rulesrow.TargetField = "name";
+            rulesrow.Rule = "REQUIRED";
+            rulesrow.SourceField = "title";
+            rulesrow.SourceCondition = "true";
+
+            loadedRules.Rules.AddRulesRow(rulesrow);
+            loadedRules.AcceptChanges();
+
+            string json = JsonConvert.SerializeObject(loadedRules, Formatting.Indented);
+
+            System.IO.File.WriteAllText(System.Configuration.ConfigurationManager.AppSettings["rulesPath"], json);
+            
+        }

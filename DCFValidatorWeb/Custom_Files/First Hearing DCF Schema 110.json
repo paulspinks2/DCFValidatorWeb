@@ -1,5 +1,5 @@
 ﻿{
-  "description": "First Hearing Digital Case File 1.1.0 Draft 2",
+  "description": "First Hearing Digital Case File 1.1.0 Draft 3",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -349,7 +349,67 @@
           "$ref": "#/definitions/OrganisationLocation"
         },
         "breach_order_title": {
-          "$ref": "#/definitions/CourtOrderTitle"
+          "enum": [
+            "antisocial_behaviour_order",
+            "application_for_costs_against_convicted_defendant",
+            "bind_over",
+            "bind_over_to_keep_the_peace",
+            "breach_of_non_molestation_order",
+            "cash_seizure_and_forfeiture_order",
+            "civil_disclosure_order",
+            "civil_recovery_order",
+            "closure_notice_for_premesis",
+            "compensation_order",
+            "confiscation_order",
+            "costs",
+            "criminal_antisocial_behaviour_order",
+            "criminal_behaviour_order",
+            "criminal_proceeds_of_crime_act_disclosure_orders",
+            "deportation_of_foreign_nation_prisoners",
+            "deportation_order",
+            "deprivation_of_property",
+            "disclosure_notice_for_the_purpose_of_terrorist_investigations",
+            "discretionary_driving_disqualification",
+            "disqualification_from_working_with_children",
+            "disruption_of_legal_professionals_facilitating_serious_organised_crime",
+            "dog_control_order",
+            "domestic_violence_protection_order",
+            "enforcement_receivership_order",
+            "european_arrest_warrant",
+            "european_protection_order",
+            "exclusion_order_licenced_premesis",
+            "financial_reporting_order",
+            "football_banning_order",
+            "forced_marriage_protection_order",
+            "forfeiture_and_destruction_of_dog_order",
+            "forfeiture_and_destruction_of_drugs_order",
+            "forfeiture_and_destruction_of_property",
+            "forfeiture_and_destruction_of_weapon_order",
+            "forfeiture_and_destruction_order",
+            "forfeiture_of_indecent_photograph",
+            "forfeiture_of_motor_vehicle_order",
+            "forfeiture_of_obscene_publications",
+            "immunity_agreements",
+            "interim_receiving_order",
+            "no_orders_required",
+            "notification_requirements_sex_offender_register",
+            "obligatory_driving_disqualification",
+            "other",
+            "parental_bind_order",
+            "parenting_order",
+            "property_freezing_order",
+            "refusal_and_revocation_of_citizenship",
+            "restitution_order",
+            "restraining_order",
+            "restraint_order",
+            "restricted_use_publications",
+            "revocation_of_a_pilots_licence",
+            "sentence_discount_agreement",
+            "serious_crime_prevention_order",
+            "sexual_risk_order",
+            "travel_restriction_order",
+            "violent_offender_order"
+          ]
         },
         "breach_order_title_other": {
           "type": "string"
@@ -894,7 +954,8 @@
     "Injuries": {
       "properties": {
         "names_of_defendants_causing_injuries": {
-          "$ref": "#/definitions/PersonName"
+          "type": "array",
+          "items": { "$ref": "#/definitions/PersonName" }
         },
         "description_of_injuries": {
           "type": "string"
@@ -1087,7 +1148,11 @@
       "type": "object",
       "properties": {
         "admit_taking_property": {
-          "type": "boolean"
+          "enum": [
+            "admits_all",
+            "admits_partial",
+            "admits_nothing"
+          ]
         },
         "admit_being_dishonest": {
           "type": "boolean"
@@ -1114,7 +1179,11 @@
           "type": "boolean"
         },
         "admits_causing_the_injuries": {
-          "type": "boolean"
+          "enum": [
+            "admits_all",
+            "admits_partial",
+            "admits_nothing"
+          ]
         },
         "accepts_victims_version_of_events": {
           "type": "boolean"
@@ -1141,7 +1210,67 @@
       "type": "object",
       "properties": {
         "court_order_title": {
-          "$ref": "#/definitions/CourtOrderTitle"
+          "enum": [
+            "antisocial_behaviour_order",
+            "application_for_costs_against_convicted_defendant",
+            "bind_over",
+            "bind_over_to_keep_the_peace",
+            "breach_of_non_molestation_order",
+            "cash_seizure_and_forfeiture_order",
+            "civil_disclosure_order",
+            "civil_recovery_order",
+            "closure_notice_for_premesis",
+            "compensation_order",
+            "confiscation_order",
+            "costs",
+            "criminal_antisocial_behaviour_order",
+            "criminal_behaviour_order",
+            "criminal_proceeds_of_crime_act_disclosure_orders",
+            "deportation_of_foreign_nation_prisoners",
+            "deportation_order",
+            "deprivation_of_property",
+            "disclosure_notice_for_the_purpose_of_terrorist_investigations",
+            "discretionary_driving_disqualification",
+            "disqualification_from_working_with_children",
+            "disruption_of_legal_professionals_facilitating_serious_organised_crime",
+            "dog_control_order",
+            "domestic_violence_protection_order",
+            "enforcement_receivership_order",
+            "european_arrest_warrant",
+            "european_protection_order",
+            "exclusion_order_licenced_premesis",
+            "financial_reporting_order",
+            "football_banning_order",
+            "forced_marriage_protection_order",
+            "forfeiture_and_destruction_of_dog_order",
+            "forfeiture_and_destruction_of_drugs_order",
+            "forfeiture_and_destruction_of_property",
+            "forfeiture_and_destruction_of_weapon_order",
+            "forfeiture_and_destruction_order",
+            "forfeiture_of_indecent_photograph",
+            "forfeiture_of_motor_vehicle_order",
+            "forfeiture_of_obscene_publications",
+            "immunity_agreements",
+            "interim_receiving_order",
+            "no_orders_required",
+            "notification_requirements_sex_offender_register",
+            "obligatory_driving_disqualification",
+            "other",
+            "parental_bind_order",
+            "parenting_order",
+            "property_freezing_order",
+            "refusal_and_revocation_of_citizenship",
+            "restitution_order",
+            "restraining_order",
+            "restraint_order",
+            "restricted_use_publications",
+            "revocation_of_a_pilots_licence",
+            "sentence_discount_agreement",
+            "serious_crime_prevention_order",
+            "sexual_risk_order",
+            "travel_restriction_order",
+            "violent_offender_order"
+          ]
         },
         "court_order_title_other": {
           "type": "string"
@@ -1183,14 +1312,13 @@
         "interpreter_language_or_dialect": {
           "type": "boolean"
         },
-        "wish_to_provide_evidence_via_video_link": {
+        "wish_to_use_video_link": {
           "type": "boolean"
         }
       },
       "required": [
         "nature_of_involvement",
-        "evidence_they_can_give",
-        "wish_to_provide_evidence_via_video_link"
+        "evidence_they_can_give"
       ],
       "additionalProperties": false
     },
@@ -1289,7 +1417,7 @@
         "interpreter_language_or_dialect": {
           "type": "boolean"
         },
-        "wish_to_provide_evidence_via_video_link": {
+        "wish_to_provide_use_link": {
           "type": "boolean"
         }
       },
@@ -1529,79 +1657,6 @@
         "ou_second_level_name",
         "ou_third_level_name",
         "ou_bottom_level_name"
-      ]
-    },
-    "CourtOrderTitle": {
-      "type": "object",
-      "properties": {
-        "court_order_title": {
-          "enum": [
-            "antisocial_behaviour_order",
-            "application_for_costs_against_convicted_defendant",
-            "bind_over",
-            "bind_over_to_keep_the_peace",
-            "breach_of_non_molestation_order",
-            "cash_seizure_and_forfeiture_order",
-            "civil_disclosure_order",
-            "civil_recovery_order",
-            "closure_notice_for_premesis",
-            "compensation_order",
-            "confiscation_order",
-            "costs",
-            "criminal_antisocial_behaviour_order",
-            "criminal_behaviour_order",
-            "criminal_proceeds_of_crime_act_disclosure_orders",
-            "deportation_of_foreign_nation_prisoners",
-            "deportation_order",
-            "deprivation_of_property",
-            "disclosure_notice_for_the_purpose_of_terrorist_investigations",
-            "discretionary_driving_disqualification",
-            "disqualification_from_working_with_children",
-            "disruption_of_legal_professionals_facilitating_serious_organised_crime",
-            "dog_control_order",
-            "domestic_violence_protection_order",
-            "enforcement_receivership_order",
-            "european_arrest_warrant",
-            "european_protection_order",
-            "exclusion_order_licenced_premesis",
-            "financial_reporting_order",
-            "football_banning_order",
-            "forced_marriage_protection_order",
-            "forfeiture_and_destruction_of_dog_order",
-            "forfeiture_and_destruction_of_drugs_order",
-            "forfeiture_and_destruction_of_property",
-            "forfeiture_and_destruction_of_weapon_order",
-            "forfeiture_and_destruction_order",
-            "forfeiture_of_indecent_photograph",
-            "forfeiture_of_motor_vehicle_order",
-            "forfeiture_of_obscene_publications",
-            "immunity_agreements",
-            "interim_receiving_order",
-            "no_orders_required",
-            "notification_requirements_sex_offender_register",
-            "obligatory_driving_disqualification",
-            "other",
-            "parental_bind_order",
-            "parenting_order",
-            "property_freezing_order",
-            "refusal_and_revocation_of_citizenship",
-            "restitution_order",
-            "restraining_order",
-            "restraint_order",
-            "restricted_use_publications",
-            "revocation_of_a_pilots_licence",
-            "sentence_discount_agreement",
-            "serious_crime_prevention_order",
-            "sexual_risk_order",
-            "travel_restriction_order",
-            "violent_offender_order"
-          ]
-        }
-
-      },
-      "additionalProperties": false,
-      "required": [
-        "court_order_title"
       ]
     }
   }
