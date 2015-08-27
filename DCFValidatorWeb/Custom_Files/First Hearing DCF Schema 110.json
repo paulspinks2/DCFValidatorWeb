@@ -762,7 +762,7 @@
         }
       },
       "required": [
-        "genric_offences"
+        "generic_offences"
       ],
       "additionalProperties": false
     },
