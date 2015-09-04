@@ -1,5 +1,5 @@
 ﻿{
-  "description": "First Hearing Digital Case File 1.1.0 Draft 3",
+  "description": "First Hearing Digital Case File 1.1.0 Draft 4",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -109,7 +109,8 @@
       "$ref": "#/definitions/SafeguardingAssessment"
     },
     "property": {
-      "$ref": "#/definitions/Property"
+      "type": "array",
+      "items": { "$ref": "#/definitions/Property" }
     },
     "officer_in_the_case": {
       "$ref": "#/definitions/PersonName"
@@ -888,7 +889,7 @@
         "type": { "enum": [ "RetailTheftOffence" ] },
         "cjs_offence_code": {
           "enum": [
-            "h410"
+            "TH68010"
           ]
         },
         "offence": {
@@ -915,8 +916,8 @@
     "Property": {
       "type": "object",
       "properties": {
-        "propery_id": {
-          "type": "string"
+        "property_id": {
+          "type": "number"
         },
         "property_action": {
           "enum": [
@@ -943,7 +944,7 @@
         }
       },
       "required": [
-        "propery_id",
+        "property_id",
         "property_action",
         "description",
         "value"
@@ -1367,7 +1368,7 @@
             "no_cps_to_disclose_and_not_to_read"
           ]
         },
-        "retraction_statement": {
+        "is_retraction_statement": {
           "type": "boolean"
         },
         "compensation_applications": {
@@ -1417,7 +1418,10 @@
         "interpreter_language_or_dialect": {
           "type": "boolean"
         },
-        "wish_to_provide_use_link": {
+        "injuries": {
+          "$ref": "#/definitions/Injuries"
+        },
+        "wish_to_use_video_link": {
           "type": "boolean"
         }
       },
@@ -1436,7 +1440,7 @@
           "$ref": "#/definitions/Victim"
         },
         "name": {
-          "$ref": "#/definitions/PersonName"
+          "$ref": "#/definitions/OrganisationName"
         }
       }
     },

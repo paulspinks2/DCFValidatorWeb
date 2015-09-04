@@ -13,7 +13,7 @@
       "date_of_birth": "1990-01-01",
       "arrest": {
         "type": "Arrest",
-        "date_time": "2015-01-01",
+        "date_time": "2015-01-01T12:00Z",
         "comments_on_arrest_and_caution": "Some comments"
       },
       "conditional_caution_considered": true,
@@ -24,7 +24,7 @@
           "retail_theft_offences": [
             {
               "type": "RetailTheftOffence",
-              "cjs_offence_code": "h410",
+              "cjs_offence_code": "TH68010",
               "offence": {
                 "type": "Offence",
                 "from_date": "2014-01-01",
@@ -32,7 +32,6 @@
                 "offence_title": "Offence Title from PNLD",
                 "charge_wording": "This is the charge wording",
                 "points_to_prove_met_by": "Description of how the points to prove have been met.",
-                "demeanour_at_incident": "Pretty Upset",
                 "anticipated_plea": "guilty",
                 "committed_on_bail": false
               },
@@ -113,11 +112,11 @@
       "pnc_convictions": true,
       "court_order_applications": [
         {
-          "court_order_title":  "antisocial_behaviour_order" ,
+          "court_order_title": "antisocial_behaviour_order",
           "reason_for_the_request": "These are the reasons for request 1"
         },
         {
-          "court_order_title": "confiscation_order" ,
+          "court_order_title": "confiscation_order",
           "reason_for_the_request": "These are the reasons for request 2",
           "draft_conditions": [
             "Condition 1",
@@ -145,11 +144,10 @@
         "type": "StandardInterview",
         "date": "2014-01-01",
         "defendant_legally_represented": true,
-        "legally_represented_by": 
-          {
-            "given_name": [ "Jennie", "Claire" ],
-            "surname": "Jones"
-          },
+        "legally_represented_by": {
+          "given_name": [ "Jennie", "Claire" ],
+          "surname": "Jones"
+        },
         "legal_representative_firm": "The firm",
         "interpreters": [
           {
@@ -211,17 +209,25 @@
       "url": "http://test.gov.uk/askdasdjds/asds"
     }
   ],
-    "expert_evidence": false,
-    "test_code": "full_code_test",
-    "pca_cps": false,
-    "officer_in_the_case": {
-        "surname": "Smith",
-        "given_name": [ "Penny" ]
-    },
-    "signatory_name": {
-        "surname": "Collins",
-        "given_name": [ "Simon" ]
-    },
-    "date": "2014-01-01",
-    "signatory_rank": "Sergeant"
+  "expert_evidence": false,
+  "test_code": "full_code_test",
+  "pca_cps": false,
+  "property": [
+    {
+      "property_id": 1,
+      "property_action": "stolen_not_recovered",
+      "description": "Description of property here",
+      "value": 10.52
+    }
+  ],
+  "officer_in_the_case": {
+    "surname": "Smith",
+    "given_name": [ "Penny" ]
+  },
+  "signatory_name": {
+    "surname": "Collins",
+    "given_name": [ "Simon" ]
+  },
+  "date": "2014-01-01",
+  "signatory_rank": "Sergeant"
 }

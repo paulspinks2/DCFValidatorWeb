@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
         <div class="jumbotron">
-        <p class="lead">This DCF validator checks a Digtal Case File to ensure it is both well formed against the DCF JSON Schema version <strong>1.1.0 Draft 3</strong> and complies with the additional business rules.</p>
+        <p class="lead">This DCF validator checks a Digital Case File to ensure it is both well formed against the DCF JSON Schema version <strong>1.1.0 Draft 4</strong> and complies with the additional business rules.</p>
          <a class="btn btn-default" href="#Capabilities">Learn more &raquo;</a>
         </div>
             <h3>Copy DCF JSON file here:</h3>
