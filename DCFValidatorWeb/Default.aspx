@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
         <div class="jumbotron">
-        <p class="lead">This DCF validator checks a Digital Case File to ensure it is both well formed against the DCF JSON Schema version <strong>1.1.0 Draft 4</strong> and complies with the additional business rules.</p>
+        <p class="lead">This DCF validator checks a Digital Case File to ensure it is both well formed against the DCF JSON Schema version <strong>1.1.0 Draft 5</strong> and complies with the additional business rules.</p>
          <a class="btn btn-default" href="#Capabilities">Learn more &raquo;</a>
         </div>
             <h3>Copy DCF JSON file here:</h3>
@@ -50,12 +50,12 @@
             </ul>
         </div>
         <div class="col-md-4">
-            <h2>Draft DCF Schema 1.1.0 Draft 3</h2>
+            <h2>Draft DCF Schema 1.1.0 Draft 5</h2>
             <p>
                 The Draft 1.1.0 Schema used by this Validator is here.
             </p>
             <p>
-                <a class="btn btn-default" href="Custom_Files/First%20Hearing%20DCF%20Schema%20110.json">DCF Schema 1.1.0 Draft 3: &raquo;</a>
+                <a class="btn btn-default" href="Custom_Files/First%20Hearing%20DCF%20Schema%20110.json">DCF Schema 1.1.0 Draft 5: &raquo;</a>
                 <a class="btn btn-default" href="Custom_Files/Business Rules.json" target="_blank">Business Rules &raquo;</a>
             </p>
         </div>

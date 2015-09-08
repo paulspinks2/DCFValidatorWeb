@@ -25,7 +25,7 @@
           "retail_theft_offences": [
             {
               "type": "RetailTheftOffence",
-              "cjs_offence_code": "TH68010",
+              "cjs_offence_code": "th68010",
               "offence": {
                 "type": "Offence",
                 "from_date": "2014-01-01",
@@ -115,11 +115,11 @@
       "court_order_applications": [
         {
           "court_order_title": "antisocial_behaviour_order",
-          "reason_for_the_request": "These are the reasons for request 1"
+          "reason_for_request": "These are the reasons for request 1"
         },
         {
           "court_order_title": "confiscation_order",
-          "reason_for_the_request": "These are the reasons for request 2",
+          "reason_for_request": "These are the reasons for request 2",
           "draft_conditions": [
             "Condition 1",
             "Condition 2"
@@ -192,6 +192,7 @@
     }
   ],
   "common_law_disclosure": {
+    "type": "CommonLawNotForDisclosure",
     "reporting_officer": {
       "surname": "Collins",
       "given_name": [ "Simon" ]
