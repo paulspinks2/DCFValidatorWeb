@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="C:\Users\Paul\Documents\Visual Studio 2015\Projects\DCFValidatorWeb\DCFValidatorWeb\XSLT\DCF XSLT.xslt"?>
+<Root>
+  <pti_urn>AAAA9999915-AA</pti_urn>
+  <type>FirstHearingDCF</type>
+  <associated_case_urns>AAAA1111115</associated_case_urns>
+  <associated_case_urns>AAAA2222215</associated_case_urns>
+  <version>1</version>
+  <brief_description_of_case>A brief description of the case.</brief_description_of_case>
+  <defendants>
+    <name>
+      <surname>Smith</surname>
+      <given_name>John</given_name>
+      <given_name>William</given_name>
+    </name>
+    <date_of_birth>1990-01-01</date_of_birth>
+    <arrest>
+      <type>Arrest</type>
+      <date_time>2015-01-01</date_time>
+      <comments_on_arrest_and_caution>Some comments</comments_on_arrest_and_caution>
+    </arrest>
+    <conditional_caution_considered>true</conditional_caution_considered>
+    <cc_not_suitable_reasons>offence_not_admitted</cc_not_suitable_reasons>
+    <offences>
+      <type>RetailTheftOffences</type>
+      <retail_theft_offences>
+        <type>RetailTheftOffence</type>
+        <cjs_offence_code>h410</cjs_offence_code>
+        <offence>
+          <type>Offence</type>
+          <from_date>2014-01-01</from_date>
+          <to_date>2014-01-01</to_date>
+          <offence_title>Offence Title from PNLD</offence_title>
+          <charge_wording>This is the charge wording</charge_wording>
+          <points_to_prove_met_by>description of how the points to prove have been met.</points_to_prove_met_by>
+          <anticipated_plea>guilty</anticipated_plea>
+          <committed_on_bail>false</committed_on_bail>
+        </offence>
+        <property_ids>1</property_ids>
+        <retail_theft_interview_extension>
+          <admit_taking_property>true</admit_taking_property>
+          <admit_being_dishonest>true</admit_being_dishonest>
+          <admit_intending_to_permanently_deprive>true</admit_intending_to_permanently_deprive>
+        </retail_theft_interview_extension>
+      </retail_theft_offences>
+    </offences>
+    <occupation>A Worker</occupation>
+    <class_a_drug_test_provided>true</class_a_drug_test_provided>
+    <accepts_drugs_result>true</accepts_drugs_result>
+    <class_a_drug_test_details>These are the details of the drug test</class_a_drug_test_details>
+    <has_eec_passports>true</has_eec_passports>
+    <eec_check_submitted>true</eec_check_submitted>
+    <eec_convictions_record_received>false</eec_convictions_record_received>
+    <foreign_national_offender>false</foreign_national_offender>
+    <breach_of_order>false</breach_of_order>
+    <remand_application>
+      <substantial_grounds>
+        <opposition_ground>breach_of_bail</opposition_ground>
+        <justification>A justification</justification>
+      </substantial_grounds>
+      <substantial_grounds>
+        <opposition_ground>failed_to_surrender_to_custody</opposition_ground>
+        <justification>A justification</justification>
+      </substantial_grounds>
+      <bail_conditions>
+        <grounds>failing_to_surrender_to_custody</grounds>
+        <condition>Condition Description</condition>
+        <reason>Reason Description</reason>
+      </bail_conditions>
+    </remand_application>
+    <breach_of_bail>
+      <breach_details>Details of the breach</breach_details>
+      <witness_statement_establishes_breach>true</witness_statement_establishes_breach>
+      <key_evidence>Key Evidence</key_evidence>
+      <existing_bail_breached>
+        <original_charge_wording>CJS Original Charge Wording.</original_charge_wording>
+        <bailed_from>
+          <ou_top_level_name>AA</ou_top_level_name>
+          <ou_second_level_name>BB</ou_second_level_name>
+          <ou_third_level_name>CC</ou_third_level_name>
+          <ou_bottom_level_name>DD</ou_bottom_level_name>
+        </bailed_from>
+        <bailed_date>2014-01-01</bailed_date>
+        <to_appear_at>
+          <ou_top_level_name>AA</ou_top_level_name>
+          <ou_second_level_name>BB</ou_second_level_name>
+          <ou_third_level_name>CC</ou_third_level_name>
+          <ou_bottom_level_name>DD</ou_bottom_level_name>
+        </to_appear_at>
+        <datetime_to_appear>2014-01-01T12:00Z</datetime_to_appear>
+        <list_of_conditions>Condition 1</list_of_conditions>
+        <list_of_conditions>Condition 2</list_of_conditions>
+      </existing_bail_breached>
+    </breach_of_bail>
+    <pnc_check_performed>true</pnc_check_performed>
+    <pnc_convictions>true</pnc_convictions>
+    <court_order_applications>
+      <court_order_title>
+        <title>antisocial_behaviour_order</title>
+      </court_order_title>
+      <reason_for_the_request>These are the reasons for request 1</reason_for_the_request>
+    </court_order_applications>
+    <court_order_applications>
+      <court_order_title>
+        <title>confiscation_order</title>
+      </court_order_title>
+      <reason_for_the_request>These are the reasons for request 2</reason_for_the_request>
+      <draft_conditions>Condition 1</draft_conditions>
+      <draft_conditions>Condition 2</draft_conditions>
+    </court_order_applications>
+    <interpreter_required>false</interpreter_required>
+    <multimedia_evidence_response>
+      <id>1</id>
+      <type>MmeRecordedResponse</type>
+      <mme_type>cctv</mme_type>
+      <defendant_shown>true</defendant_shown>
+      <defendant_comments_if_shown>These are the defendant comments if shown.</defendant_comments_if_shown>
+      <is_defendant_believed_to_be_in_the_mme>true</is_defendant_believed_to_be_in_the_mme>
+      <defendant_admits_being_in_mme>true</defendant_admits_being_in_mme>
+    </multimedia_evidence_response>
+    <dealt_with_in_welsh>false</dealt_with_in_welsh>
+    <person_remand_status>custody</person_remand_status>
+    <given_charges>true</given_charges>
+    <initiation_type>charge</initiation_type>
+    <interview>
+      <type>StandardInterview</type>
+      <date>2014-01-01</date>
+      <defendant_legally_represented>true</defendant_legally_represented>
+      <legally_represented_by>
+        <given_name>Jennie</given_name>
+        <given_name>Claire</given_name>
+        <surname>Jones</surname>
+      </legally_represented_by>
+      <legal_representative_firm>The firm</legal_representative_firm>
+      <interpretors>
+        <given_name>Jennie</given_name>
+        <given_name>Claire</given_name>
+        <surname>Jones</surname>
+      </interpretors>
+      <special_warnings_given>false</special_warnings_given>
+      <no_comment_response>false</no_comment_response>
+      <admissions_made>The admissions made go here.</admissions_made>
+      <denials>The Denials</denials>
+      <explanations>Any explanations made</explanations>
+      <mitigations>Any mitigating circumstances go here.</mitigations>
+      <aggravating_features>Any aggravating features</aggravating_features>
+    </interview>
+    <first_hearing_datetime>2015-08-01T12:00Z</first_hearing_datetime>
+    <first_hearing_location>
+      <ou_top_level_name>AA</ou_top_level_name>
+      <ou_second_level_name>BB</ou_second_level_name>
+      <ou_third_level_name>CC</ou_third_level_name>
+      <ou_bottom_level_name>DD</ou_bottom_level_name>
+    </first_hearing_location>
+  </defendants>
+  <witnesses>
+    <type>StatementWitness</type>
+    <witness_type>eye</witness_type>
+    <name>
+      <given_name>Jennie</given_name>
+      <given_name>Claire</given_name>
+      <surname>Jones</surname>
+    </name>
+    <witness>
+      <nature_of_involvement>Nature of involvement</nature_of_involvement>
+      <evidence_they_can_give>Evidence they can give</evidence_they_can_give>
+      <wish_to_provide_evidence_via_video_link>false</wish_to_provide_evidence_via_video_link>
+    </witness>
+    <date_of_birth>1980-08-01T12:00Z</date_of_birth>
+    <visually_recorded_interview>false</visually_recorded_interview>
+  </witnesses>
+  <common_law_disclosure>
+    <reporting_officer>
+      <surname>Collins</surname>
+      <given_name>Simon</given_name>
+    </reporting_officer>
+    <reporting_officer_signature_date>2014-01-01</reporting_officer_signature_date>
+  </common_law_disclosure>
+  <multimedia_evidence>
+    <id>1</id>
+    <date>2014-01-01</date>
+    <type>cctv</type>
+    <description_of_what_is_contained_in_multimedia_evidence>Description goes here</description_of_what_is_contained_in_multimedia_evidence>
+    <evidential_value>true</evidential_value>
+    <relied_upon_trial>true</relied_upon_trial>
+    <relied_upon_sentence>true</relied_upon_sentence>
+    <total_duration>01:02</total_duration>
+    <url>http://test.gov.uk/askdasdjds/asds</url>
+  </multimedia_evidence>
+  <expert_evidence>false</expert_evidence>
+  <test_code>full_code_test</test_code>
+  <pca_cps>false</pca_cps>
+  <safeguarding_assessment>
+    <assessment_completed>true</assessment_completed>
+    <safeguarding_level>moderate</safeguarding_level>
+  </safeguarding_assessment>
+  <officer_in_the_case>
+    <surname>Smith</surname>
+    <given_name>Penny</given_name>
+  </officer_in_the_case>
+  <signatory_name>
+    <surname>Collins</surname>
+    <given_name>Simon</given_name>
+  </signatory_name>
+  <date>2014-01-01</date>
+  <signatory_rank>Sergeant</signatory_rank>
+</Root>

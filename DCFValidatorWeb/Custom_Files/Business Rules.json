@@ -1,0 +1,400 @@
+{
+  "DependantAttributes": [
+    {
+      "RuleName": "hearsay_details",
+      "DependantAttribute": "hearsay_details",
+      "SourceAttribute": "is_hearsay",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "safeguarding_assessment",
+      "DependantAttribute": "safeguarding_assessment",
+      "SourceAttribute": "case_markers",
+      "SourceCondition": "DomesticViolence",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "reasons_not_completed",
+      "DependantAttribute": "reasons_not_completed",
+      "SourceAttribute": "assessment_completed",
+      "SourceCondition": "False",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "safeguarding_level",
+      "DependantAttribute": "safeguarding_level",
+      "SourceAttribute": "assessment_completed",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "safeguarding_level",
+      "DependantAttribute": "safeguarding_level",
+      "SourceAttribute": "assessment_completed",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "arrest",
+      "DependantAttribute": "arrest",
+      "SourceAttribute": "initiation_type",
+      "SourceCondition": "charge",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "class_a_drug_test_details",
+      "DependantAttribute": "class_a_drug_test_details",
+      "SourceAttribute": "class_a_drug_test_provided",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "accepts_drugs_result",
+      "DependantAttribute": "accepts_drugs_result",
+      "SourceAttribute": "class_a_drug_test_provided",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "eec_check_submitted",
+      "DependantAttribute": "eec_check_submitted",
+      "SourceAttribute": "has_eec_passports",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "breach_order_date_issued",
+      "DependantAttribute": "breach_order_date_issued",
+      "SourceAttribute": "breach_of_order",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "breach_order_court_issued",
+      "DependantAttribute": "breach_order_court_issued",
+      "SourceAttribute": "breach_of_order",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "breach_order_title",
+      "DependantAttribute": "breach_order_title",
+      "SourceAttribute": "breach_of_order",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "breach_order_title_other",
+      "DependantAttribute": "breach_order_title_other",
+      "SourceAttribute": "breach_order_title",
+      "SourceCondition": "other",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "breach_order_lapse_date",
+      "DependantAttribute": "breach_order_lapse_date",
+      "SourceAttribute": "breach_of_order",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "breach_order_lapse_date",
+      "DependantAttribute": "breach_order_lapse_date",
+      "SourceAttribute": "breach_of_order",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "pnc_convictions",
+      "DependantAttribute": "pnc_convictions",
+      "SourceAttribute": "pnc_check_performed",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "bad_character_details",
+      "DependantAttribute": "bad_character_details",
+      "SourceAttribute": "notice_to_provide_bad_character_evidence",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "signed_charge_sheet",
+      "DependantAttribute": "signed_charge_sheet",
+      "SourceAttribute": "initiation_type",
+      "SourceCondition": "charge",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "date_sent",
+      "DependantAttribute": "date_sent",
+      "SourceAttribute": "initiation_type",
+      "SourceCondition": "requisition",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "parent_guardian_date_sent_1",
+      "DependantAttribute": "parent_gardian_date_sent",
+      "SourceAttribute": "parent_guardian_copy",
+      "SourceCondition": "True",
+      "AndRuleName": "parent_guardian_date_sent_2"
+    },
+    {
+      "RuleName": "parent_guardian_date_sent_2",
+      "DependantAttribute": "parent_gardian_date_sent",
+      "SourceAttribute": "initiation_type",
+      "SourceCondition": "requisition",
+      "AndRuleName": "parent_guardian_date_sent_1"
+    },
+    {
+      "RuleName": "bail_conditions_provided",
+      "DependantAttribute": "bail_conditions_provided",
+      "SourceAttribute": "person_remand_status ",
+      "SourceCondition": "conditional_bail",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "signed_for_bail_1",
+      "DependantAttribute": "signed_for_bail",
+      "SourceAttribute": "person_remand_status",
+      "SourceCondition": "conditional_bail",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "signed_for_bail_2",
+      "DependantAttribute": "signed_for_bail",
+      "SourceAttribute": "person_remand_status",
+      "SourceCondition": "unconditional_bail",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "bail_conditions",
+      "DependantAttribute": "bail_conditions",
+      "SourceAttribute": "person_remand_status",
+      "SourceCondition": "conditional_bail",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "domestic_violence",
+      "DependantAttribute": "domestic_violence",
+      "SourceAttribute": "case_markers",
+      "SourceCondition": "DomesticViolence",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "demeanour_at_incident",
+      "DependantAttribute": "demeanour_at_incident",
+      "SourceAttribute": "case_markers",
+      "SourceCondition": "DomesticViolence",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "children_present",
+      "DependantAttribute": "children_present",
+      "SourceAttribute": "case_markers",
+      "SourceCondition": "DomesticViolence",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "ages_of_children",
+      "DependantAttribute": "ages_of_children",
+      "SourceAttribute": "case_markers",
+      "SourceCondition": "DomesticViolence",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "damage_description_1",
+      "DependantAttribute": "damage_description",
+      "SourceAttribute": "property_action",
+      "SourceCondition": "stolen_recovered_damaged",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "damage_description_2",
+      "DependantAttribute": "damage_description",
+      "SourceAttribute": "property_action",
+      "SourceCondition": "damaged",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "damage_cost_1",
+      "DependantAttribute": "damage_cost",
+      "SourceAttribute": "property_action",
+      "SourceCondition": "stolen_recovered_damaged",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "damage_cost_2",
+      "DependantAttribute": "damage_cost",
+      "SourceAttribute": "property_action",
+      "SourceCondition": "damaged",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "recovered_from_1",
+      "DependantAttribute": "recovered_from",
+      "SourceAttribute": "property_action",
+      "SourceCondition": "stolen_recovered",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "recovered_from_2",
+      "DependantAttribute": "recovered_from",
+      "SourceAttribute": "property_action",
+      "SourceCondition": "stolen_recovered_damaged",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "image_description",
+      "DependantAttribute": "image_description",
+      "SourceAttribute": "images_taken",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "image_description",
+      "DependantAttribute": "image_description",
+      "SourceAttribute": "images_taken",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "reason_images_not_taken",
+      "DependantAttribute": "reason_images_not_taken",
+      "SourceAttribute": "images_taken",
+      "SourceCondition": "False",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "details_of_medical_treatment",
+      "DependantAttribute": "details_of_medical_treatment",
+      "SourceAttribute": "received_medical_treatment",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "reasons_if_not_shown",
+      "DependantAttribute": "reasons_if_not_shown",
+      "SourceAttribute": "defendant_shown",
+      "SourceCondition": "False",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "defendant_comments_if_shown",
+      "DependantAttribute": "defendant_comments_if_shown",
+      "SourceAttribute": "defendant_shown",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "defendant_admits_being_in_mme_1",
+      "DependantAttribute": "defendant_admits_being_in_mme",
+      "SourceAttribute": "defendant_shown",
+      "SourceCondition": "True",
+      "AndRuleName": "defendant_admits_being_in_mme_2"
+    },
+    {
+      "RuleName": "defendant_admits_being_in_mme_2",
+      "DependantAttribute": "defendant_admits_being_in_mme",
+      "SourceAttribute": "is_defendant_believed_to_be_in_the_mme",
+      "SourceCondition": "True",
+      "AndRuleName": "defendant_admits_being_in_mme_1"
+    },
+    {
+      "RuleName": "how_is_identification_established_1",
+      "DependantAttribute": "how_is_identification_established",
+      "SourceAttribute": "defendant_shown",
+      "SourceCondition": "False",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "how_is_identification_established_2",
+      "DependantAttribute": "how_is_identification_established",
+      "SourceAttribute": "defendant_admits_being_in_mme",
+      "SourceCondition": "False",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "legally_represented_by",
+      "DependantAttribute": "legally_represented_by",
+      "SourceAttribute": "defendant_legally_represented",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "legal_representative_firm",
+      "DependantAttribute": "legal_representative_firm",
+      "SourceAttribute": "defendant_legally_represented",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "questions_asked",
+      "DependantAttribute": "questions_asked",
+      "SourceAttribute": "no_comment_response",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "questions_asked",
+      "DependantAttribute": "questions_asked",
+      "SourceAttribute": "no_comment_response",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "victim_wish_to_attend_court",
+      "DependantAttribute": "victim_wish_to_attend_court",
+      "SourceAttribute": "has_the_victim_made_a_vps_isb",
+      "SourceCondition": "True",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "is_retraction_statement",
+      "DependantAttribute": "is_retraction_statement",
+      "SourceAttribute": "case_markers",
+      "SourceCondition": "DomesticViolence",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "reason_dob_not_provided",
+      "DependantAttribute": "reason_dob_not_provided",
+      "SourceAttribute": "date_of_birth",
+      "SourceCondition": "",
+      "AndRuleName": ""
+    },
+    {
+      "RuleName": "details_of_expenses",
+      "DependantAttribute": "details_of_expenses",
+      "SourceAttribute": "reasons_for_application",
+      "SourceCondition": "other_expenses",
+      "AndRuleName": "True"
+    },
+    {
+      "RuleName": "details_of_other_losses",
+      "DependantAttribute": "details_of_other_losses",
+      "SourceAttribute": "reasons_for_application",
+      "SourceCondition": "other_losses",
+      "AndRuleName": "True"
+    }
+
+  ],
+  "NGAPOnly": [
+    {
+      "Attribute": "likely_case_progression"
+    },
+    {
+      "Attribute": "is_hearsay"
+    },
+    {
+      "Attribute": "notice_to_provide_bad_character_evidence"
+    },
+    {
+      "Attribute": "special_measures"
+    },
+    {
+      "Attribute": "wish_to_use_video_link"
+    }
+  ]
+}
