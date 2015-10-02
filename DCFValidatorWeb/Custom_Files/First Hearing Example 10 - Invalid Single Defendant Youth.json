@@ -10,7 +10,7 @@
         "surname": "Smith",
         "given_name": [ "John", "William" ]
       },
-      "date_of_birth": "1990-01-01",
+      "date_of_birth": "2000-01-01",
       "arrest": {
         "type": "Arrest",
         "date_time": "2015-01-01T12:00Z",
@@ -182,11 +182,10 @@
       },
       "witness": {
         "nature_of_involvement": "Nature of involvement",
-        "evidence_they_can_give": "Evidence they can give",
-        "special_measures": true
+        "evidence_they_can_give": "Evidence they can give"
       },
 
-      "date_of_birth": "1980-08-01T12:00Z",
+      "date_of_birth": "1980-08-01",
       "visually_recorded_interview": false
     }
   ],

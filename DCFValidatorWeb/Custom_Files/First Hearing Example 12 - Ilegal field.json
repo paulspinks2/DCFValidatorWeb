@@ -4,7 +4,7 @@
   "associated_case_urns": [ "AAAA1111115", "AAAA2222215" ],
   "version": 1,
   "brief_description_of_case": "A brief description of the case.",
-  "case_markers": [ "INVALID" ],
+  "i_should_not_be_here": "look I shouldn't be here",
   "defendants": [
     {
       "name": {
@@ -33,7 +33,6 @@
                 "offence_title": "Offence Title from PNLD",
                 "charge_wording": "This is the charge wording",
                 "points_to_prove_met_by": "Description of how the points to prove have been met.",
-                "demeanour_at_incident": "Pretty Upset",
                 "anticipated_plea": "guilty",
                 "committed_on_bail": false
               },
@@ -187,7 +186,7 @@
         "evidence_they_can_give": "Evidence they can give"
       },
 
-      "date_of_birth": "1980-08-01T12:00Z",
+      "date_of_birth": "1980-08-01",
       "visually_recorded_interview": false
     }
   ],

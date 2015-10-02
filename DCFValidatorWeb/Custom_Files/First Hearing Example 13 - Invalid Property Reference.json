@@ -35,7 +35,7 @@
                 "anticipated_plea": "guilty",
                 "committed_on_bail": false
               },
-              "property_ids": [ 1 ],
+              "property_ids": [ 2 ],
               "retail_theft_interview_extension": {
                 "admit_taking_property": "admits_all",
                 "admit_being_dishonest": true,
@@ -47,8 +47,11 @@
       ],
       "occupation": "A Worker",
       "class_a_drug_test_provided": true,
+      "accepts_drugs_result": true,
+      "class_a_drug_test_details": "These are the details of the drug test",
       "has_eec_passports": true,
       "eec_check_submitted": true,
+      "eec_convictions_record_received": false,
       "foreign_national_offender": false,
       "breach_of_order": false,
       "remand_application": {
@@ -182,7 +185,7 @@
         "evidence_they_can_give": "Evidence they can give"
       },
 
-      "date_of_birth": "1980-08-01T12:00Z",
+      "date_of_birth": "1980-08-01",
       "visually_recorded_interview": false
     }
   ],
