@@ -1007,15 +1007,15 @@
       "type": "object",
       "properties": {
         "type": { "enum": [ "MmeNotRecordedResponse" ] },
-        "defendent_addmitted_to_location": {
+        "defendent_admitted_to_location": {
           "type": "boolean"
         },
         "how_is_identification_established": {
-          "type": "boolean"
+          "type": "string"
         }
       },
       "required": [
-        "defendent_addmitted_to_location",
+        "defendent_admitted_to_location",
         "how_is_identification_established"
       ],
       "additionalProperties": false
@@ -1321,7 +1321,7 @@
           "type": "boolean"
         },
         "interpreter_language_or_dialect": {
-          "type": "boolean"
+          "type": "string"
         },
         "wish_to_use_video_link": {
           "type": "boolean"
