@@ -48,12 +48,13 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\Libs\Json70r1\Bin\Net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json.Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Libs\JsonSchema10r9\Bin\Net45\Newtonsoft.Json.Schema.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.Schema.1.0.11\lib\net45\Newtonsoft.Json.Schema.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
@@ -190,13 +191,23 @@
     </Content>
     <Content Include="Custom_Files\Business Rules.json" />
     <Content Include="Custom_Files\First Hearing DCF Schema 110.json" />
-    <Content Include="Custom_Files\First Hearing Example 2 - Invalid Schema.json" />
-    <Content Include="Custom_Files\First Hearing Example 1 - Single Defendant 110.json" />
-    <Content Include="Custom_Files\First Hearing Example 3 - Missing Fields.json" />
-    <Content Include="Custom_Files\First Hearing Example 4 - Additional Fields %28Dependant%29.json" />
-    <Content Include="Custom_Files\First Hearing Example 5 - NGAP Violation %28when GAP%29.json" />
     <Content Include="WebForm1.aspx" />
     <Content Include="XSLT\DCF XSLT.xslt" />
+    <Content Include="Custom_Files\First Hearing Example 13 - Invalid Property Reference.json" />
+    <Content Include="Custom_Files\First Hearing Example 3 - Invalid Missing Fields.json" />
+    <Content Include="Custom_Files\First Hearing Example 4 - Invalid Additional Fields %28Dependant%29.json" />
+    <Content Include="Custom_Files\First Hearing Example 5 - Invalid NGAP Violation %28when GAP%29.json" />
+    <Content Include="Custom_Files\First Hearing Example 6 - Invalid MME Reference.json" />
+    <Content Include="Custom_Files\First Hearing Example 7 - Invalid Inclusion of MMENotRecorded.json" />
+    <Content Include="Custom_Files\First Hearing Example 8 - Valid contains no MME.json" />
+    <Content Include="Custom_Files\First Hearing Example 9 - Valid Two Defendants.json" />
+    <Content Include="Custom_Files\First Hearing Example 2 - Invalid case markers enumeration.json" />
+    <Content Include="Custom_Files\First Hearing Example 10 - Invalid Single Defendant Youth.json" />
+    <Content Include="Custom_Files\First Hearing Example 12 - Ilegal field.json" />
+    <Content Include="Custom_Files\First Hearing Example 11 - Missing Schema mandated field.json" />
+    <Content Include="Custom_Files\Breach of Bail Example 1 - Simple BoB with Remand.json" />
+    <Content Include="Custom_Files\BoB DCF Schema 110.json" />
+    <Content Include="Custom_Files\First Hearing Example 1 - Valid Single Defendant.json" />
     <None Include="RulesDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
