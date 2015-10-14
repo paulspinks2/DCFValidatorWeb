@@ -62,7 +62,8 @@
       "items": {
         "anyOf": [
           { "$ref": "#/definitions/StatementWitness" },
-          { "$ref": "#/definitions/Victim" },
+          { "$ref": "#/definitions/PersonVictim" },
+          { "$ref": "#/definitions/OrganisationVictim" },
           { "$ref": "#/definitions/NgapOtherWitness" },
           { "$ref": "#/definitions/ExpertWitness" }
         ]
@@ -175,7 +176,7 @@
           "enum": [ "CommonLawForDisclosure" ]
         },
         "reporting_officer": {
-          "type": "string"
+          "$ref": "#/definitions/PersonName"
         },
         "reporting_officer_signature_date": {
           "description": "ISO 8601 Conformant Date",
@@ -1508,8 +1509,8 @@
             "enum": [
               "eye",
               "identity",
-              "arresting officer",
-              "interviewing officer",
+              "arresting_officer",
+              "interviewing_officer",
               "child",
               "corroborative",
               "continuity",
