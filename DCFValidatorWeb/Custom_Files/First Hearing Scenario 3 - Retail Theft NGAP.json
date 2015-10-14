@@ -108,6 +108,9 @@
       "witness": {
         "nature_of_involvement": "Witnessed offence being committed on CCTV at the time",
         "evidence_they_can_give": "Identification, theft and consumption of property, failure to pay for property, exhibit CCTV"
+        "special_measures": false,
+        "interpreter_required": false,
+        "wish_to_use_video_link": false
       },
       "date_of_birth": "1973-07-20",
       "visually_recorded_interview": false
