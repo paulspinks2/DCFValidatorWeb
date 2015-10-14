@@ -130,7 +130,7 @@
       "visually_recorded_interview": false
     },
     {
-      "type": "NGAPOtherWitness",
+      "type": "NgapOtherWitness",
       "witness_type": [ "corroborative", "police" ],
       "name": {
         "given_name": [ "Michael" ],
@@ -142,9 +142,7 @@
         "special_measures": false,
         "interpreter_required": false,
         "wish_to_use_video_link": false
-      },
-      "reason_dob_not_provided": "Police Officer",
-      "visually_recorded_interview": false
+      }
     },
     {
       "type": "OrganisationVictim",
