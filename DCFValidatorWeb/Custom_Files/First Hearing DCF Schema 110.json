@@ -305,10 +305,10 @@
               "offence_whilst_on_bail",
               "liable_for_resentence_of_an_earlier_offence",
               "liable_for_prison_recall",
-              "defendants_response_on arrest_co operation",
-              "reoffending_risk_ offending history",
-              "reoffending_risk_ response_to_sentence_bail",
-              "reoffending_risk_ not_reduced_by_conditions"
+              "defendants_response_on_arrest_co-operation",
+              "reoffending_risk_offending_history",
+              "reoffending_risk_response_to_sentence_bail",
+              "reoffending_risk_not_reduced_by_conditions"
             ]
           }
         },
@@ -1015,6 +1015,7 @@
         }
       },
       "required": [
+        "type",
         "defendent_admitted_to_location",
         "how_is_identification_established"
       ],
@@ -1296,8 +1297,7 @@
         }
       },
       "required": [
-        "court_order_title",
-        "reason_for_request"
+        "court_order_title"
       ],
       "additionalProperties": false
     },
