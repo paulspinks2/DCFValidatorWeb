@@ -1008,7 +1008,7 @@
       "type": "object",
       "properties": {
         "type": { "enum": [ "MmeNotRecordedResponse" ] },
-        "defendent_admitted_to_location": {
+        "defendant_admitted_to_location": {
           "type": "boolean"
         },
         "how_is_identification_established": {
@@ -1017,7 +1017,7 @@
       },
       "required": [
         "type",
-        "defendent_admitted_to_location",
+        "defendant_admitted_to_location",
         "how_is_identification_established"
       ],
       "additionalProperties": false
