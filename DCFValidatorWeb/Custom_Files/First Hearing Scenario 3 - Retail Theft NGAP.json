@@ -142,7 +142,9 @@
         "special_measures": false,
         "interpreter_required": false,
         "wish_to_use_video_link": false
-      }
+      },
+      "rank": "PC",
+      "number": "1"
     },
     {
       "type": "OrganisationVictim",
