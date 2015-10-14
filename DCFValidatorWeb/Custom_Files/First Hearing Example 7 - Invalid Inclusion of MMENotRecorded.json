@@ -128,8 +128,8 @@
       "multimedia_evidence_response": [
         {
           "type": "MmeNotRecordedResponse",
-          "defendent_addmitted_to_location": true,
-          "how_is_identification_established": true
+          "defendant_admitted_to_location": true,
+          "how_is_identification_established": "Explaination"
         }
       ],
       "dealt_with_in_welsh": false,
