@@ -208,6 +208,11 @@
     <Content Include="Custom_Files\Breach of Bail Example 1 - Simple BoB with Remand.json" />
     <Content Include="Custom_Files\BoB DCF Schema 110.json" />
     <Content Include="Custom_Files\First Hearing Example 1 - Valid Single Defendant.json" />
+    <Content Include="Custom_Files\First Hearing Example 14 - Missing Common Law Disclosure Details.json" />
+    <Content Include="Custom_Files\First Hearing Scenario 1 - S5 Public Order.json" />
+    <Content Include="Custom_Files\First Hearing Scenario 2 - Retail Theft GAP.json" />
+    <Content Include="Custom_Files\First Hearing Scenario 3 - Retail Theft NGAP.json" />
+    <None Include="Properties\PublishProfiles\DevDCFValidatorWeb.pubxml" />
     <None Include="RulesDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
