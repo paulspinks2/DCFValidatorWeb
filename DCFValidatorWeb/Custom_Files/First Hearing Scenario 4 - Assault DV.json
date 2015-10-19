@@ -252,20 +252,22 @@
         "victim_wish_to_attend_court": "no_cps_to_read",
         "is_retraction_statement": false
       },
-      "injuries": {
-        "names_of_defendants_causing_injuries": [
-          {
-            "surname": "Shuttleworth",
-            "given_name": [ "Max" ]
-          }
-        ],
-        "description_of_injuries": "2 black eyes, cut to the right cheek and brusing to the neck.",
-        "images_taken": true,
-        "image_description": "PHOTO/01 Two black eyes \n PHOTO/02 Cut to right cheek \n PHOTO/03 Brusing to the throat",
-        "received_medical_treatment": true,
-        "details_of_medical_treatment": "4 stitches to right cheek.",
-        "injuries_visible": true
-      }
+      "injuries": [
+        {
+          "names_of_defendants_causing_injuries": [
+            {
+              "surname": "Shuttleworth",
+              "given_name": [ "Max" ]
+            }
+          ],
+          "description_of_injuries": "2 black eyes, cut to the right cheek and brusing to the neck.",
+          "images_taken": true,
+          "image_description": "PHOTO/01 Two black eyes \n PHOTO/02 Cut to right cheek \n PHOTO/03 Brusing to the throat",
+          "received_medical_treatment": true,
+          "details_of_medical_treatment": "4 stitches to right cheek.",
+          "injuries_visible": true
+        }
+      ]
     }
   ],
   "common_law_disclosure": {
