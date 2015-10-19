@@ -1,0 +1,315 @@
+﻿{
+  "pti_urn": "AAAA9999915-AA",
+  "type": "FirstHearingDCF",
+  "version": 1,
+  "case_markers": [ "DomesticViolence" ],
+  "brief_description_of_case": "Max Shuttleworth is on court bail for a previous assault on the victim Vera Shuttleworth. Max attended the victims address in breach of those conditions. Max was admitted to the address by the victim and assaulted her by kicking, punching and throttling her. The injuries amount to ABH. Officers attended the address in response to a call from the victim and arrested Max at the scene. Statements and photos have been obtained. A no comment interview was provided.",
+  "defendants": [
+    {
+      "name": {
+        "surname": "Shuttleworth",
+        "given_name": [ "Max" ]
+      },
+      "date_of_birth": "1959-12-17",
+      "arrest": {
+        "type": "Arrest",
+        "date_time": "2015-09-19T19:06Z",
+        "comments_on_arrest_and_caution": "She inivited me around"
+      },
+      "conditional_caution_considered": true,
+      "cc_not_suitable_reasons": [ "offence_not_admitted", "offence_whilst_on_bail", "reoffending_risk_offending_history" ],
+      "offences": [
+        {
+          "type": "AssaultOffences",
+          "assault_offences": [
+            {
+              "type": "AssaultOffence",
+              "cjs_offence_code": "of61102",
+              "offence": {
+                "type": "Offence",
+                "from_date": "2014-09-19",
+                "to_date": "2014-09-19",
+                "offence_title": "Assault a person therby occasioning them actual bodily harm",
+                "charge_wording": "On the 19th of September 2015 at Anytown, assaulted Vera SHUTTLEWORTH, thereby occasioning her, actual bodily harm Contrary to section 47 of the Offences Against the Person Act 1861",
+                "points_to_prove_met_by": "Date and Location - proven by victim statement \n Assault a person thereby occasioning her actual bodily harm - proven by victim statement, photographic evidence of injury and medical evidence.",
+                "anticipated_plea": "not_guilty",
+                "committed_on_bail": true,
+                "children_present": false
+
+              },
+              "assault_interview_extension": {
+                "admits_involvement_in_incident": false,
+                "admits_assaulting_victim": false,
+                "admits_causing_the_injuries": "admits_nothing",
+                "accepts_victims_version_of_events": false,
+                "position_of_trust": false,
+                "self_defence_put_forward": false
+              },
+              "victim_name": {
+                "surname": "Shuttleworth",
+                "given_name": [ "Vera" ]
+              }
+            }
+          ]
+        }
+      ],
+      "occupation": "Unemployed",
+      "has_eec_passports": false,
+      "foreign_national_offender": false,
+      "breach_of_order": false,
+      "remand_application": {
+        "substantial_grounds": [
+          {
+            "opposition_ground": "commit_offences_on_bail",
+            "justification": "Offences committed on bail x 7 including this offence."
+          },
+          {
+            "opposition_ground": "interfere_with_witness_or_otherwise_obstruct_the_course_of_justice",
+            "justification": "This offence committed against victim whilst on bail despite being on court bail to keep away from her."
+          }
+        ],
+        "bail_conditions": [
+          {
+            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "commiting_an_offence_whilst_on_bail" ],
+            "condition": "Not to contact directly or indirectly Vera Shuttleworth.",
+            "reason": "To prevent further offences against the victim."
+          },
+          {
+            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "commiting_an_offence_whilst_on_bail" ],
+            "condition": "Not to visit the 32A New Street, Anytown.",
+            "reason": "To prevent further offences against the victim."
+          }
+        ]
+      },
+      "breach_of_bail": {
+        "breach_details": "Max attended the victim's address and contacted victim",
+        "witness_statement_establishes_breach": true,
+        "key_evidence": "Statement from victim and seen at address by police, recorded on bwv.",
+        "existing_bail_breached": {
+          "original_charge_wording": [ "Assault……" ],
+          "bailed_from": {
+            "ou_top_level_name": "Magistrates' Courts",
+            "ou_second_level_name": "London",
+            "ou_third_level_name": "Bexley",
+            "ou_bottom_level_name": "A"
+          },
+          "bailed_date": "2014-01-01",
+          "to_appear_at": {
+            "ou_top_level_name": "Magistrates' Courts",
+            "ou_second_level_name": "London",
+            "ou_third_level_name": "Barking (East Street)",
+            "ou_bottom_level_name": "A"
+          },
+          "datetime_to_appear": "2014-01-01T12:00Z",
+          "list_of_conditions": [
+            {
+              "grounds": [ "commiting_an_offence_whilst_on_bail" ],
+              "condition": "Not to contact Vera Shuttleworth",
+              "reason": "Could not compete if court imposed bail. See Proposed Amendment 5"
+            }
+          ]
+        }
+      },
+      "pnc_check_performed": true,
+      "pnc_convictions": true,
+      "court_order_applications": [
+        {
+          "court_order_title": "restraining_order",
+          "reason_for_request": "TBC",
+          "draft_conditions": [ "TBC", "TBC" ]
+        }
+      ],
+      "interpreter_required": false,
+      "multimedia_evidence_response": [
+        {
+          "id": "BWV/01",
+          "type": "MmeRecordedResponse",
+          "defendant_shown": true,
+          "defendant_comments_if_shown": "No Comment",
+          "is_defendant_believed_to_be_in_the_mme": true,
+          "defendant_admits_being_in_mme": false,
+          "how_is_identification_established": "Statement from victim and found at scene by police"
+        },
+        {
+          "id": "999/01",
+          "type": "MmeRecordedResponse",
+          "defendant_shown": true,
+          "defendant_comments_if_shown": "No Comment",
+          "is_defendant_believed_to_be_in_the_mme": true,
+          "defendant_admits_being_in_mme": false,
+          "how_is_identification_established": "Found at scene believed to be male heard during the telephone call"
+        }
+      ],
+      "notice_to_provide_bad_character_evidence": true,
+      "bad_character_details": "Various like offences",
+      "dealt_with_in_welsh": false,
+      "person_remand_status": "custody",
+      "given_charges": true,
+      "initiation_type": "charge",
+      "interview": {
+        "type": "StandardInterview",
+        "date": "2014-09-05",
+        "defendant_legally_represented": true,
+        "legally_represented_by": {
+          "given_name": [ "Mitchell" ],
+          "surname": "Mitchell"
+        },
+        "legal_representative_firm": "Mitchell and Sons",
+        "special_warnings_given": false,
+        "no_comment_response": true,
+        "questions_asked": "You were arrested at flat 3, 32A New Street Anytown. When did you go there? \n Why did you go to the address in breach of your bail? \n How did you get into the flat? \n What can you tell us about your wife’s injuries? \n Did you assault her? \n Did you punch her? \n Did you cause the bruising to her neck by trying to throttle her? \n Did you cause the black eyes? \n Did you cause the cut to her cheek? \n Why were you shouting at her when she rang the police? \n Did you terminate the call?"
+      },
+      "domestic_violence": [
+        {
+          "victim_name": {
+            "surname": "Shuttleworth",
+            "given_name": [ "Vera" ]
+          },
+          "relationship_description": "married",
+          "length_of_relationship": "17 years"
+        }
+      ],
+      "signed_charge_sheet": true,
+      "first_hearing_datetime": "2015-09-20T10:20Z",
+      "first_hearing_location": {
+        "ou_top_level_name": "Magistrates' Courts",
+        "ou_second_level_name": "London",
+        "ou_third_level_name": "Barking (East Street)",
+        "ou_bottom_level_name": "A"
+      }
+    }
+  ],
+  "witnesses": [
+    {
+      "type": "ExpertWitness",
+      "witness_type": [ "expert" ],
+      "name": {
+        "given_name": [ "Bernard" ],
+        "surname": "Kildare"
+      },
+      "witness": {
+        "nature_of_involvement": "A&E Doctor who treated the injuries.",
+        "evidence_they_can_give": "Injuries and treatment.",
+        "special_measures": false,
+        "interpreter_required": false,
+        "wish_to_use_video_link": false
+      }
+    },
+    {
+      "type": "NgapOtherWitness",
+      "witness_type": [ "arresting_officer", "interviewing_officer" ],
+      "name": {
+        "given_name": [ "Michael" ],
+        "surname": "WELLS"
+      },
+      "witness": {
+        "nature_of_involvement": "Attended scene, captured victim's injuries on bwv, arrested defendant and interviewed.",
+        "evidence_they_can_give": "Identity of Defendant, witness to injuries.",
+        "special_measures": false,
+        "interpreter_required": false,
+        "wish_to_use_video_link": false
+      },
+      "rank": "PC",
+      "number": "1"
+    },
+    {
+      "type": "NgapOtherWitness",
+      "witness_type": [ "police" ],
+      "name": {
+        "given_name": [ "James" ],
+        "surname": "Barker"
+      },
+      "witness": {
+        "nature_of_involvement": "Attended scene and escorted the victim to hospital. Took photos of injuries.",
+        "evidence_they_can_give": "Corroboration, exhibiting of photos.",
+        "special_measures": false,
+        "interpreter_required": false,
+        "wish_to_use_video_link": false
+      },
+      "rank": "PC",
+      "number": "2"
+    },
+    {
+      "type": "PersonVictim",
+      "name": {
+        "surname": "Shuttleworth",
+        "given_name": [ "Vera" ]
+      },
+      "date_of_birth": "1961/12/05",
+      "visually_recorded_interview": true,
+      "url": "http://aberecordingsystem.gov.uk/qu8jfajf8jfwfjar",
+      "victim": {
+        "witness_type": [ "eye" ],
+        "witness": {
+          "nature_of_involvement": "The victim",
+          "evidence_they_can_give": "Of the assault and injuries.",
+          "special_measures": true,
+          "interpreter_required": false,
+          "wish_to_use_video_link": false
+        },
+        "victim_code_requirements_met": true,
+        "has_the_victim_made_a_vps_isb": true,
+        "victim_wish_to_attend_court": "no_cps_to_read",
+        "is_retraction_statement": false
+      },
+      "injuries": {
+        "names_of_defendants_causing_injuries": [
+          {
+            "surname": "Shuttleworth",
+            "given_name": [ "Max" ]
+          }
+        ],
+        "description_of_injuries": "2 black eyes, cut to the right cheek and brusing to the neck.",
+        "images_taken": true,
+        "image_description": "PHOTO/01 Two black eyes \n PHOTO/02 Cut to right cheek \n PHOTO/03 Brusing to the throat",
+        "received_medical_treatment": true,
+        "details_of_medical_treatment": "4 stitches to right cheek.",
+        "injuries_visible": true
+      }
+    }
+  ],
+  "common_law_disclosure": {
+    "type": "CommonLawForDisclosure",
+    "reporting_officer": {
+      "surname": "Wells",
+      "given_name": [ "Michael" ]
+    },
+    "reporting_officer_signature_date": "2015-07-10",
+    "details_of_relevant_unused_material": "Crime Report, PNB, Incident Log"
+  },
+  "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
+  "multimedia_evidence": [
+    {
+      "id": "999/01",
+      "date": "19/09/2015",
+      "type": "telephone_call",
+      "description_of_what_is_contained_in_multimedia_evidence": "Vera states her husband is attacking her.  There are sounds of an angry male shouting  in the background.",
+      "evidential_value": true,
+      "relied_upon_trial": true,
+      "relied_upon_sentence": true,
+      "total_duration": "00:01"
+    }
+  ],
+  "is_hearsay": false,
+  "expert_evidence": true,
+  "test_code": "threshold_test",
+  "pca_cps": true,
+  "property": [
+    {
+      "property_id": 1,
+      "property_action": "stolen_not_recovered",
+      "description": "Razor blades",
+      "value": 15.00
+    }
+  ],
+  "officer_in_the_case": {
+    "surname": "Wells",
+    "given_name": [ "Michael" ]
+  },
+  "signatory_name": {
+    "surname": "Specific",
+    "given_name": [ "Test" ]
+  },
+  "date": "2015-10-14",
+  "signatory_rank": "Test Specific"
+}
