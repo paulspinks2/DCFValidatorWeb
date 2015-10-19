@@ -31,7 +31,7 @@
                 "offence_title": "Theft from a shop",
                 "charge_wording": "On Saturday 5th September 2015 at Anytown, stole a quantity of razors , of a  value unknown belonging to Boots.",
                 "reply_to_charge": "I am not guilty",
-                "points_to_prove_met_by": "CCTV shows MARSHALL: \n taking the property \n consuming the property \n leaving the shop without paying",
+                "points_to_prove_met_by": "date and location - store detectives statement \n dishonestly appropriated property belonging to another from a shop with the intention to permanently deprive the another of it - shown on CCTV removing items from store and leaving without offering payment",
                 "anticipated_plea": "not_guilty",
                 "committed_on_bail": false
               },
@@ -130,7 +130,8 @@
         "wish_to_use_video_link": false
       },
       "reason_dob_not_provided": "Police Officer",
-      "visually_recorded_interview": false
+      "visually_recorded_interview": false,
+      "rank": "PC"
     },
     {
       "type": "NgapOtherWitness",
@@ -147,7 +148,7 @@
         "wish_to_use_video_link": false
       },
       "rank": "PC",
-      "number": "1"
+      "number": "2"
     },
     {
       "type": "OrganisationVictim",
@@ -189,7 +190,7 @@
       "given_name": [ "Michael" ]
     },
     "reporting_officer_signature_date": "2015-07-10",
-    "details_of_relevant_unused_material": "TO-DO"
+    "details_of_relevant_unused_material": "PNB PC678, PC99. Incident log. Crime Report"
   },
   "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
   "multimedia_evidence": [

@@ -30,7 +30,7 @@
                 "to_date": "2014-09-07",
                 "offence_title": "Theft from a shop",
                 "charge_wording": "On Monday 7th September 2015 at Anytown, stole whisky and a banana, to the value of £12.07 belonging to Tesco",
-                "points_to_prove_met_by": "CCTV shows MARSHALL: \n taking the property \n consuming the property \n leaving the shop without paying",
+                "points_to_prove_met_by": "date and location - store detectives statements \n dishonestly appropriated property belonging to another from a shop  with the intention to permanently deprive the another of it - statement from store detective and CCTV which shows him consuming the items in the store and leaving without offering payment and admission in interview",
                 "anticipated_plea": "guilty",
                 "committed_on_bail": false
               },
@@ -82,7 +82,7 @@
         "special_warnings_given": false,
         "no_comment_response": false,
         "admissions_made": "Q: Is that you on that film? \n A: Yes, it's me \n Q: Did you have any intention to pay? \n A: No, I have no money \n Q: Do you accept the banana and whiskey belong to Tesco? \n A: Of course, I'm not stupid, I know what theft is",
-        "mitigations": "Q: What happened? \n A: I'm tired, wet and hungry. They can afford it.",
+        "mitigations": "Q: What happened? \n A: I'm tired, wet and hungry. They can afford it."
       },
       "signed_charge_sheet": true,
       "signed_for_bail": true,

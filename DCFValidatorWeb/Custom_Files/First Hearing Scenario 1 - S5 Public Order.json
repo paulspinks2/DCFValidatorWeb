@@ -23,7 +23,7 @@
           "generic_offences": [
             {
               "type": "GenericOffence",
-              "cjs_offence_code": "to_be_added",
+              "cjs_offence_code": "pu86149",
               "offence": {
                 "type": "Offence",
                 "from_date": "2015-09-04",
