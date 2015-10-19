@@ -91,12 +91,12 @@ namespace DCFValidatorWeb
                     OutputText.CssClass = "alert-success";
 
                     //Business Rule Validation
-                    bool isGap = true;
-                    FirstPass(ref isGap);
-                    if (isGap)
-                    {
-                        CheckGap();
-                    }
+                    //bool isGap = true;
+                    //FirstPass(ref isGap);
+                    //if (isGap)
+                    //{
+                        //CheckGap();
+                    //}
                 }
                 else
                 {
