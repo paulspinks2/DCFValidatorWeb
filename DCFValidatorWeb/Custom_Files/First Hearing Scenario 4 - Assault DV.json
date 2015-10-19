@@ -282,6 +282,16 @@
   "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
   "multimedia_evidence": [
     {
+      "id": "BWV/01",
+      "date": "19/09/2015",
+      "type": "body_worn_video",
+      "description_of_what_is_contained_in_multimedia_evidence": "At 20:01:00 Shows Max and Vera at the address.  Shows Vera crying and upset and shows visible injuries.  At 20:06:00 Records Max is visibly angry and red faced.  Records the arrest.",
+      "evidential_value": true,
+      "relied_upon_trial": true,
+      "relied_upon_sentence": true,
+      "total_duration": "00:10"
+    },
+    {
       "id": "999/01",
       "date": "19/09/2015",
       "type": "telephone_call",
