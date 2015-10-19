@@ -33,6 +33,7 @@
                 "charge_wording": "On the 19th of September 2015 at Anytown, assaulted Vera SHUTTLEWORTH, thereby occasioning her, actual bodily harm Contrary to section 47 of the Offences Against the Person Act 1861",
                 "points_to_prove_met_by": "Date and Location - proven by victim statement \n Assault a person thereby occasioning her actual bodily harm - proven by victim statement, photographic evidence of injury and medical evidence.",
                 "anticipated_plea": "not_guilty",
+                "demeanour_at_incident": "Andry and red faced",
                 "committed_on_bail": true,
                 "children_present": false
 
@@ -159,16 +160,6 @@
         "no_comment_response": true,
         "questions_asked": "You were arrested at flat 3, 32A New Street Anytown. When did you go there? \n Why did you go to the address in breach of your bail? \n How did you get into the flat? \n What can you tell us about your wife’s injuries? \n Did you assault her? \n Did you punch her? \n Did you cause the bruising to her neck by trying to throttle her? \n Did you cause the black eyes? \n Did you cause the cut to her cheek? \n Why were you shouting at her when she rang the police? \n Did you terminate the call?"
       },
-      "domestic_violence": [
-        {
-          "victim_name": {
-            "surname": "Shuttleworth",
-            "given_name": [ "Vera" ]
-          },
-          "relationship_description": "married",
-          "length_of_relationship": "17 years"
-        }
-      ],
       "signed_charge_sheet": true,
       "first_hearing_datetime": "2015-09-20T10:20Z",
       "first_hearing_location": {
