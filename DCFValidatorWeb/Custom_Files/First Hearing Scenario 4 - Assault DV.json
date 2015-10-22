@@ -87,7 +87,7 @@
         "witness_statement_establishes_breach": true,
         "key_evidence": "Statement from victim and seen at address by police, recorded on bwv.",
         "existing_bail_breached": {
-          "original_charge_wording": [ "Assault……" ],
+          "original_charge_wording": ["On the 9th of September 2015 assaulted Vera SHUTTLEWORTH by beating her. Contrary to Section 39 of the Criminal Justice Act 1988."],
           "bailed_from": {
             "ou_top_level_name": "Magistrates' Courts",
             "ou_second_level_name": "London",

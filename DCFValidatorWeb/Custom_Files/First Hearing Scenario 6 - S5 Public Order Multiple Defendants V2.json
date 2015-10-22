@@ -2,11 +2,11 @@
   "pti_urn": "AAAA9999915-AA",
   "type": "FirstHearingDCF",
   "version": 1,
-  "brief_description_of_case": "Bruce was one of 3 males having a loud and animated argument in the town centre in the late evening. The police asked the males to disperse and one did so. Bull continued to shout and swear in the street despite this and moved towards the officer who arrested him.",
+  "brief_description_of_case": "BULL and BROWN were 2 of 3 males having a loud and animated argument in the town centre in the late evening. BULL shouts and pushes the third male and BROWN intervenes by pushing and swearing at BULL. The police asked the males to disperse and the third one did so. BULL continued to shout and swear in the street despite this and moved towards the officer who arrested him.  BROWN also continued to be disorderly but was not arrested at the scene as he has was removed to hospital but was detained later by officer when he failed to cooperate or keep appointments.",
   "defendants": [
     {
       "name": {
-        "surname": "BULL",
+        "surname": "Bull",
         "given_name": [ "John" ]
       },
       "date_of_birth": "1989-12-01",
@@ -30,7 +30,8 @@
                 "to_date": "2015-09-04",
                 "offence_title": "Use threatening / abusive words / behaviour or disorderly behaviour likely to cause harassment, alarm or distress",
                 "charge_wording": "On Friday the 4th of September 2015 at Anywhere used threatening or abusive words or behaviour or disorderly behaviour within the hearing or sight of a person likely to be caused harassment, alarm or distress thereby. Contrary to section 5(1) and (6) of the Public Order Act 1986.",
-                "points_to_prove_met_by": "Date and location - proved by officers statement. \n Used threatening or abusive words or behaviour in sight of the officer. \n Abusive words to the officer.",
+                "reply_to_charge": "I'm sorry",
+                "points_to_prove_met_by": "Date and location - proved by officers statement. Used threatening or abusive words or behaviour in sight of the officer. Abusive words to the officer.",
                 "anticipated_plea": "guilty",
                 "committed_on_bail": false
               }
@@ -63,7 +64,7 @@
       "initiation_type": "charge",
       "interview": {
         "type": "NotInterviewed",
-        "reason": "Witnessed by a Police officer."
+        "reason": "S5 witnessed by police"
       },
       "signed_charge_sheet": true,
       "signed_for_bail": true,
@@ -153,13 +154,13 @@
       "type": "StatementWitness",
       "witness_type": [ "eye", "arresting_officer", "police" ],
       "name": {
-        "given_name": [ "Arthur" ],
+        "given_name": [ "Craig" ],
         "surname": "MARROW"
       },
       "rank": "PC",
       "witness": {
-        "nature_of_involvement": "Witnessed the incident, arrested defendants.",
-        "evidence_they_can_give": "Date, time & location. Disorderly conduct and threatening behaviour."
+        "nature_of_involvement": "Witnessed the defendants behaviour and arrested BULL",
+        "evidence_they_can_give": "Witnessed the defendants conduct."
       },
       "reason_dob_not_provided": "Police officer",
       "visually_recorded_interview": false
@@ -168,13 +169,13 @@
       "type": "StatementWitness",
       "witness_type": [ "eye", "arresting_officer", "police" ],
       "name": {
-        "given_name": [ "Martin" ],
+        "given_name": [ "Archie" ],
         "surname": "BRUCE"
       },
       "rank": "PC",
       "witness": {
-        "nature_of_involvement": "Witnessed the incident, arrested defendants.",
-        "evidence_they_can_give": "Date, time & location. Disorderly conduct and threatening behaviour."
+        "nature_of_involvement": "Witnessed the defendants behaviour and arrested BROWN",
+        "evidence_they_can_give": "Witnessed the defendants conduct."
       },
       "reason_dob_not_provided": "Police officer",
       "visually_recorded_interview": false
@@ -193,7 +194,7 @@
   "pca_cps": false,
   "officer_in_the_case": {
     "surname": "MARROW",
-    "given_name": [ "Arthur" ]
+    "given_name": [ "Craig" ]
   },
   "signatory_name": {
     "surname": "Specific",

@@ -18,7 +18,7 @@
           "generic_offences": [
             {
               "type": "GenericOffence",
-              "cjs_offence_code": "TBC",
+              "cjs_offence_code": "rt88026",
               "offence": {
                 "type": "Offence",
                 "from_date": "2015-02-16",
@@ -93,6 +93,21 @@
       },
       "date_of_birth": "1973-04-17",
       "visually_recorded_interview": false
+    },
+    {
+      "type": "StatementWitness",
+      "witness_type": [ "interviewing_officer", "police" ],
+      "name": {
+        "given_name": [ "Gareth" ],
+        "surname": "THOMAS "
+      },
+      "witness": {
+        "nature_of_involvement": "Interviewing officer",
+        "evidence_they_can_give": "Interviewing officer"
+      },
+      "reason_dob_not_provided": "Police Officer",
+      "visually_recorded_interview": false,
+      "rank": "PC"
     }
   ],
   "common_law_disclosure": {
