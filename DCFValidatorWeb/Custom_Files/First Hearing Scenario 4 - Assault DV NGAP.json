@@ -27,8 +27,8 @@
               "cjs_offence_code": "of61102",
               "offence": {
                 "type": "Offence",
-                "from_date": "2014-09-19",
-                "to_date": "2014-09-19",
+                "from_date": "2015-09-19",
+                "to_date": "2015-09-19",
                 "offence_title": "Assault a person therby occasioning them actual bodily harm",
                 "charge_wording": "On the 19th of September 2015 at Anytown, assaulted Vera SHUTTLEWORTH, thereby occasioning her, actual bodily harm Contrary to section 47 of the Offences Against the Person Act 1861",
                 "points_to_prove_met_by": "Date and Location - proven by victim statement \n Assault a person thereby occasioning her actual bodily harm - proven by victim statement, photographic evidence of injury and medical evidence.",
@@ -94,14 +94,14 @@
             "ou_third_level_name": "Bexley",
             "ou_bottom_level_name": "A"
           },
-          "bailed_date": "2014-01-01",
+          "bailed_date": "2015-01-01",
           "to_appear_at": {
             "ou_top_level_name": "Magistrates' Courts",
             "ou_second_level_name": "London",
             "ou_third_level_name": "Barking (East Street)",
             "ou_bottom_level_name": "A"
           },
-          "datetime_to_appear": "2014-01-01T12:00Z",
+          "datetime_to_appear": "2015-01-01T12:00Z",
           "list_of_conditions": [
             {
               "grounds": [ "commiting_an_offence_whilst_on_bail" ],
@@ -149,7 +149,7 @@
       "initiation_type": "charge",
       "interview": {
         "type": "StandardInterview",
-        "date": "2014-09-05",
+        "date": "2015-09-05",
         "defendant_legally_represented": true,
         "legally_represented_by": {
           "given_name": [ "Mitchell" ],

@@ -212,6 +212,11 @@
     <Content Include="Custom_Files\First Hearing Scenario 1 - S5 Public Order.json" />
     <Content Include="Custom_Files\First Hearing Scenario 2 - Retail Theft GAP.json" />
     <Content Include="Custom_Files\First Hearing Scenario 3 - Retail Theft NGAP.json" />
+    <Content Include="Custom_Files\First Hearing Scenario 4 - Assault DV NGAP.json" />
+    <Content Include="Custom_Files\First Hearing Scenario 5 - Dangerous Driving PCR Summons.json" />
+    <Content Include="Custom_Files\First Hearing Scenario 6 - S5 Public Order Multiple Defendants V2.json" />
+    <Content Include="Custom_Files\First Hearing Scenario 6 - S5 Public Order Multiple Defendants V1.json" />
+    <Content Include="Custom_Files\First Hearing Scenario 7 - Multiple Defendants Offences Mixed Pleas.json" />
     <None Include="Properties\PublishProfiles\DevDCFValidatorWeb.pubxml" />
     <None Include="RulesDataSet.xsd">
       <SubType>Designer</SubType>
