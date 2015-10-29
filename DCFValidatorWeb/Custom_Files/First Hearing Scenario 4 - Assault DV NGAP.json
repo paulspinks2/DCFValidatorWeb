@@ -117,8 +117,10 @@
         {
           "court_order_title": "restraining_order",
           "reason_for_request": "TBC",
-          "draft_conditions": [ "Not to go within 100 metres of 32A New Street, Anytown", 
-                                "Not to approach, contact or communicate in any way with Vera SHUTTLEWORTH directly or indirectly" ]
+          "draft_conditions": [
+            "Not to go within 100 metres of 32A New Street, Anytown",
+            "Not to approach, contact or communicate in any way with Vera SHUTTLEWORTH directly or indirectly"
+          ]
         }
       ],
       "interpreter_required": false,
@@ -308,6 +310,10 @@
   "expert_evidence": true,
   "test_code": "threshold_test",
   "pca_cps": true,
+  "safeguarding_assessment": {
+    "assessment_completed": false,
+    "reasons_not_completed": "This element will be removed in 1.2.0 and is not included in this scenario"
+  },
   "property": [
     {
       "property_id": 1,
