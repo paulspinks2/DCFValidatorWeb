@@ -117,7 +117,8 @@
         {
           "court_order_title": "restraining_order",
           "reason_for_request": "TBC",
-          "draft_conditions": [ "TBC", "TBC" ]
+          "draft_conditions": [ "Not to go within 100 metres of 32A New Street, Anytown", 
+                                "Not to approach, contact or communicate in any way with Vera SHUTTLEWORTH directly or indirectly" ]
         }
       ],
       "interpreter_required": false,
