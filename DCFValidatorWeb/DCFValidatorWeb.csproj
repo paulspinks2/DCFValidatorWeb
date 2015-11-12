@@ -190,7 +190,7 @@
       <DependentUpon>RulesDataSet.xsd</DependentUpon>
     </Content>
     <Content Include="Custom_Files\Business Rules.json" />
-    <Content Include="Custom_Files\First Hearing DCF Schema 110.json" />
+    <Content Include="Custom_Files\First Hearing DCF Schema 120.json" />
     <Content Include="WebForm1.aspx" />
     <Content Include="XSLT\DCF XSLT.xslt" />
     <Content Include="Custom_Files\First Hearing Example 13 - Invalid Property Reference.json" />
@@ -206,7 +206,7 @@
     <Content Include="Custom_Files\First Hearing Example 12 - Ilegal field.json" />
     <Content Include="Custom_Files\First Hearing Example 11 - Missing Schema mandated field.json" />
     <Content Include="Custom_Files\Breach of Bail Example 1 - Simple BoB with Remand.json" />
-    <Content Include="Custom_Files\BoB DCF Schema 110.json" />
+    <Content Include="Custom_Files\BoB DCF Schema 120.json" />
     <Content Include="Custom_Files\First Hearing Example 1 - Valid Single Defendant.json" />
     <Content Include="Custom_Files\First Hearing Example 14 - Missing Common Law Disclosure Details.json" />
     <Content Include="Custom_Files\First Hearing Scenario 1 - S5 Public Order.json" />

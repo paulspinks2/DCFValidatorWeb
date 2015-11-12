@@ -46,7 +46,7 @@ namespace DCFValidatorWeb
             try
             {
                 // load JSchema directly from a file
-                string schemaPath = HttpRuntime.AppDomainAppPath + "\\Custom_Files\\First Hearing DCF Schema 110.json";
+                string schemaPath = HttpRuntime.AppDomainAppPath + "\\Custom_Files\\First Hearing DCF Schema 120.json";
                 using (StreamReader file = File.OpenText(schemaPath))
                 using (JsonTextReader reader = new JsonTextReader(file))
 
