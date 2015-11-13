@@ -1,12 +1,14 @@
 ﻿{
-  "pti_urn": "AAAA9999915-AA",
-  "type": "FirstHearingDCF",
-  "associated_case_urns": [ "AAAA1111115", "AAAA2222215" ],
+  "schema_version": "1.2.0",
+  "pti_urn": "01AA9999915-AA",
+  "type": "BobDCF",
+  "associated_case_urns": [ "01AA1111115", "01AA2222215" ],
   "version": 1,
   "brief_description_of_case": "A brief description of the case.",
   "defendants": [
     {
       "name": {
+        "type": "PersonName",
         "surname": "Smith",
         "given_name": [ "John", "William" ]
       },
@@ -17,6 +19,7 @@
         "comments_on_arrest_and_caution": "Some comments"
       },
       "occupation": "A Worker",
+      "foreign_national_offender": false,
       "remand_application": {
         "substantial_grounds": [
           {
@@ -74,6 +77,16 @@
       "pnc_check_performed": true,
       "pnc_convictions": true,
       "interpreter_required": false,
+      "multimedia_evidence_response": [
+        {
+          "id": "1",
+          "type": "MmeRecordedResponse",
+          "defendant_shown": true,
+          "defendant_comments_if_shown": "These are the defendant comments if shown.",
+          "is_defendant_believed_to_be_in_the_mme": true,
+          "defendant_admits_being_in_mme": true
+        }
+      ],
       "dealt_with_in_welsh": false,
       "person_remand_status": "custody",
       "interview": {
@@ -81,12 +94,14 @@
         "date": "2014-01-01",
         "defendant_legally_represented": true,
         "legally_represented_by": {
+          "type": "PersonName",
           "given_name": [ "Jennie", "Claire" ],
           "surname": "Jones"
         },
         "legal_representative_firm": "The firm",
         "interpreters": [
           {
+            "type": "PersonName",
             "given_name": [ "Jennie", "Claire" ],
             "surname": "Jones"
           }
@@ -95,7 +110,7 @@
         "no_comment_response": false,
         "admissions_made": "The admissions made go here.",
         "denials": "The Denials",
-        "explanations": "Any explanations made",
+        "explanations": "Any explanations made"
       },
       "first_hearing_datetime": "2015-08-01T12:00Z",
       "first_hearing_location": {
@@ -111,6 +126,7 @@
       "type": "StatementWitness",
       "witness_type": [ "eye" ],
       "name": {
+        "type": "PersonName",
         "given_name": [ "Jennie", "Claire" ],
         "surname": "Jones"
       },
@@ -123,15 +139,30 @@
       "visually_recorded_interview": false
     }
   ],
-  "test_code": "full_code_test",
+  "multimedia_evidence": [
+    {
+      "id": "1",
+      "date": "2014-01-01",
+      "type": "cctv",
+      "description_of_what_is_contained_in_multimedia_evidence": "Description goes here",
+      "evidential_value": true,
+      "total_duration": "01:02",
+      "url": "http://test.gov.uk/askdasdjds/asds"
+    }
+  ],
   "officer_in_the_case": {
+    "type": "OfficerName",
     "surname": "Smith",
-    "given_name": [ "Penny" ]
+    "given_name": [ "Penny" ],
+    "rank": "PC",
+    "collar_number": "AA12"
   },
   "signatory_name": {
+    "type": "OfficerName",
     "surname": "Collins",
-    "given_name": [ "Simon" ]
+    "given_name": [ "Simon" ],
+    "rank": "PC",
+    "collar_number": "AA11"
   },
-  "date": "2014-01-01",
-  "signatory_rank": "Sergeant"
+  "date": "2014-01-01"
 }
