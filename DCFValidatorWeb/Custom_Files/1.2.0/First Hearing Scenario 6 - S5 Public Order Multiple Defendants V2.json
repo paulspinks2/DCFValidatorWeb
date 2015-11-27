@@ -1,0 +1,222 @@
+﻿{
+  "schema_version": "1.2.0",
+  "pti_urn": "01AA9999915",
+  "type": "FirstHearingDCF",
+  "version": 2,
+  "brief_description_of_case": "BULL and BROWN were 2 of 3 males having a loud and animated argument in the town centre in the late evening. BULL shouts and pushes the third male and BROWN intervenes by pushing and swearing at BULL. The police asked the males to disperse and the third one did so. BULL continued to shout and swear in the street despite this and moved towards the officer who arrested him.  BROWN also continued to be disorderly but was not arrested at the scene as he has was removed to hospital but was detained later by officer when he failed to cooperate or keep appointments.",
+  "defendants": [
+    {
+      "name": {
+        "type": "PersonName",
+        "surname": "Bull",
+        "given_name": [ "John" ]
+      },
+      "date_of_birth": "1989-12-01",
+      "arrest": {
+        "type": "Arrest",
+        "date_time": "2015-09-04T22:35Z",
+        "comments_on_arrest_and_caution": "I knew you were a halfwit."
+      },
+      "conditional_caution_considered": true,
+      "cc_not_suitable_reasons": [ "reoffending_risk_offending_history" ],
+      "offences": [
+        {
+          "type": "GenericOffences",
+          "generic_offences": [
+            {
+              "type": "GenericOffence",
+              "cjs_offence_code": "pu86149",
+              "offence": {
+                "type": "Offence",
+                "from_date": "2015-09-04",
+                "to_date": "2015-09-04",
+                "charge_date": "2015-09-05",
+                "offence_title": "Use threatening / abusive words / behaviour or disorderly behaviour likely to cause harassment, alarm or distress",
+                "charge_wording": "On Friday the 4th of September 2015 at Anywhere used threatening or abusive words or behaviour or disorderly behaviour within the hearing or sight of a person likely to be caused harassment, alarm or distress thereby. Contrary to section 5(1) and (6) of the Public Order Act 1986.",
+                "reply_to_charge": "I'm sorry",
+                "points_to_prove_met_by": "Date and location - proved by officers statement. Used threatening or abusive words or behaviour in sight of the officer. Abusive words to the officer.",
+                "anticipated_plea": "guilty",
+                "committed_on_bail": false
+              }
+            }
+          ]
+        }
+      ],
+      "occupation": "Unemployed",
+      "has_eec_passports": false,
+      "foreign_national_offender": false,
+      "breach_of_order": false,
+      "pnc_check_performed": true,
+      "pnc_convictions": true,
+      "court_order_applications": [
+        {
+          "court_order_title": "no_orders_required"
+        }
+      ],
+      "interpreter_required": false,
+      "multimedia_evidence_response": [
+        {
+          "type": "MmeNotRecordedResponse",
+          "defendant_admitted_to_location": true,
+          "how_is_identification_established": "Seen and arrested at the scene by PC666."
+        }
+      ],
+      "dealt_with_in_welsh": false,
+      "person_remand_status": "unconditional_bail",
+      "given_charges": true,
+      "initiation_type": "charge",
+      "interview": {
+        "type": "NotInterviewed",
+        "reason": "S5 witnessed by police"
+      },
+      "signed_charge_sheet": true,
+      "signed_for_bail": true,
+      "first_hearing_datetime": "2015-09-20T10:20Z",
+      "first_hearing_location": {
+        "ou_top_level_name": "Magistrates' Courts",
+        "ou_second_level_name": "London",
+        "ou_third_level_name": "Barking (East Street)",
+        "ou_bottom_level_name": "A"
+      }
+    },
+    {
+      "name": {
+        "type": "PersonName",
+        "surname": "BROWN",
+        "given_name": [ "James" ]
+      },
+      "date_of_birth": "1988-09-17",
+      "arrest": {
+        "type": "Arrest",
+        "date_time": "2015-09-09T16:35Z",
+        "comments_on_arrest_and_caution": "I thought you had forgotten."
+      },
+      "conditional_caution_considered": true,
+      "cc_not_suitable_reasons": [ "reoffending_risk_offending_history" ],
+      "offences": [
+        {
+          "type": "GenericOffences",
+          "generic_offences": [
+            {
+              "type": "GenericOffence",
+              "cjs_offence_code": "pu86149",
+              "offence": {
+                "type": "Offence",
+                "from_date": "2015-09-04",
+                "to_date": "2015-09-04",
+                "charge_date": "2015-09-09",
+                "offence_title": "Use threatening / abusive words / behaviour or disorderly behaviour likely to cause harassment, alarm or distress",
+                "charge_wording": "On Friday the 4th of September 2015 at Anywhere used threatening or abusive words or behaviour or disorderly behaviour within the hearing or sight of a person likely to be caused harassment, alarm or distress thereby. Contrary to section 5(1) and (6) of the Public Order Act 1986.",
+                "reply_to_charge": "I'm sorry for running off.",
+                "points_to_prove_met_by": "Date and location - proved by officers statement. \n Used threatening or abusive words or behaviour in sight of the officer. \n Abusive words to the officer.",
+                "anticipated_plea": "guilty",
+                "committed_on_bail": false
+              }
+            }
+          ]
+        }
+      ],
+      "occupation": "IT Consultant",
+      "has_eec_passports": false,
+      "foreign_national_offender": false,
+      "breach_of_order": false,
+      "pnc_check_performed": true,
+      "pnc_convictions": true,
+      "court_order_applications": [
+        {
+          "court_order_title": "no_orders_required"
+        }
+      ],
+      "interpreter_required": false,
+      "multimedia_evidence_response": [
+        {
+          "type": "MmeNotRecordedResponse",
+          "defendant_admitted_to_location": true,
+          "how_is_identification_established": "Seen and arrested at the scene by PC666."
+        }
+      ],
+      "dealt_with_in_welsh": false,
+      "person_remand_status": "unconditional_bail",
+      "given_charges": true,
+      "initiation_type": "charge",
+      "interview": {
+        "type": "NotInterviewed",
+        "reason": "Witnessed by a Police officer."
+      },
+      "signed_charge_sheet": true,
+      "signed_for_bail": true,
+      "first_hearing_datetime": "2015-09-20T10:20Z",
+      "first_hearing_location": {
+        "ou_top_level_name": "Magistrates' Courts",
+        "ou_second_level_name": "London",
+        "ou_third_level_name": "Barking (East Street)",
+        "ou_bottom_level_name": "A"
+      }
+    }
+  ],
+  "witnesses": [
+    {
+      "type": "StatementWitness",
+      "witness_type": [ "eye", "arresting_officer", "police" ],
+      "name": {
+        "type": "OfficerName",
+        "given_name": [ "Craig" ],
+        "surname": "MARROW",
+        "rank": "PC",
+        "collar_number": "99"
+      },
+      "witness": {
+        "nature_of_involvement": "Witnessed the defendants behaviour and arrested BULL",
+        "evidence_they_can_give": "Witnessed the defendants conduct."
+      },
+      "reason_dob_not_provided": "Police officer",
+      "visually_recorded_interview": false
+    },
+    {
+      "type": "StatementWitness",
+      "witness_type": [ "eye", "arresting_officer", "police" ],
+      "name": {
+        "type": "OfficerName",
+        "given_name": [ "Archie" ],
+        "surname": "BRUCE",
+        "rank": "PC",
+        "collar_number": "666"
+      },
+      "witness": {
+        "nature_of_involvement": "Witnessed the defendants behaviour and arrested BROWN",
+        "evidence_they_can_give": "Witnessed the defendants conduct."
+      },
+      "reason_dob_not_provided": "Police officer",
+      "visually_recorded_interview": false
+    }
+  ],
+  "common_law_disclosure": {
+    "type": "CommonLawNotForDisclosure",
+    "reporting_officer": {
+      "type": "OfficerName",
+      "surname": "SPRAY",
+      "given_name": [ "John" ],
+      "rank": "PC",
+      "collar_number": "51"
+    },
+    "reporting_officer_signature_date": "2015-09-04"
+  },
+  "expert_evidence": false,
+  "test_code": "full_code_test",
+  "pca_cps": false,
+  "officer_in_the_case": {
+    "type": "OfficerName",
+    "surname": "MARROW",
+    "given_name": [ "Craig" ],
+    "rank": "PC",
+    "collar_number": "99"
+  },
+  "signatory_name": {
+    "type": "OfficerName",
+    "surname": "Specific",
+    "given_name": [ "Test" ],
+    "rank": "Test Specific",
+    "collar_number": "Test Specific"
+  },
+  "date": "2015-10-14"
+}
