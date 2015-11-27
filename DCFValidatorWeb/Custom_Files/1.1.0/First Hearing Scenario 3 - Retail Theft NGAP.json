@@ -197,7 +197,7 @@
     {
       "id": "RSW1",
       "date": "2015-09-05",
-      "type": "cctv",
+      "type": "CCTV",
       "description_of_what_is_contained_in_multimedia_evidence": "BULLOVA taking the razor blades at 00:00:20.",
       "evidential_value": true,
       "relied_upon_trial": true,
