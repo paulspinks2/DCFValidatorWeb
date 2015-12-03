@@ -3,7 +3,7 @@
   "pti_urn": "01AA9999915",
   "type": "FirstHearingDCF",
   "version": 1,
-  "brief_description_of_case": "Officers see 2 males on the street, Market Street, Anywhere. PC666 stops the car as the 2 males are having a loud and heated argument whilst gesturing furiously at one another.PC99 got out of the car and approached the men. BULL shouted at the other “you fucking halfwit” and pushed male 2 in the chest. PC99 told both males to calm down and leave the area. Male 2 immediately apologised and walked off down the street. BULL looked at PC99 and shouted “you’re a fucking halfwit too” and started to move towards the officer. Bull was subsequently arrested.",
+  "brief_description_of_case": "Officers see 2 males on the street, Market Street, Anywhere. PC666 stops the car as the 2 males are having a loud and heated argument whilst gesturing furiously at one another.PC99 got out of the car and approached the men. BULL shouted at the other \"you fucking halfwit\" and pushed male 2 in the chest. PC99 told both males to calm down and leave the area. Male 2 immediately apologised and walked off down the street. BULL looked at PC99 and shouted \"you’re a fucking halfwit too\" and started to move towards the officer. Bull was subsequently arrested.",
   "defendants": [
     {
       "name": {
@@ -127,7 +127,6 @@
     "given_name": [ "Test" ],
     "rank": "Test Specific",
     "collar_number": "Test Specific"
-
   },
   "date": "2015-10-14"
 }

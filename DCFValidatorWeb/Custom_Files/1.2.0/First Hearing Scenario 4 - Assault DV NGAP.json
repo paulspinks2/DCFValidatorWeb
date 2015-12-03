@@ -75,12 +75,12 @@
         ],
         "bail_conditions": [
           {
-            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "commiting_an_offence_whilst_on_bail" ],
+            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
             "condition": "Not to contact directly or indirectly Vera Shuttleworth.",
             "reason": "To prevent further offences against the victim."
           },
           {
-            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "commiting_an_offence_whilst_on_bail" ],
+            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
             "condition": "Not to visit the 32A New Street, Anytown.",
             "reason": "To prevent further offences against the victim."
           }
@@ -108,7 +108,7 @@
           "datetime_to_appear": "2015-01-01T12:00Z",
           "list_of_conditions": [
             {
-              "grounds": [ "commiting_an_offence_whilst_on_bail" ],
+              "grounds": [ "committing_an_offence_whilst_on_bail" ],
               "condition": "Not to contact Vera Shuttleworth",
               "reason": "Could not compete if court imposed bail. See Proposed Amendment 5"
             }
@@ -282,18 +282,6 @@
       ]
     }
   ],
-  "common_law_disclosure": {
-    "type": "CommonLawForDisclosure",
-    "reporting_officer": {
-      "type": "OfficerName",
-      "given_name": [ "Michael" ],
-      "surname": "WELLS",
-      "rank": "PC",
-      "collar_number": "456"
-    },
-    "reporting_officer_signature_date": "2015-07-10",
-    "details_of_relevant_unused_material": "Crime Report, PNB, Incident Log"
-  },
   "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
   "multimedia_evidence": [
     {

@@ -49,7 +49,6 @@
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 11 - Invalid missing Schema mandated field.json" target="_blank">Example 11: Invalid: Missing Schema mandated field &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 12 - Invalid ilegal field.json" target="_blank">Example 12: Invalid: Illegal Field &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 13 - Invalid Property Reference.json" target="_blank">Example 13: Invalid: Invalid Property Reference &raquo;</a><br />
-                    <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 14 - Invalid missing Common Law Disclosure Details.json" target="_blank">Example 14: Invalid: Missing Common Law Disclosure Details &raquo;</a><br />
                 </p>
             </td>
         </tr>

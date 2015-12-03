@@ -376,18 +376,6 @@
       "number": "3"
     }
   ],
-  "common_law_disclosure": {
-    "type": "CommonLawForDisclosure",
-    "reporting_officer": {
-      "type": "OfficerName",
-      "given_name": [ "Gemma" ],
-      "surname": "GELL",
-      "rank": "PC",
-      "collar_number": "41"
-    },
-    "reporting_officer_signature_date": "2015-07-10",
-    "details_of_relevant_unused_material": "Incident log, Crime Reports, Officers PNB (GELL, COLT, WILLIAMS, WILSON)"
-  },
   "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
   "multimedia_evidence": [
     {

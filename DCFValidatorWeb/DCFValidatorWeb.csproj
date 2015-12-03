@@ -208,7 +208,6 @@
     <Content Include="Custom_Files\1.2.0\Breach of Bail Example 1 - Simple BoB with Remand.json" />
     <Content Include="Custom_Files\1.2.0\BoB DCF Schema 120.json" />
     <Content Include="Custom_Files\1.2.0\First Hearing Example 1 - Valid Single Defendant.json" />
-    <Content Include="Custom_Files\1.2.0\First Hearing Example 14 - Invalid Missing Common Law Disclosure Details.json" />
     <Content Include="Custom_Files\1.1.0\First Hearing Scenario 1 - S5 Public Order.json" />
     <Content Include="Custom_Files\1.1.0\First Hearing Scenario 2 - Retail Theft GAP.json" />
     <Content Include="Custom_Files\1.1.0\First Hearing Scenario 3 - Retail Theft NGAP.json" />
