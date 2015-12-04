@@ -3,7 +3,7 @@
   "pti_urn": "62CA1234515",
   "type": "BobDCF",
   "version": 1,
-  "brief_description_of_case": "Defendant visited girlfriend's address and assaulted her.",
+  "brief_description_of_case": "Breached bail condition by attending victim's home address.",
   "defendants": [
     {
       "name": {
@@ -14,61 +14,66 @@
       "date_of_birth": "1970-01-30",
       "arrest": {
         "type": "Arrest",
-        "date_time": "2015-09-21T20:15Z",
-        "comments_on_arrest_and_caution": "She inivited me around"
+        "date_time": "2015-09-22T03:15Z"
       },
       "occupation": "Administrative Assistant",
       "foreign_national_offender": false,
-            "remand_application": {
+      "remand_application": {
         "substantial_grounds": [
           {
-            "opposition_ground": "commit_offences_on_bail",
-            "justification": "Offences committed on bail x 7 including this offence."
+            "opposition_ground": "breach_of_bail",
+            "justification": "Has breached bail conditions"
           },
           {
             "opposition_ground": "interfere_with_witness_or_otherwise_obstruct_the_course_of_justice",
-            "justification": "This offence committed against victim whilst on bail despite being on court bail to keep away from her."
+            "justification": "Has threatened victim with further violence."
           }
         ],
         "bail_conditions": [
           {
             "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
-            "condition": "Not to contact directly or indirectly Vera Shuttleworth.",
-            "reason": "To prevent further offences against the victim."
+            "condition": "Not to contact or communicate with Cheryl SMITH in any way.",
+            "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
           },
           {
             "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
-            "condition": "Not to visit the 32A New Street, Anytown.",
-            "reason": "To prevent further offences against the victim."
+            "condition": "Not to visit Cheryl SMITH's home address - 1, High Street, Anytown",
+            "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
           }
         ]
       },
       "breach_of_bail": {
-        "breach_details": "Max attended the victim's address and contacted victim",
+        "breach_details": "Breached bail condition by attending victim's home address.",
         "witness_statement_establishes_breach": true,
-        "key_evidence": "Statement from victim and seen at address by police, recorded on bwv.",
+        "key_evidence": "Defendant arrested at the scene one hour after being released on conditional bail (not to attend that address)",
         "existing_bail_breached": {
-          "original_charge_wording": [ "On the 9th of September 2015 assaulted Vera SHUTTLEWORTH by beating her. Contrary to Section 39 of the Criminal Justice Act 1988." ],
+          "original_charge_wording": [ "On the 21st of September 2015 assaulted Cheryl SMITH by beating her. Contrary to Section 39 of the Criminal Justice Act 1988." ],
           "bailed_from": {
-            "ou_top_level_name": "Magistrates' Courts",
-            "ou_second_level_name": "London",
-            "ou_third_level_name": "Bexley",
+            "ou_top_level_name": "Anytown Police Station",
+            "ou_second_level_name": "Any town",
+            "ou_third_level_name": "Any District",
             "ou_bottom_level_name": "A"
           },
-          "bailed_date": "2015-01-01",
+          "bailed_date": "2015-09-22",
           "to_appear_at": {
-            "ou_top_level_name": "Magistrates' Courts",
-            "ou_second_level_name": "London",
-            "ou_third_level_name": "Barking (East Street)",
+            "ou_top_level_name": "Anytown Domestic violence court",
+            "ou_second_level_name": "Any town",
+            "ou_third_level_name": "Any District",
             "ou_bottom_level_name": "A"
           },
-          "datetime_to_appear": "2015-01-01T12:00Z",
+          "datetime_to_appear": "2015-01-29T10:00Z",
           "list_of_conditions": [
             {
-              "grounds": [ "committing_an_offence_whilst_on_bail" ],
-              "condition": "Not to contact Vera Shuttleworth",
-              "reason": "Could not compete if court imposed bail. See Proposed Amendment 5"
+              "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
+              "condition": "Not to contact or communicate with Cheryl SMITH in any way",
+              "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
+            },
+            {
+              "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
+              "condition": "Not to visit Cheryl SMITH's home address - 1, High Street, Anytown",
+              "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
             }
+
           ]
         }
       },
@@ -79,18 +84,14 @@
         {
           "type": "MmeNotRecordedResponse",
           "defendant_admitted_to_location": false,
-          "how_is_identification_established": "Identified by victim and arrested at scene"
+          "how_is_identification_established": "arrested at scene"
         }
       ],
       "dealt_with_in_welsh": false,
       "person_remand_status": "custody",
       "interview": {
-        "type": "StandardInterview",
-        "date": "2015-09-21",
-        "defendant_legally_represented": false,
-        "special_warnings_given": true,
-        "no_comment_response": true,
-        "questions_asked": "Q: PC Samuels arrested you at Cheryl SMITH's house.  Why were you there? \n Q: Did you have an argument with Cheryl SMITH this evening at her home? \n Q: Did you assault Cheryl SMITH this evening? \n Q: Did you cause the injuries to Cheryl SMITH's nose?"
+        "type": "NotInterviewed",
+        "reason": "Found at scene of the breach, no new offences alleged"
       },
       "first_hearing_datetime": "2015-09-20T10:20Z",
       "first_hearing_location": {
@@ -104,20 +105,33 @@
   "witnesses": [
     {
       "type": "StatementWitness",
-      "witness_type": [ "eye" ],
+      "witness_type": [ "police", "arresting_officer" ],
       "name": {
-        "type": "PersonName",
-        "given_name": [ "Jennie", "Claire" ],
-        "surname": "Jones"
+        "type": "OfficerName",
+        "surname": "Samuels",
+        "given_name": [ "Neil" ],
+        "rank": "PC",
+        "collar_number": "123"
       },
       "witness": {
-        "nature_of_involvement": "Nature of involvement",
-        "evidence_they_can_give": "Evidence they can give"
+        "nature_of_involvement": "Arrested (at scene)",
+        "evidence_they_can_give": "defendant's presence at the scene"
       },
-      "date_of_birth": "1980-08-01",
+      "reason_dob_not_provided": "Police Officer",
       "visually_recorded_interview": false
     }
   ],
+  "common_law_disclosure": {
+    "type": "CommonLawNotForDisclosure",
+    "reporting_officer": {
+      "type": "OfficerName",
+      "surname": "Samuels",
+      "given_name": [ "Neil" ],
+      "rank": "PC",
+      "collar_number": "123"
+    },
+    "reporting_officer_signature_date": "2015-07-10"
+  },
   "officer_in_the_case": {
     "type": "OfficerName",
     "given_name": [ "Neils" ],
