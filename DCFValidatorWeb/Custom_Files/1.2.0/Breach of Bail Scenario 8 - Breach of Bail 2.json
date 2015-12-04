@@ -1,7 +1,7 @@
 ﻿{
   "schema_version": "1.2.0",
   "pti_urn": "61JA6789015",
-  "associated_case_urns": ["62CA1234515"],
+  "associated_case_urns": [ "62CA1234515" ],
   "type": "BobDCF",
   "version": 1,
   "brief_description_of_case": "Breached bail condition by attending at victim's mother's house, asking to see the victim.",
@@ -62,7 +62,7 @@
             "ou_third_level_name": "Any District",
             "ou_bottom_level_name": "A"
           },
-          "datetime_to_appear": "2015-01-29T10:00Z",
+          "datetime_to_appear": "2015-09-29T09:00Z",
           "list_of_conditions": [
             {
               "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
@@ -98,9 +98,9 @@
         "no_comment_response": true,
         "questions_asked": "Q: Did you go to Megan Killick’s house this afternoon? \n Q: Did you ask Megan Killick if you could see her daughter, Cheryl Smith? \n Q: Do you accept that this was a breach of your bail condition not to contact or communicate with Cheryl Smith in any way?"
       },
-      "first_hearing_datetime": "2015-09-24T10:00Z",
+      "first_hearing_datetime": "2015-09-24T09:00Z",
       "first_hearing_location": {
-        "ou_top_level_name": "Magistrates' Courts",
+        "ou_top_level_name": "Anytown Remand Court",
         "ou_second_level_name": "London",
         "ou_third_level_name": "Barking (East Street)",
         "ou_bottom_level_name": "A"
@@ -128,10 +128,10 @@
     "type": "CommonLawNotForDisclosure",
     "reporting_officer": {
       "type": "OfficerName",
-      "surname": "Samuels",
-      "given_name": [ "Neil" ],
+      "given_name": [ "David" ],
+      "surname": "Broadway",
       "rank": "PC",
-      "collar_number": "123"
+      "collar_number": "456"
     },
     "reporting_officer_signature_date": "2015-07-10"
   },
@@ -149,5 +149,5 @@
     "rank": "Test Specific",
     "collar_number": "Test Specific"
   },
-  "date": "2015-09-21"
+  "date": "2015-09-23"
 }

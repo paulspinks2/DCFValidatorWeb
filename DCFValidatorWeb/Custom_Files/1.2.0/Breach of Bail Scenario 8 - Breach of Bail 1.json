@@ -61,7 +61,7 @@
             "ou_third_level_name": "Any District",
             "ou_bottom_level_name": "A"
           },
-          "datetime_to_appear": "2015-01-29T10:00Z",
+          "datetime_to_appear": "2015-09-29T09:00Z",
           "list_of_conditions": [
             {
               "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
@@ -93,9 +93,9 @@
         "type": "NotInterviewed",
         "reason": "Found at scene of the breach, no new offences alleged"
       },
-      "first_hearing_datetime": "2015-09-20T10:20Z",
+      "first_hearing_datetime": "2015-09-20T09:20Z",
       "first_hearing_location": {
-        "ou_top_level_name": "Magistrates' Courts",
+        "ou_top_level_name": "Anytown Remand Court",
         "ou_second_level_name": "London",
         "ou_third_level_name": "Barking (East Street)",
         "ou_bottom_level_name": "A"
@@ -146,5 +146,5 @@
     "rank": "Test Specific",
     "collar_number": "Test Specific"
   },
-  "date": "2015-09-21"
+  "date": "2015-09-22"
 }
