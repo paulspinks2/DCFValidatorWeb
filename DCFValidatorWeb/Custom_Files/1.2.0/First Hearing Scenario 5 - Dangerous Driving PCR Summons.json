@@ -1,169 +1,171 @@
 ﻿{
   "schema_version": "1.2.0",
-  "pti_urn": "01AA9999915",
-  "type": "FirstHearingDCF",
-  "version": 1,
-  "brief_description_of_case": "LLEWELLYN was riding her cycle on the carraigeway when a VW Golf driven by WILLIAMS coming from the opposite direction crossed on to the other side of the road on the wrong side of a keep left bollard. This manoeuvre caused LLEWELLYN to fall from her cycle. WILLIAMS was using his hand held mobile phone at the time. In interview WILLIAMS admits his driving was dangerous.",
-  "defendants": [
-    {
-      "name": {
-        "type": "PersonName",
-        "surname": "WILLIAMS",
-        "given_name": [ "Rhys" ]
-      },
-      "date_of_birth": "1995-04-26",
-      "conditional_caution_considered": true,
-      "cc_not_suitable_reasons": [ "offence_not_one_in_dpps_guidance_for_conditional_caution" ],
-      "offences": [
-        {
-          "type": "GenericOffences",
-          "generic_offences": [
-            {
-              "type": "GenericOffence",
-              "cjs_offence_code": "rt88026",
-              "offence": {
-                "type": "Offence",
-                "from_date": "2015-02-16",
-                "to_date": "2015-02-16",
-                "charge_date": "2015-02-17",
-                "offence_title": "Drive a motor vehicle dangerously",
-                "charge_wording": "On the 16th of February 2015 at Anytown drove a mechanically propelled vehicle, namely a VW Golf registered number N103 PLP dangerously on a road, namely High Street. Contrary to section 2 of the Road Traffic Act 1988 and Schedule 2 to the Road Traffic Offenders Act 1988.",
-                "points_to_prove_met_by": "date and location - statement from victim, MME, and admission in interview \n drove a mechanically propelled vehicle dangerously on road- statement from victim, MME, and admission in interview",
-                "anticipated_plea": "guilty",
-                "committed_on_bail": false
+  "case": {
+    "pti_urn": "01AA9999915",
+    "type": "FirstHearingDCF",
+    "version": 1,
+    "brief_description_of_case": "LLEWELLYN was riding her cycle on the carraigeway when a VW Golf driven by WILLIAMS coming from the opposite direction crossed on to the other side of the road on the wrong side of a keep left bollard. This manoeuvre caused LLEWELLYN to fall from her cycle. WILLIAMS was using his hand held mobile phone at the time. In interview WILLIAMS admits his driving was dangerous.",
+    "defendants": [
+      {
+        "name": {
+          "type": "PersonName",
+          "surname": "WILLIAMS",
+          "given_name": [ "Rhys" ]
+        },
+        "date_of_birth": "1995-04-26",
+        "conditional_caution_considered": true,
+        "cc_not_suitable_reasons": [ "offence_not_one_in_dpps_guidance_for_conditional_caution" ],
+        "offences": [
+          {
+            "type": "GenericOffences",
+            "generic_offences": [
+              {
+                "type": "GenericOffence",
+                "cjs_offence_code": "rt88026",
+                "offence": {
+                  "type": "Offence",
+                  "from_date": "2015-02-16",
+                  "to_date": "2015-02-16",
+                  "charge_date": "2015-02-17",
+                  "offence_title": "Drive a motor vehicle dangerously",
+                  "charge_wording": "On the 16th of February 2015 at Anytown drove a mechanically propelled vehicle, namely a VW Golf registered number N103 PLP dangerously on a road, namely High Street. Contrary to section 2 of the Road Traffic Act 1988 and Schedule 2 to the Road Traffic Offenders Act 1988.",
+                  "points_to_prove_met_by": "date and location - statement from victim, MME, and admission in interview \n drove a mechanically propelled vehicle dangerously on road- statement from victim, MME, and admission in interview",
+                  "anticipated_plea": "guilty",
+                  "committed_on_bail": false
+                }
               }
-            }
-          ]
+            ]
+          }
+        ],
+        "occupation": "Self-employed Gas Fitter",
+        "has_eec_passports": false,
+        "foreign_national_offender": false,
+        "breach_of_order": false,
+        "pnc_check_performed": true,
+        "pnc_convictions": false,
+        "court_order_applications": [
+          {
+            "court_order_title": "no_orders_required"
+          }
+        ],
+        "interpreter_required": false,
+        "multimedia_evidence_response": [
+          {
+            "id": "FL1",
+            "type": "MmeRecordedResponse",
+            "defendant_shown": true,
+            "defendant_comments_if_shown": "Q: Are you driving the silver Ford Fiesta shown in the video \n A: Yes",
+            "is_defendant_believed_to_be_in_the_mme": true,
+            "defendant_admits_being_in_mme": true
+          }
+        ],
+        "dealt_with_in_welsh": true,
+        "person_remand_status": "not_applicable",
+        "given_charges": true,
+        "initiation_type": "requisition",
+        "interview": {
+          "type": "StandardInterview",
+          "date": "2015-02-17",
+          "defendant_legally_represented": false,
+          "special_warnings_given": false,
+          "no_comment_response": false,
+          "admissions_made": "Admits being the driver, admits going the wrong side of the bollard and being on his handheld mobile phone \n Q: Do you accept that your driving fell far below the standard expected? \n A: I’ve just passed my test. I’m sorry.",
+          "explanations": "Q: The footage shows you passing the bollard on the wrong side of the road, causing a cyclist to fall from her bicycle. Why did you do this? \n A: I had just overtaken a stationary vehicle and didn’t see the bollard until the last minute. \n Q: Do you agree that the footage shows you are using your mobile phone during the manoeuvre. \n A:  I’m sorry it was a really important call, my wife is expecting a baby.",
+          "mitigations": "Stated he had just passed his driving test."
+        },
+        "date_sent": "2015/03/13",
+        "first_hearing_datetime": "2015-09-20T10:20Z",
+        "first_hearing_location": {
+          "ou_top_level_name": "Magistrates' Courts",
+          "ou_second_level_name": "London",
+          "ou_third_level_name": "Barking (East Street)",
+          "ou_bottom_level_name": "A"
         }
-      ],
-      "occupation": "Self-employed Gas Fitter",
-      "has_eec_passports": false,
-      "foreign_national_offender": false,
-      "breach_of_order": false,
-      "pnc_check_performed": true,
-      "pnc_convictions": false,
-      "court_order_applications": [
-        {
-          "court_order_title": "no_orders_required"
-        }
-      ],
-      "interpreter_required": false,
-      "multimedia_evidence_response": [
-        {
-          "id": "FL1",
-          "type": "MmeRecordedResponse",
-          "defendant_shown": true,
-          "defendant_comments_if_shown": "Q: Are you driving the silver Ford Fiesta shown in the video \n A: Yes",
-          "is_defendant_believed_to_be_in_the_mme": true,
-          "defendant_admits_being_in_mme": true
-        }
-      ],
-      "dealt_with_in_welsh": true,
-      "person_remand_status": "not_applicable",
-      "given_charges": true,
-      "initiation_type": "requisition",
-      "interview": {
-        "type": "StandardInterview",
-        "date": "2015-02-17",
-        "defendant_legally_represented": false,
-        "special_warnings_given": false,
-        "no_comment_response": false,
-        "admissions_made": "Admits being the driver, admits going the wrong side of the bollard and being on his handheld mobile phone \n Q: Do you accept that your driving fell far below the standard expected? \n A: I’ve just passed my test. I’m sorry.",
-        "explanations": "Q: The footage shows you passing the bollard on the wrong side of the road, causing a cyclist to fall from her bicycle. Why did you do this? \n A: I had just overtaken a stationary vehicle and didn’t see the bollard until the last minute. \n Q: Do you agree that the footage shows you are using your mobile phone during the manoeuvre. \n A:  I’m sorry it was a really important call, my wife is expecting a baby.",
-        "mitigations": "Stated he had just passed his driving test."
-      },
-      "date_sent": "2015/03/13",
-      "first_hearing_datetime": "2015-09-20T10:20Z",
-      "first_hearing_location": {
-        "ou_top_level_name": "Magistrates' Courts",
-        "ou_second_level_name": "London",
-        "ou_third_level_name": "Barking (East Street)",
-        "ou_bottom_level_name": "A"
       }
-    }
-  ],
-  "witnesses": [
-    {
-      "type": "StatementWitness",
-      "witness_type": [ "eye" ],
-      "name": {
-        "type": "PersonName",
-        "given_name": [ "Ffion" ],
-        "surname": "LLEWELLYN "
+    ],
+    "witnesses": [
+      {
+        "type": "StatementWitness",
+        "witness_type": [ "eye" ],
+        "name": {
+          "type": "PersonName",
+          "given_name": [ "Ffion" ],
+          "surname": "LLEWELLYN "
+        },
+        "witness": {
+          "nature_of_involvement": "Road user effected by the defendants drivivng",
+          "evidence_they_can_give": "Witnessed the driving and recorded it on her head cam."
+        },
+        "date_of_birth": "1973-04-17",
+        "visually_recorded_interview": false
       },
-      "witness": {
-        "nature_of_involvement": "Road user effected by the defendants drivivng",
-        "evidence_they_can_give": "Witnessed the driving and recorded it on her head cam."
-      },
-      "date_of_birth": "1973-04-17",
-      "visually_recorded_interview": false
-    },
-    {
-      "type": "StatementWitness",
-      "witness_type": [ "interviewing_officer", "police" ],
-      "name": {
+      {
+        "type": "StatementWitness",
+        "witness_type": [ "interviewing_officer", "police" ],
+        "name": {
+          "type": "OfficerName",
+          "given_name": [ "Gareth" ],
+          "surname": "THOMAS ",
+          "rank": "PC",
+          "collar_number": "99"
+        },
+        "witness": {
+          "nature_of_involvement": "Interviewing officer",
+          "evidence_they_can_give": "Interviewing officer"
+        },
+        "reason_dob_not_provided": "Police Officer",
+        "visually_recorded_interview": false
+      }
+    ],
+    "common_law_disclosure": {
+      "type": "CommonLawNotForDisclosure",
+      "reporting_officer": {
         "type": "OfficerName",
         "given_name": [ "Gareth" ],
         "surname": "THOMAS ",
         "rank": "PC",
         "collar_number": "99"
       },
-      "witness": {
-        "nature_of_involvement": "Interviewing officer",
-        "evidence_they_can_give": "Interviewing officer"
-      },
-      "reason_dob_not_provided": "Police Officer",
-      "visually_recorded_interview": false
-    }
-  ],
-  "common_law_disclosure": {
-    "type": "CommonLawNotForDisclosure",
-    "reporting_officer": {
+      "reporting_officer_signature_date": "2015-07-10"
+    },
+    "multimedia_evidence": [
+      {
+        "id": "FL1",
+        "date": "2015-02-16",
+        "type": "Other Video",
+        "description_of_what_is_contained_in_multimedia_evidence": "At 10:00 Evidence shows Williams coming towards the cyclist on the wrong side of a keep left bollard whilst using his mobile phone.",
+        "evidential_value": true,
+        "relied_upon_trial": true,
+        "relied_upon_sentence": false,
+        "total_duration": "00:38",
+        "url": "http://evidencesystem.gov.uk/u9jqfq88q38hq84hg"
+      }
+    ],
+    "expert_evidence": false,
+    "test_code": "full_code_test",
+    "pca_cps": true,
+    "property": [
+      {
+        "property_id": 1,
+        "property_action": "stolen_not_recovered",
+        "description": "Razor blades",
+        "value": 15.00
+      }
+    ],
+    "officer_in_the_case": {
       "type": "OfficerName",
       "given_name": [ "Gareth" ],
       "surname": "THOMAS ",
       "rank": "PC",
       "collar_number": "99"
     },
-    "reporting_officer_signature_date": "2015-07-10"
-  },
-  "multimedia_evidence": [
-    {
-      "id": "FL1",
-      "date": "2015-02-16",
-      "type": "Other Video",
-      "description_of_what_is_contained_in_multimedia_evidence": "At 10:00 Evidence shows Williams coming towards the cyclist on the wrong side of a keep left bollard whilst using his mobile phone.",
-      "evidential_value": true,
-      "relied_upon_trial": true,
-      "relied_upon_sentence": false,
-      "total_duration": "00:38",
-      "url": "http://evidencesystem.gov.uk/u9jqfq88q38hq84hg"
-    }
-  ],
-  "expert_evidence": false,
-  "test_code": "full_code_test",
-  "pca_cps": true,
-  "property": [
-    {
-      "property_id": 1,
-      "property_action": "stolen_not_recovered",
-      "description": "Razor blades",
-      "value": 15.00
-    }
-  ],
-  "officer_in_the_case": {
-    "type": "OfficerName",
-    "given_name": [ "Gareth" ],
-    "surname": "THOMAS ",
-    "rank": "PC",
-    "collar_number": "99"
-  },
-  "signatory_name": {
-    "type": "OfficerName",
-    "surname": "Specific",
-    "given_name": [ "Test" ],
-    "rank": "Test Specific",
-    "collar_number": "Test Specific"
-  },
-  "date": "2015-10-14"
+    "signatory_name": {
+      "type": "OfficerName",
+      "surname": "Specific",
+      "given_name": [ "Test" ],
+      "rank": "Test Specific",
+      "collar_number": "Test Specific"
+    },
+    "date": "2015-10-14"
+  }
 }

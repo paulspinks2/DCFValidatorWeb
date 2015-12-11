@@ -1,219 +1,221 @@
 ﻿{
   "schema_version": "1.2.0",
-  "pti_urn": "62CA1234515",
-  "type": "FirstHearingDCF",
-  "version": 1,
-  "case_markers": [ "DomesticViolence" ],
-  "brief_description_of_case": "Defendant visited girlfriend's address and assaulted her.",
-  "defendants": [
-    {
-      "name": {
-        "type": "PersonName",
-        "surname": "CHURCHES",
-        "given_name": [ "Paul" ]
-      },
-      "date_of_birth": "1970-01-30",
-      "arrest": {
-        "type": "Arrest",
-        "date_time": "2015-09-21T20:15Z",
-        "comments_on_arrest_and_caution": "She inivited me around"
-      },
-      "conditional_caution_considered": true,
-      "cc_not_suitable_reasons": [ "offence_not_admitted" ],
-      "offences": [
-        {
-          "type": "AssaultOffences",
-          "assault_offences": [
-            {
-              "type": "AssaultOffence",
-              "cjs_offence_code": "cj88116",
-              "offence": {
-                "type": "Offence",
-                "from_date": "2015-09-21",
-                "to_date": "2015-09-21",
-                "charge_date": "2015-09-21",
-                "offence_title": "Assault by beating",
-                "charge_wording": "On the 21st of September 2015 assaulted Cheryl SMITH by beating her. Contrary to Section 39 of the Criminal Justice Act 1988.",
-                "points_to_prove_met_by": "date and location - Victim's statement, PC Samuel's statement \n unlawfully assaulted another person by beating - victims statement and photograph of injuries",
-                "anticipated_plea": "not_guilty",
-                "demeanour_at_incident": "Passive",
-                "committed_on_bail": false,
-                "children_present": false
-              },
-              "assault_interview_extension": {
-                "admits_involvement_in_incident": false,
-                "admits_assaulting_victim": false,
-                "admits_causing_the_injuries": "admits_nothing",
-                "accepts_victims_version_of_events": false,
-                "position_of_trust": false,
-                "self_defence_put_forward": false
-              },
-              "victim_name": {
-                "type": "PersonName",
-                "surname": "SMITH",
-                "given_name": [ "Cheryl" ]
-              }
-            }
-          ]
-        }
-      ],
-      "occupation": "Administrative Assistant",
-      "class_a_drug_test_provided": false,
-      "has_eec_passports": false,
-      "foreign_national_offender": false,
-      "breach_of_order": false,
-      "pnc_check_performed": true,
-      "pnc_convictions": false,
-      "court_order_applications": [
-        {
-          "court_order_title": "no_orders_required"
-        }
-      ],
-      "interpreter_required": false,
-      "multimedia_evidence_response": [
-        {
-          "type": "MmeNotRecordedResponse",
-          "defendant_admitted_to_location": false,
-          "how_is_identification_established": "Identified by victim and arrested at scene"
-        }
-      ],
-      "notice_to_provide_bad_character_evidence": false,
-      "dealt_with_in_welsh": false,
-      "person_remand_status": "conditional_bail",
-      "given_charges": true,
-      "initiation_type": "charge",
-      "bail_conditions_provided": true,
-      "signed_for_bail": true,
-      "bail_conditions": [
-        {
-          "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
-          "condition": "Not to contact or communicate with Cheryl SMITH in any way",
-          "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
+  "case": {
+    "pti_urn": "62CA1234515",
+    "type": "FirstHearingDCF",
+    "version": 1,
+    "case_markers": [ "DomesticViolence" ],
+    "brief_description_of_case": "Defendant visited girlfriend's address and assaulted her.",
+    "defendants": [
+      {
+        "name": {
+          "type": "PersonName",
+          "surname": "CHURCHES",
+          "given_name": [ "Paul" ]
         },
-        {
-          "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
-          "condition": "Not to visit Cheryl SMITH's home address - 1, High Street, Anytown",
-          "reason": "Victim says that CHURCHES said he would come back as soon as the police release him."
-        }
-      ],
-      "interview": {
-        "type": "StandardInterview",
-        "date": "2015-09-21",
-        "defendant_legally_represented": false,
-        "special_warnings_given": true,
-        "no_comment_response": true,
-        "questions_asked": "Q: PC Samuels arrested you at Cheryl SMITH's house.  Why were you there? \n Q: Did you have an argument with Cheryl SMITH this evening at her home? \n Q: Did you assault Cheryl SMITH this evening? \n Q: Did you cause the injuries to Cheryl SMITH's nose?"
-      },
-      "domestic_violence": [
-        {
-          "victim_name": {
-            "type": "PersonName",
-            "surname": "SMITH",
-            "given_name": [ "Cheryl" ]
-          },
-          "relationship_description": "Girlfriend",
-          "length_of_relationship": 0.5
-        }
-      ],
-      "signed_charge_sheet": true,
-      "first_hearing_datetime": "2015-09-29T09:20Z",
-      "first_hearing_location": {
-        "ou_top_level_name": "Magistrates' Courts",
-        "ou_second_level_name": "London",
-        "ou_third_level_name": "Barking (East Street)",
-        "ou_bottom_level_name": "A"
-      }
-    }
-  ],
-  "witnesses": [
-    {
-      "type": "NgapOtherWitness",
-      "witness_type": [ "police", "arresting_officer", "interviewing_officer" ],
-      "name": {
-        "type": "OfficerName",
-        "given_name": [ "Neil" ],
-        "surname": "Samuels",
-        "rank": "PC",
-        "collar_number": "123"
-      },
-      "witness": {
-        "nature_of_involvement": "Attended scene, captured victim's injuries on bwv, arrested defendant and interviewed.",
-        "evidence_they_can_give": "Identity of Defendant, witness to injuries.",
-        "special_measures": false,
+        "date_of_birth": "1970-01-30",
+        "arrest": {
+          "type": "Arrest",
+          "date_time": "2015-09-21T20:15Z",
+          "comments_on_arrest_and_caution": "She inivited me around"
+        },
+        "conditional_caution_considered": true,
+        "cc_not_suitable_reasons": [ "offence_not_admitted" ],
+        "offences": [
+          {
+            "type": "AssaultOffences",
+            "assault_offences": [
+              {
+                "type": "AssaultOffence",
+                "cjs_offence_code": "cj88116",
+                "offence": {
+                  "type": "Offence",
+                  "from_date": "2015-09-21",
+                  "to_date": "2015-09-21",
+                  "charge_date": "2015-09-21",
+                  "offence_title": "Assault by beating",
+                  "charge_wording": "On the 21st of September 2015 assaulted Cheryl SMITH by beating her. Contrary to Section 39 of the Criminal Justice Act 1988.",
+                  "points_to_prove_met_by": "date and location - Victim's statement, PC Samuel's statement \n unlawfully assaulted another person by beating - victims statement and photograph of injuries",
+                  "anticipated_plea": "not_guilty",
+                  "demeanour_at_incident": "Passive",
+                  "committed_on_bail": false,
+                  "children_present": false
+                },
+                "assault_interview_extension": {
+                  "admits_involvement_in_incident": false,
+                  "admits_assaulting_victim": false,
+                  "admits_causing_the_injuries": "admits_nothing",
+                  "accepts_victims_version_of_events": false,
+                  "position_of_trust": false,
+                  "self_defence_put_forward": false
+                },
+                "victim_name": {
+                  "type": "PersonName",
+                  "surname": "SMITH",
+                  "given_name": [ "Cheryl" ]
+                }
+              }
+            ]
+          }
+        ],
+        "occupation": "Administrative Assistant",
+        "class_a_drug_test_provided": false,
+        "has_eec_passports": false,
+        "foreign_national_offender": false,
+        "breach_of_order": false,
+        "pnc_check_performed": true,
+        "pnc_convictions": false,
+        "court_order_applications": [
+          {
+            "court_order_title": "no_orders_required"
+          }
+        ],
         "interpreter_required": false,
-        "wish_to_use_video_link": false
-      },
-      "number": "1"
-    },
-    {
-      "type": "PersonVictim",
-      "name": {
-        "type": "PersonName",
-        "surname": "SMITH",
-        "given_name": [ "Cheryl" ]
-      },
-      "date_of_birth": "1973/02/15",
-      "visually_recorded_interview": false,
-      "victim": {
-        "witness_type": [ "eye" ],
+        "multimedia_evidence_response": [
+          {
+            "type": "MmeNotRecordedResponse",
+            "defendant_admitted_to_location": false,
+            "how_is_identification_established": "Identified by victim and arrested at scene"
+          }
+        ],
+        "notice_to_provide_bad_character_evidence": false,
+        "dealt_with_in_welsh": false,
+        "person_remand_status": "conditional_bail",
+        "given_charges": true,
+        "initiation_type": "charge",
+        "bail_conditions_provided": true,
+        "signed_for_bail": true,
+        "bail_conditions": [
+          {
+            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
+            "condition": "Not to contact or communicate with Cheryl SMITH in any way",
+            "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
+          },
+          {
+            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
+            "condition": "Not to visit Cheryl SMITH's home address - 1, High Street, Anytown",
+            "reason": "Victim says that CHURCHES said he would come back as soon as the police release him."
+          }
+        ],
+        "interview": {
+          "type": "StandardInterview",
+          "date": "2015-09-21",
+          "defendant_legally_represented": false,
+          "special_warnings_given": true,
+          "no_comment_response": true,
+          "questions_asked": "Q: PC Samuels arrested you at Cheryl SMITH's house.  Why were you there? \n Q: Did you have an argument with Cheryl SMITH this evening at her home? \n Q: Did you assault Cheryl SMITH this evening? \n Q: Did you cause the injuries to Cheryl SMITH's nose?"
+        },
+        "domestic_violence": [
+          {
+            "victim_name": {
+              "type": "PersonName",
+              "surname": "SMITH",
+              "given_name": [ "Cheryl" ]
+            },
+            "relationship_description": "Girlfriend",
+            "length_of_relationship": 0.5
+          }
+        ],
+        "signed_charge_sheet": true,
+        "first_hearing_datetime": "2015-09-29T09:20Z",
+        "first_hearing_location": {
+          "ou_top_level_name": "Magistrates' Courts",
+          "ou_second_level_name": "London",
+          "ou_third_level_name": "Barking (East Street)",
+          "ou_bottom_level_name": "A"
+        }
+      }
+    ],
+    "witnesses": [
+      {
+        "type": "NgapOtherWitness",
+        "witness_type": [ "police", "arresting_officer", "interviewing_officer" ],
+        "name": {
+          "type": "OfficerName",
+          "given_name": [ "Neil" ],
+          "surname": "Samuels",
+          "rank": "PC",
+          "collar_number": "123"
+        },
         "witness": {
-          "nature_of_involvement": "Assaulted by the defendant",
-          "evidence_they_can_give": "Identification and injuries",
+          "nature_of_involvement": "Attended scene, captured victim's injuries on bwv, arrested defendant and interviewed.",
+          "evidence_they_can_give": "Identity of Defendant, witness to injuries.",
           "special_measures": false,
           "interpreter_required": false,
           "wish_to_use_video_link": false
         },
-        "victim_code_requirements_met": true,
-        "has_the_victim_made_a_vps_isb": false,
-        "is_retraction_statement": false
+        "number": "1"
       },
-      "injuries": [
-        {
-          "names_of_defendants_causing_injuries": [
-            {
-              "type": "PersonName",
-              "surname": "CHURCHES",
-              "given_name": [ "Paul" ]
-            }
-          ],
-          "description_of_injuries": "bloodied nose and a bruise below her left eye",
-          "images_taken": true,
-          "image_description": "blood round nose and bruise below left eye",
-          "received_medical_treatment": false,
-          "injuries_visible": true
-        }
-      ]
-    }
-  ],
-  "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
-  "common_law_disclosure": {
-    "type": "CommonLawNotForDisclosure",
-    "reporting_officer": {
+      {
+        "type": "PersonVictim",
+        "name": {
+          "type": "PersonName",
+          "surname": "SMITH",
+          "given_name": [ "Cheryl" ]
+        },
+        "date_of_birth": "1973/02/15",
+        "visually_recorded_interview": false,
+        "victim": {
+          "witness_type": [ "eye" ],
+          "witness": {
+            "nature_of_involvement": "Assaulted by the defendant",
+            "evidence_they_can_give": "Identification and injuries",
+            "special_measures": false,
+            "interpreter_required": false,
+            "wish_to_use_video_link": false
+          },
+          "victim_code_requirements_met": true,
+          "has_the_victim_made_a_vps_isb": false,
+          "is_retraction_statement": false
+        },
+        "injuries": [
+          {
+            "names_of_defendants_causing_injuries": [
+              {
+                "type": "PersonName",
+                "surname": "CHURCHES",
+                "given_name": [ "Paul" ]
+              }
+            ],
+            "description_of_injuries": "bloodied nose and a bruise below her left eye",
+            "images_taken": true,
+            "image_description": "blood round nose and bruise below left eye",
+            "received_medical_treatment": false,
+            "injuries_visible": true
+          }
+        ]
+      }
+    ],
+    "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
+    "common_law_disclosure": {
+      "type": "CommonLawNotForDisclosure",
+      "reporting_officer": {
+        "type": "OfficerName",
+        "surname": "Samuels",
+        "given_name": [ "Neil" ],
+        "rank": "PC",
+        "collar_number": "123"
+      },
+      "reporting_officer_signature_date": "2015-07-10"
+    },
+    "is_hearsay": false,
+    "expert_evidence": false,
+    "test_code": "full_code_test",
+    "pca_cps": false,
+    "officer_in_the_case": {
       "type": "OfficerName",
+      "given_name": [ "Neils" ],
       "surname": "Samuels",
-      "given_name": [ "Neil" ],
       "rank": "PC",
       "collar_number": "123"
     },
-    "reporting_officer_signature_date": "2015-07-10"
-  },
-  "is_hearsay": false,
-  "expert_evidence": false,
-  "test_code": "full_code_test",
-  "pca_cps": false,
-  "officer_in_the_case": {
-    "type": "OfficerName",
-    "given_name": [ "Neils" ],
-    "surname": "Samuels",
-    "rank": "PC",
-    "collar_number": "123"
-  },
-  "signatory_name": {
-    "type": "OfficerName",
-    "surname": "Specific",
-    "given_name": [ "Test" ],
-    "rank": "Test Specific",
-    "collar_number": "Test Specific"
-  },
-  "date": "2015-09-21"
+    "signatory_name": {
+      "type": "OfficerName",
+      "surname": "Specific",
+      "given_name": [ "Test" ],
+      "rank": "Test Specific",
+      "collar_number": "Test Specific"
+    },
+    "date": "2015-09-21"
+  }
 }

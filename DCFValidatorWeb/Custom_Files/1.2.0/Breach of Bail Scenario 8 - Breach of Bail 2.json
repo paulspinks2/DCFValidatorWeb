@@ -1,153 +1,155 @@
 ﻿{
   "schema_version": "1.2.0",
-  "pti_urn": "61JA6789015",
-  "associated_case_urns": [ "62CA1234515" ],
-  "type": "BobDCF",
-  "version": 1,
-  "brief_description_of_case": "Breached bail condition by attending at victim's mother's house, asking to see the victim.",
-  "defendants": [
-    {
-      "name": {
-        "type": "PersonName",
-        "surname": "CHURCHES",
-        "given_name": [ "Paul" ]
-      },
-      "date_of_birth": "1970-01-30",
-      "arrest": {
-        "type": "Arrest",
-        "date_time": "2015-09-23T13:40Z"
-      },
-      "occupation": "Administrative Assistant",
-      "foreign_national_offender": false,
-      "remand_application": {
-        "substantial_grounds": [
-          {
-            "opposition_ground": "breach_of_bail",
-            "justification": "Has breached bail conditions"
-          },
-          {
-            "opposition_ground": "interfere_with_witness_or_otherwise_obstruct_the_course_of_justice",
-            "justification": "Has threatened victim with further violence."
-          }
-        ],
-        "bail_conditions": [
-          {
-            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
-            "condition": "Not to contact or communicate with Cheryl SMITH in any way.",
-            "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
-          },
-          {
-            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
-            "condition": "Not to visit Cheryl SMITH's home address - 1, High Street, Anytown",
-            "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
-          }
-        ]
-      },
-      "breach_of_bail": {
-        "breach_details": "Breached bail condition by attending at victim's mother's house, asking to see the vicitim",
-        "witness_statement_establishes_breach": true,
-        "key_evidence": "The victim's mother, Megan KILLICK, states that CHURCHES came to her house and asked to speak to her daughter, Cheryl SMITH CHURCHES was arrested at the scene",
-        "existing_bail_breached": {
-          "original_charge_wording": [ "On the 21st of September 2015 assaulted Cheryl SMITH by beating her. Contrary to Section 39 of the Criminal Justice Act 1988." ],
-          "bailed_from": {
-            "ou_top_level_name": "Anytown Remand Court",
-            "ou_second_level_name": "Any town",
-            "ou_third_level_name": "Any District",
-            "ou_bottom_level_name": "A"
-          },
-          "bailed_date": "2015-09-22",
-          "to_appear_at": {
-            "ou_top_level_name": "Anytown Domestic Violence court",
-            "ou_second_level_name": "Any town",
-            "ou_third_level_name": "Any District",
-            "ou_bottom_level_name": "A"
-          },
-          "datetime_to_appear": "2015-09-29T09:00Z",
-          "list_of_conditions": [
+  "case": {
+    "pti_urn": "61JA6789015",
+    "associated_case_urns": [ "62CA1234515" ],
+    "type": "BobDCF",
+    "version": 1,
+    "brief_description_of_case": "Breached bail condition by attending at victim's mother's house, asking to see the victim.",
+    "defendants": [
+      {
+        "name": {
+          "type": "PersonName",
+          "surname": "CHURCHES",
+          "given_name": [ "Paul" ]
+        },
+        "date_of_birth": "1970-01-30",
+        "arrest": {
+          "type": "Arrest",
+          "date_time": "2015-09-23T13:40Z"
+        },
+        "occupation": "Administrative Assistant",
+        "foreign_national_offender": false,
+        "remand_application": {
+          "substantial_grounds": [
             {
-              "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
-              "condition": "Not to contact or communicate with Cheryl SMITH in any way",
+              "opposition_ground": "breach_of_bail",
+              "justification": "Has breached bail conditions"
+            },
+            {
+              "opposition_ground": "interfere_with_witness_or_otherwise_obstruct_the_course_of_justice",
+              "justification": "Has threatened victim with further violence."
+            }
+          ],
+          "bail_conditions": [
+            {
+              "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
+              "condition": "Not to contact or communicate with Cheryl SMITH in any way.",
               "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
             },
             {
-              "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
+              "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
               "condition": "Not to visit Cheryl SMITH's home address - 1, High Street, Anytown",
               "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
             }
-
           ]
+        },
+        "breach_of_bail": {
+          "breach_details": "Breached bail condition by attending at victim's mother's house, asking to see the vicitim",
+          "witness_statement_establishes_breach": true,
+          "key_evidence": "The victim's mother, Megan KILLICK, states that CHURCHES came to her house and asked to speak to her daughter, Cheryl SMITH CHURCHES was arrested at the scene",
+          "existing_bail_breached": {
+            "original_charge_wording": [ "On the 21st of September 2015 assaulted Cheryl SMITH by beating her. Contrary to Section 39 of the Criminal Justice Act 1988." ],
+            "bailed_from": {
+              "ou_top_level_name": "Anytown Remand Court",
+              "ou_second_level_name": "Any town",
+              "ou_third_level_name": "Any District",
+              "ou_bottom_level_name": "A"
+            },
+            "bailed_date": "2015-09-22",
+            "to_appear_at": {
+              "ou_top_level_name": "Anytown Domestic Violence court",
+              "ou_second_level_name": "Any town",
+              "ou_third_level_name": "Any District",
+              "ou_bottom_level_name": "A"
+            },
+            "datetime_to_appear": "2015-09-29T09:00Z",
+            "list_of_conditions": [
+              {
+                "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
+                "condition": "Not to contact or communicate with Cheryl SMITH in any way",
+                "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
+              },
+              {
+                "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
+                "condition": "Not to visit Cheryl SMITH's home address - 1, High Street, Anytown",
+                "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
+              }
+
+            ]
+          }
+        },
+        "pnc_check_performed": true,
+        "pnc_convictions": false,
+        "interpreter_required": false,
+        "multimedia_evidence_response": [
+          {
+            "type": "MmeNotRecordedResponse",
+            "defendant_admitted_to_location": false,
+            "how_is_identification_established": "arrested at scene"
+          }
+        ],
+        "dealt_with_in_welsh": false,
+        "person_remand_status": "custody",
+        "interview": {
+          "type": "StandardInterview",
+          "date": "2015-09-23",
+          "defendant_legally_represented": false,
+          "special_warnings_given": true,
+          "no_comment_response": true,
+          "questions_asked": "Q: Did you go to Megan Killick’s house this afternoon? \n Q: Did you ask Megan Killick if you could see her daughter, Cheryl Smith? \n Q: Do you accept that this was a breach of your bail condition not to contact or communicate with Cheryl Smith in any way?"
+        },
+        "first_hearing_datetime": "2015-09-24T09:00Z",
+        "first_hearing_location": {
+          "ou_top_level_name": "Anytown Remand Court",
+          "ou_second_level_name": "London",
+          "ou_third_level_name": "Barking (East Street)",
+          "ou_bottom_level_name": "A"
         }
-      },
-      "pnc_check_performed": true,
-      "pnc_convictions": false,
-      "interpreter_required": false,
-      "multimedia_evidence_response": [
-        {
-          "type": "MmeNotRecordedResponse",
-          "defendant_admitted_to_location": false,
-          "how_is_identification_established": "arrested at scene"
-        }
-      ],
-      "dealt_with_in_welsh": false,
-      "person_remand_status": "custody",
-      "interview": {
-        "type": "StandardInterview",
-        "date": "2015-09-23",
-        "defendant_legally_represented": false,
-        "special_warnings_given": true,
-        "no_comment_response": true,
-        "questions_asked": "Q: Did you go to Megan Killick’s house this afternoon? \n Q: Did you ask Megan Killick if you could see her daughter, Cheryl Smith? \n Q: Do you accept that this was a breach of your bail condition not to contact or communicate with Cheryl Smith in any way?"
-      },
-      "first_hearing_datetime": "2015-09-24T09:00Z",
-      "first_hearing_location": {
-        "ou_top_level_name": "Anytown Remand Court",
-        "ou_second_level_name": "London",
-        "ou_third_level_name": "Barking (East Street)",
-        "ou_bottom_level_name": "A"
       }
-    }
-  ],
-  "witnesses": [
-    {
-      "type": "StatementWitness",
-      "witness_type": [ "eye" ],
-      "name": {
-        "type": "PersonName",
-        "surname": "Killick",
-        "given_name": [ "Megan" ]
+    ],
+    "witnesses": [
+      {
+        "type": "StatementWitness",
+        "witness_type": [ "eye" ],
+        "name": {
+          "type": "PersonName",
+          "surname": "Killick",
+          "given_name": [ "Megan" ]
+        },
+        "witness": {
+          "nature_of_involvement": "Eye witness to the breach of bail.",
+          "evidence_they_can_give": "CHURCHES went to the witness' address and asked to see SMITH."
+        },
+        "date_of_birth": "1968-05-28",
+        "visually_recorded_interview": false
+      }
+    ],
+    "common_law_disclosure": {
+      "type": "CommonLawNotForDisclosure",
+      "reporting_officer": {
+        "type": "OfficerName",
+        "given_name": [ "David" ],
+        "surname": "Broadway",
+        "rank": "PC",
+        "collar_number": "456"
       },
-      "witness": {
-        "nature_of_involvement": "Eye witness to the breach of bail.",
-        "evidence_they_can_give": "CHURCHES went to the witness' address and asked to see SMITH."
-      },
-      "date_of_birth": "1968-05-28",
-      "visually_recorded_interview": false
-    }
-  ],
-  "common_law_disclosure": {
-    "type": "CommonLawNotForDisclosure",
-    "reporting_officer": {
+      "reporting_officer_signature_date": "2015-07-10"
+    },
+    "officer_in_the_case": {
       "type": "OfficerName",
       "given_name": [ "David" ],
       "surname": "Broadway",
       "rank": "PC",
       "collar_number": "456"
     },
-    "reporting_officer_signature_date": "2015-07-10"
-  },
-  "officer_in_the_case": {
-    "type": "OfficerName",
-    "given_name": [ "David" ],
-    "surname": "Broadway",
-    "rank": "PC",
-    "collar_number": "456"
-  },
-  "signatory_name": {
-    "type": "OfficerName",
-    "surname": "Specific",
-    "given_name": [ "Test" ],
-    "rank": "Test Specific",
-    "collar_number": "Test Specific"
-  },
-  "date": "2015-09-23"
+    "signatory_name": {
+      "type": "OfficerName",
+      "surname": "Specific",
+      "given_name": [ "Test" ],
+      "rank": "Test Specific",
+      "collar_number": "Test Specific"
+    },
+    "date": "2015-09-23"
+  }
 }

@@ -1,149 +1,151 @@
 ﻿{
   "schema_version": "1.2.0",
-  "pti_urn": "62CA1234515",
-  "associated_case_urns": [ "61JA6789015" ],
-  "type": "BobDCF",
-  "version": 2,
-  "brief_description_of_case": "Breached bail condition by attending victim's home address.",
-  "defendants": [
-    {
-      "name": {
-        "type": "PersonName",
-        "surname": "CHURCHES",
-        "given_name": [ "Paul" ]
-      },
-      "date_of_birth": "1970-01-30",
-      "arrest": {
-        "type": "Arrest",
-        "date_time": "2015-10-01T15:10Z"
-      },
-      "occupation": "Administrative Assistant",
-      "foreign_national_offender": false,
-      "remand_application": {
-        "substantial_grounds": [
-          {
-            "opposition_ground": "breach_of_bail",
-            "justification": "Has breached bail conditions"
-          },
-          {
-            "opposition_ground": "interfere_with_witness_or_otherwise_obstruct_the_course_of_justice",
-            "justification": "Has threatened victim with further violence."
-          }
-        ],
-        "bail_conditions": [
-          {
-            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
-            "condition": "Not to contact or communicate with Cheryl SMITH in any way.",
-            "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
-          },
-          {
-            "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
-            "condition": "Not to visit Cheryl SMITH's home address - 1, High Street, Anytown",
-            "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
-          }
-        ]
-      },
-      "breach_of_bail": {
-        "breach_details": "Breached bail condition by attending victim's home address.",
-        "witness_statement_establishes_breach": true,
-        "key_evidence": "CHURCHES contacted SMITH at her home address",
-        "existing_bail_breached": {
-          "original_charge_wording": [ "On the 21st of September 2015 assaulted Cheryl SMITH by beating her. Contrary to Section 39 of the Criminal Justice Act 1988." ],
-          "bailed_from": {
-            "ou_top_level_name": "Anytown Domestic Violence Court",
-            "ou_second_level_name": "Any town",
-            "ou_third_level_name": "Any District",
-            "ou_bottom_level_name": "A"
-          },
-          "bailed_date": "2015-09-26",
-          "to_appear_at": {
-            "ou_top_level_name": "Anytown Magistrates Court",
-            "ou_second_level_name": "Any town",
-            "ou_third_level_name": "Any District",
-            "ou_bottom_level_name": "A"
-          },
-          "datetime_to_appear": "2015-10-04T09:00Z",
-          "list_of_conditions": [
+  "case": {
+    "pti_urn": "62CA1234515",
+    "associated_case_urns": [ "61JA6789015" ],
+    "type": "BobDCF",
+    "version": 2,
+    "brief_description_of_case": "Breached bail condition by attending victim's home address.",
+    "defendants": [
+      {
+        "name": {
+          "type": "PersonName",
+          "surname": "CHURCHES",
+          "given_name": [ "Paul" ]
+        },
+        "date_of_birth": "1970-01-30",
+        "arrest": {
+          "type": "Arrest",
+          "date_time": "2015-10-01T15:10Z"
+        },
+        "occupation": "Administrative Assistant",
+        "foreign_national_offender": false,
+        "remand_application": {
+          "substantial_grounds": [
             {
-              "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
-              "condition": "Not to contact or communicate with Cheryl SMITH in any way",
+              "opposition_ground": "breach_of_bail",
+              "justification": "Has breached bail conditions"
+            },
+            {
+              "opposition_ground": "interfere_with_witness_or_otherwise_obstruct_the_course_of_justice",
+              "justification": "Has threatened victim with further violence."
+            }
+          ],
+          "bail_conditions": [
+            {
+              "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
+              "condition": "Not to contact or communicate with Cheryl SMITH in any way.",
               "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
             },
             {
-              "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
+              "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice", "committing_an_offence_whilst_on_bail" ],
               "condition": "Not to visit Cheryl SMITH's home address - 1, High Street, Anytown",
               "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
             }
-
           ]
+        },
+        "breach_of_bail": {
+          "breach_details": "Breached bail condition by attending victim's home address.",
+          "witness_statement_establishes_breach": true,
+          "key_evidence": "CHURCHES contacted SMITH at her home address",
+          "existing_bail_breached": {
+            "original_charge_wording": [ "On the 21st of September 2015 assaulted Cheryl SMITH by beating her. Contrary to Section 39 of the Criminal Justice Act 1988." ],
+            "bailed_from": {
+              "ou_top_level_name": "Anytown Domestic Violence Court",
+              "ou_second_level_name": "Any town",
+              "ou_third_level_name": "Any District",
+              "ou_bottom_level_name": "A"
+            },
+            "bailed_date": "2015-09-26",
+            "to_appear_at": {
+              "ou_top_level_name": "Anytown Magistrates Court",
+              "ou_second_level_name": "Any town",
+              "ou_third_level_name": "Any District",
+              "ou_bottom_level_name": "A"
+            },
+            "datetime_to_appear": "2015-10-04T09:00Z",
+            "list_of_conditions": [
+              {
+                "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
+                "condition": "Not to contact or communicate with Cheryl SMITH in any way",
+                "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
+              },
+              {
+                "grounds": [ "interfering_with_witnesses_or_otherwise_obstructing_the_course_of_justice" ],
+                "condition": "Not to visit Cheryl SMITH's home address - 1, High Street, Anytown",
+                "reason": "Victim says that CHURCHES said he would come back as soon as the police release him"
+              }
+
+            ]
+          }
+        },
+        "pnc_check_performed": true,
+        "pnc_convictions": false,
+        "interpreter_required": false,
+        "multimedia_evidence_response": [
+          {
+            "type": "MmeNotRecordedResponse",
+            "defendant_admitted_to_location": false,
+            "how_is_identification_established": "eye witness statement (victim of substantive offence)"
+          }
+        ],
+        "dealt_with_in_welsh": false,
+        "person_remand_status": "custody",
+        "interview": {
+          "type": "NotInterviewed",
+          "reason": "Found at the scene, no further offences alleged"
+        },
+        "first_hearing_datetime": "2015-10-02T09:00Z",
+        "first_hearing_location": {
+          "ou_top_level_name": "Anytown Remand Court",
+          "ou_second_level_name": "London",
+          "ou_third_level_name": "Barking (East Street)",
+          "ou_bottom_level_name": "A"
         }
-      },
-      "pnc_check_performed": true,
-      "pnc_convictions": false,
-      "interpreter_required": false,
-      "multimedia_evidence_response": [
-        {
-          "type": "MmeNotRecordedResponse",
-          "defendant_admitted_to_location": false,
-          "how_is_identification_established": "eye witness statement (victim of substantive offence)"
-        }
-      ],
-      "dealt_with_in_welsh": false,
-      "person_remand_status": "custody",
-      "interview": {
-        "type": "NotInterviewed",
-        "reason": "Found at the scene, no further offences alleged"
-      },
-      "first_hearing_datetime": "2015-10-02T09:00Z",
-      "first_hearing_location": {
-        "ou_top_level_name": "Anytown Remand Court",
-        "ou_second_level_name": "London",
-        "ou_third_level_name": "Barking (East Street)",
-        "ou_bottom_level_name": "A"
       }
-    }
-  ],
-  "witnesses": [
-    {
-      "type": "StatementWitness",
-      "witness_type": [ "eye" ],
-      "name": {
-        "type": "PersonName",
-        "surname": "SMITH",
-        "given_name": [ "Cheryl" ]
+    ],
+    "witnesses": [
+      {
+        "type": "StatementWitness",
+        "witness_type": [ "eye" ],
+        "name": {
+          "type": "PersonName",
+          "surname": "SMITH",
+          "given_name": [ "Cheryl" ]
+        },
+        "witness": {
+          "nature_of_involvement": "Eye witness to the breach of bail (and victim of the substantive offence)",
+          "evidence_they_can_give": "statement that CHURCHES knocked on her front door, asking to be let in"
+        },
+        "date_of_birth": "1973-02-15",
+        "visually_recorded_interview": false
+      }
+    ],
+    "common_law_disclosure": {
+      "type": "CommonLawNotForDisclosure",
+      "reporting_officer": {
+        "type": "OfficerName",
+        "surname": "Samuels",
+        "given_name": [ "Neil" ],
+        "rank": "PC",
+        "collar_number": "123"
       },
-      "witness": {
-        "nature_of_involvement": "Eye witness to the breach of bail (and victim of the substantive offence)",
-        "evidence_they_can_give": "statement that CHURCHES knocked on her front door, asking to be let in"
-      },
-      "date_of_birth": "1973-02-15",
-      "visually_recorded_interview": false
-    }
-  ],
-  "common_law_disclosure": {
-    "type": "CommonLawNotForDisclosure",
-    "reporting_officer": {
+      "reporting_officer_signature_date": "2015-07-10"
+    },
+    "officer_in_the_case": {
       "type": "OfficerName",
-      "surname": "Samuels",
+      "surname": "SAMUELS",
       "given_name": [ "Neil" ],
       "rank": "PC",
       "collar_number": "123"
     },
-    "reporting_officer_signature_date": "2015-07-10"
-  },
-  "officer_in_the_case": {
-    "type": "OfficerName",
-    "surname": "SAMUELS",
-    "given_name": [ "Neil" ],
-    "rank": "PC",
-    "collar_number": "123"
-  },
-  "signatory_name": {
-    "type": "OfficerName",
-    "surname": "Specific",
-    "given_name": [ "Test" ],
-    "rank": "Test Specific",
-    "collar_number": "Test Specific"
-  },
-  "date": "2015-09-28"
+    "signatory_name": {
+      "type": "OfficerName",
+      "surname": "Specific",
+      "given_name": [ "Test" ],
+      "rank": "Test Specific",
+      "collar_number": "Test Specific"
+    },
+    "date": "2015-09-28"
+  }
 }
