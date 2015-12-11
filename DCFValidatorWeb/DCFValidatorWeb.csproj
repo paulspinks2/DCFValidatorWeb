@@ -241,6 +241,15 @@
     <Content Include="Custom_Files\1.2.0\First Hearing Scenario 6 - S5 Public Order Multiple Defendants V1.json" />
     <Content Include="Custom_Files\1.2.0\First Hearing Scenario 6 - S5 Public Order Multiple Defendants V2.json" />
     <Content Include="Custom_Files\1.2.0\First Hearing Scenario 7 - Multiple Defendants Offences Mixed Pleas.json" />
+    <Content Include="Custom_Files\1.2.0\Breach of Bail Scenario 8 - Breach of Bail 1.json" />
+    <Content Include="Custom_Files\1.2.0\Breach of Bail Scenario 8 - First Hearing 1.json" />
+    <Content Include="Custom_Files\1.2.0\Breach of Bail Scenario 8 - Breach of Bail 2.json" />
+    <Content Include="Custom_Files\1.2.0\Breach of Bail Scenario 8 - Breach of Bail 3.json" />
+    <Content Include="Custom_Files\1.2.0\Breach of Bail Scenario 8 - Breach of Bail 4.json" />
+    <Content Include="Custom_Files\1.2.0\Breach of Bail Scenario 8 - Breach of Bail 5.json" />
+    <Content Include="Custom_Files\1.2.0\Combined First Hearing and BoB DCF Schema 120.json" />
+    <Content Include="Custom_Files\1.2.0\Combined Example Scenario 1 - S5 Public Order.json" />
+    <Content Include="Custom_Files\1.2.0\Combined Example Scenario 8 - Breach of Bail 1.json" />
     <None Include="Properties\PublishProfiles\DevDCFValidatorWeb.pubxml" />
     <None Include="RulesDataSet.xsd">
       <SubType>Designer</SubType>

@@ -30,7 +30,15 @@
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Scenario 5 - Dangerous Driving PCR Summons.json" target="_blank">Scenario 5: Dangerous Driving PCR Summons &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Scenario 6 - S5 Public Order Multiple Defendants V1.json" target="_blank">Scenario 6: S5 Public Order Multiple Defendants V1 &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Scenario 6 - S5 Public Order Multiple Defendants V2.json" target="_blank">Scenario 6: S5 Public Order Multiple Defendants V2 &raquo;</a><br />
-                    <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Scenario 7 - Multiple Defendants Offences Mixed Pleas.json" target="_blank">Scenario 7: Multiple Defendants Offences Mixed Pleas &raquo;</a><br />
+                    <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 7 - Invalid Inclusion of MMENotRecorded" target="_blank">Scenario 7: Multiple Defendants Offences Mixed Pleas &raquo;</a><br />
+                    <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - First Hearing 1" target="_blank">Scenario 8: First Hearing DCF &raquo;</a><br />
+                    <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 1.json" target="_blank">Scenario 8: Breach of Bail 1 &raquo;</a><br />
+                    <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 2.json" target="_blank">Scenario 8: Breach of Bail 2 &raquo;</a><br />
+                    <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 3.json" target="_blank">Scenario 8: Breach of Bail 3 &raquo;</a><br />
+                    <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 4.json" target="_blank">Scenario 8: Breach of Bail 4 &raquo;</a><br />
+                    <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 5.json" target="_blank">Scenario 8: Breach of Bail 5 &raquo;</a><br />
+                
+                
                 </p>
             </td>
             <td valign="top">
