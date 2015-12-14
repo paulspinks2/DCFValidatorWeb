@@ -3,6 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
         <p class="lead">Welcome to the DCF Validation site. This sight contains the latest version of the DCF schema &amp; a suite of test files, including the JSON for the DCF Scenarios (available separately). </p>
+        <p class="lead" style="font-weight: bold; color: #008000">15/12/2015 - Updated to Draft 2, in line with DCF 1.2.0 Final</p>
         <p class="lead">
             The Official Schema and Business Rule Validator can be found here:&nbsp;
         <a class="btn btn-default" href="https://dcf-validator.herokuapp.com/case-files">Official Validator &raquo;</a>
@@ -10,13 +11,14 @@
         <a class="btn btn-default" href="#Capabilities">Learn more &raquo;</a>
     </div>
 
-    <h2>Draft DCF Schema 1.2.0 Draft 1</h2>
+    <h2>Draft DCF Schema 1.2.0 Draft 2</h2>
     <p>
         The Draft 1.2.0 Schema is here.
     </p>
     <p>
-        <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing DCF Schema 120.json">DCF First Hearing Schema 1.2.0 Draft 1: &raquo;</a>
-        <a class="btn btn-default" href="Custom_Files/1.2.0/BoB DCF Schema 120.json">DCF BoB Schema 1.2.0 Draft 1: &raquo;</a>
+        <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing DCF Schema 120.json">DCF First Hearing Schema 1.2.0 Draft 2: &raquo;</a>
+        <a class="btn btn-default" href="Custom_Files/1.2.0/BoB DCF Schema 120.json">DCF BoB Schema 1.2.0 Draft 2: &raquo;</a>
+        <a class="btn btn-default" href="Custom_Files/1.2.0/Combined First Hearing and BoB DCF Schema 120.json">Combined First Hearing and BoB DCF Schema 1.2.0 Draft 2: &raquo;</a>
     </p>
     <table>
         <tr>
@@ -37,8 +39,6 @@
                     <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 3.json" target="_blank">Scenario 8: Breach of Bail 3 &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 4.json" target="_blank">Scenario 8: Breach of Bail 4 &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 5.json" target="_blank">Scenario 8: Breach of Bail 5 &raquo;</a><br />
-                
-                
                 </p>
             </td>
             <td valign="top">

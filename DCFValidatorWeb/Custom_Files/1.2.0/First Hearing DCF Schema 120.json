@@ -149,7 +149,8 @@
         "officer_in_the_case",
         "signatory_name",
         "date"
-      ]
+      ],
+      "additionalProperties": false
     },
 
     "CommonLawNotForDisclosure": {
