@@ -5,7 +5,7 @@
         <p class="lead">Welcome to the DCF Validation site. This sight contains the latest version of the DCF schema &amp; a suite of test files, including the JSON for the DCF Scenarios (available separately). </p>
         <p class="lead" style="font-weight: bold; color: #008000">15/12/2015 - Updated to Final, in line with DCF 1.2.0 Final</p>
         <p class="lead">
-            The Official Schema and Business Rule Validator can be found here:&nbsp;
+            The Official Schema and Business Rule Validator can be found here&nbsp;
         <a class="btn btn-default" href="https://dcf-validator.herokuapp.com/case-files">Official Validator &raquo;</a>
         </p>
         <a class="btn btn-default" href="#Capabilities">Learn more &raquo;</a>
