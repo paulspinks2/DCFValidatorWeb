@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
         <p class="lead">Welcome to the DCF Validation site. This sight contains the latest version of the DCF schema &amp; a suite of test files, including the JSON for the DCF Scenarios (available separately). </p>
-        <p class="lead" style="font-weight: bold; color: #008000">15/12/2015 - Updated to Final, in line with DCF 1.2.0 Final</p>
+        <p class="lead" style="font-weight: bold; color: #008000">14/01/2016 - Updated with Combined Schema 1.2.0.1 (Injuries bug fix). Seperate FH and BoB Schemas removed<br />15/12/2015 - Updated to Final, in line with DCF 1.2.0 Final</p>
         <p class="lead">
             The Official Schema and Business Rule Validator can be found here&nbsp;
         <a class="btn btn-default" href="https://dcf-validator.herokuapp.com/case-files">Official Validator &raquo;</a>
@@ -11,13 +11,11 @@
         <a class="btn btn-default" href="#Capabilities">Learn more &raquo;</a>
     </div>
 
-    <h2>DCF Schema 1.2.0 Final</h2>
+    <h2>DCF Schema 1.2.0.1 Final</h2>
     <p>
         The 1.2.0 Schema is here.
     </p>
     <p>
-        <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing DCF Schema 120.json">DCF First Hearing Schema 1.2.0 Final: &raquo;</a>
-        <a class="btn btn-default" href="Custom_Files/1.2.0/BoB DCF Schema 120.json">DCF BoB Schema 1.2.0 Final: &raquo;</a>
         <a class="btn btn-default" href="Custom_Files/1.2.0/Combined First Hearing and BoB DCF Schema 120.json">Combined First Hearing and BoB DCF Schema 1.2.0 Final: &raquo;</a>
     </p>
     <table>
@@ -32,8 +30,8 @@
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Scenario 5 - Dangerous Driving PCR Summons.json" target="_blank">Scenario 5: Dangerous Driving PCR Summons &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Scenario 6 - S5 Public Order Multiple Defendants V1.json" target="_blank">Scenario 6: S5 Public Order Multiple Defendants V1 &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Scenario 6 - S5 Public Order Multiple Defendants V2.json" target="_blank">Scenario 6: S5 Public Order Multiple Defendants V2 &raquo;</a><br />
-                    <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 7 - Invalid Inclusion of MMENotRecorded" target="_blank">Scenario 7: Multiple Defendants Offences Mixed Pleas &raquo;</a><br />
-                    <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - First Hearing 1" target="_blank">Scenario 8: First Hearing DCF &raquo;</a><br />
+                    <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 7 - Invalid Inclusion of MMENotRecorded.json" target="_blank">Scenario 7: Multiple Defendants Offences Mixed Pleas &raquo;</a><br />
+                    <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - First Hearing 1.json" target="_blank">Scenario 8: First Hearing DCF &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 1.json" target="_blank">Scenario 8: Breach of Bail 1 &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 2.json" target="_blank">Scenario 8: Breach of Bail 2 &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/Breach of Bail Scenario 8 - Breach of Bail 3.json" target="_blank">Scenario 8: Breach of Bail 3 &raquo;</a><br />
