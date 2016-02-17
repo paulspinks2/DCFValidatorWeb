@@ -190,7 +190,6 @@
       <DependentUpon>RulesDataSet.xsd</DependentUpon>
     </Content>
     <Content Include="Custom_Files\Business Rules.json" />
-    <Content Include="Custom_Files\1.2.0\First Hearing DCF Schema 120.json" />
     <Content Include="WebForm1.aspx" />
     <Content Include="XSLT\DCF XSLT.xslt" />
     <Content Include="Custom_Files\1.2.0\First Hearing Example 13 - Invalid Property Reference.json" />
@@ -206,7 +205,6 @@
     <Content Include="Custom_Files\1.2.0\First Hearing Example 12 - Invalid ilegal field.json" />
     <Content Include="Custom_Files\1.2.0\First Hearing Example 11 - Invalid missing Schema mandated field.json" />
     <Content Include="Custom_Files\1.2.0\Breach of Bail Example 1 - Simple BoB with Remand.json" />
-    <Content Include="Custom_Files\1.2.0\BoB DCF Schema 120.json" />
     <Content Include="Custom_Files\1.2.0\First Hearing Example 1 - Valid Single Defendant.json" />
     <Content Include="Custom_Files\1.1.0\First Hearing Scenario 1 - S5 Public Order.json" />
     <Content Include="Custom_Files\1.1.0\First Hearing Scenario 2 - Retail Theft GAP.json" />
@@ -248,6 +246,8 @@
     <Content Include="Custom_Files\1.2.0\Breach of Bail Scenario 8 - Breach of Bail 4.json" />
     <Content Include="Custom_Files\1.2.0\Breach of Bail Scenario 8 - Breach of Bail 5.json" />
     <Content Include="Custom_Files\1.2.0\Combined First Hearing and BoB DCF Schema 120.json" />
+    <Content Include="Custom_Files\1.2.0\First Hearing Example 15 - Welsh Characters Example Escaped.json" />
+    <Content Include="Custom_Files\1.2.0\First Hearing Example 14 - Welsh Characters Example UTF8.json" />
     <None Include="Properties\PublishProfiles\DevDCFValidatorWeb.pubxml" />
     <None Include="RulesDataSet.xsd">
       <SubType>Designer</SubType>
