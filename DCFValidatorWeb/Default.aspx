@@ -3,10 +3,25 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
         <p class="lead">Welcome to the DCF Validation site. This sight contains the latest version of the DCF schema &amp; a suite of test files, including the JSON for the DCF Scenarios (available separately). </p>
-        <p class="lead" style="font-weight: bold; color: #008000">
-                  17/02/2016 - Corrected missing underscore in indictable_only_or_either_way_and_likely_to_be_heard_in_the_crown_court
-            <br />14/01/2016 - Updated with Combined Schema 1.2.0.1 (Injuries bug fix). Seperate FH and BoB Schemas removed
-            <br />15/12/2015 - Updated to Final, in line with DCF 1.2.0 Final</p>
+            <p style="color: #008000">
+                17/02/2016
+                <br />
+                Corrected missing underscore in indictable_only_or_either_way_and_likely_to_be_heard_in_the_crown_court
+                <br />
+                Corrected defendant_admits_being_in_mme. Removed "required" condition.
+            </p>
+
+
+            <p style="color: #008000">
+                14/01/2016
+                  <br />
+                Updated with Combined Schema 1.2.0.1 (Injuries bug fix). Seperate FH and BoB Schemas removed
+            </p>
+            <p style="color: #008000">
+                15/12/2015
+                  <br />
+                Updated to Final, in line with DCF 1.2.0 Final
+            </p>
         <p class="lead">
             The Official Schema and Business Rule Validator can be found here&nbsp;
         <a class="btn btn-default" href="https://dcf-validator.herokuapp.com/case-files">Official Validator &raquo;</a>
@@ -69,7 +84,7 @@
     <hr />
     <h2 style="color: #FF0000">DEPRICATED</h2>
     <p style="color: #FF0000">The following files are provided for legacy purposes only whilst teams make the migration to 1.2.0. </p>
-    <p style="color: #FF0000">A legacy 1.1.0 Draft 7 validator can be found  <a href="https://dcf-validator110.herokuapp.com/case-files" > here </a></p>
+    <p style="color: #FF0000">A legacy 1.1.0 Draft 7 validator can be found  <a href="https://dcf-validator110.herokuapp.com/case-files">here </a></p>
     <h2>Draft DCF Schema 1.1.0 Draft 7</h2>
     <p>
         <a class="btn btn-default" href="Custom_Files/1.1.0/First Hearing DCF Schema 110.json">DCF Schema 1.1.0 Draft 7: &raquo;</a>
@@ -112,4 +127,4 @@
         </tr>
     </table>
     <hr />
-    </asp:Content>
+</asp:Content>

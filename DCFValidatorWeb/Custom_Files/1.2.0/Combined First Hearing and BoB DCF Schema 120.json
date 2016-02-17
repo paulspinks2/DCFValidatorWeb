@@ -1219,8 +1219,7 @@
       "required": [
         "id",
         "defendant_shown",
-        "is_defendant_believed_to_be_in_the_mme",
-        "defendant_admits_being_in_mme"
+        "is_defendant_believed_to_be_in_the_mme"
       ]
     },
 
