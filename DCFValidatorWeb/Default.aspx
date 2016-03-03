@@ -29,7 +29,7 @@
         <a class="btn btn-default" href="#Capabilities">Learn more &raquo;</a>
     </div>
 
-    <h2>DCF Schema 1.2.0.1 Final</h2>
+    <h2>DCF Schema 1.2.0.2 Final</h2>
     <p>
         The 1.2.0 Schema is here.
     </p>
