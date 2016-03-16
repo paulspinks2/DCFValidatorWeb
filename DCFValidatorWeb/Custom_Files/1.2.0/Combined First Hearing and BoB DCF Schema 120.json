@@ -1,5 +1,5 @@
 ﻿{
-  "description": "Combined Digital Case File 1.2.0.2 Final",
+  "description": "Combined Digital Case File 1.2.2.0 Final",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -146,6 +146,7 @@
         "brief_description_of_case",
         "defendants",
         "witnesses",
+        "likely_case_progression",
         "expert_evidence",
         "test_code",
         "pca_cps",
@@ -609,7 +610,6 @@
         "pnc_check_performed",
         "court_order_applications",
         "interpreter_required",
-        "multimedia_evidence_response",
         "dealt_with_in_welsh",
         "person_remand_status",
         "given_charges",
@@ -1036,7 +1036,6 @@
       "required": [
         "type",
         "cjs_offence_code",
-        "assault_interview_extension",
         "victim_name"
       ],
       "additionalProperties": false
@@ -1082,8 +1081,7 @@
       "required": [
         "type",
         "cjs_offence_code",
-        "property_ids",
-        "retail_theft_interview_extension"
+        "property_ids"
       ],
       "additionalProperties": false
     },
@@ -1603,15 +1601,9 @@
         "url": {
           "type": "string"
         },
-        "special_measures": {
-          "type": "boolean"
-        },
         "injuries": {
           "type": "array",
           "items": [ { "$ref": "#/definitions/Injuries" } ]
-        },
-        "wish_to_use_video_link": {
-          "type": "boolean"
         }
       },
       "additionalProperties": false,
@@ -1837,7 +1829,7 @@
           ]
         },
         "number": {
-          "type": "string"
+          "type": "number"
         }
       },
       "additionalProperties": false,
