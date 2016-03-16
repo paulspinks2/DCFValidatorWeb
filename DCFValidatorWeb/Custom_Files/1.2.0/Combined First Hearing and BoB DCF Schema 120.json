@@ -26,7 +26,7 @@
       "properties": {
         "pti_urn": {
           "type": "string",
-          "pattern": "[0-9]{2}[A-Z]{2}[0-9]{5}[0-9]{2}(-[A-Z]{2})?"
+          "pattern": "[0-9]{2}[A-Z]{2}[0-9]{5}[0-9]{2}(-M|-[0-9][0-9]?)?"
         },
         "type": {
           "enum": [ "FirstHearingDCF", "BobDCF" ]
@@ -35,7 +35,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "pattern": "[0-9]{2}[A-Z]{2}[0-9]{5}[0-9]{2}(-[A-Z]{2})?",
+            "pattern": "[0-9]{2}[A-Z]{2}[0-9]{5}[0-9]{2}(-M|-[0-9][0-9]?)?",
             "uniqueItems": true,
             "minItems": 1
           }
@@ -746,8 +746,7 @@
         }
       },
       "required": [
-        "substantial_grounds",
-        "bail_conditions"
+        "substantial_grounds"
       ],
       "additionalProperties": false
     },
@@ -1632,7 +1631,12 @@
         "name": {
           "$ref": "#/definitions/OrganisationName"
         }
-      }
+      },
+      "required": [
+        "type",
+        "name",
+        "victim"
+      ]
     },
 
     "CompensationApplication": {
@@ -1730,6 +1734,7 @@
       },
       "additionalProperties": false,
       "required": [
+        "name",
         "type",
         "witness_type",
         "witness",
@@ -1788,6 +1793,7 @@
       },
       "additionalProperties": false,
       "required": [
+        "name",
         "type",
         "witness_type",
         "witness",
@@ -1836,6 +1842,7 @@
       },
       "additionalProperties": false,
       "required": [
+        "name",
         "type",
         "witness"
       ]
