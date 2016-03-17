@@ -219,7 +219,7 @@
           "interpreter_required": false,
           "wish_to_use_video_link": false
         },
-        "number": "1"
+        "number": 1
       },
       {
         "type": "NgapOtherWitness",
@@ -238,7 +238,7 @@
           "interpreter_required": false,
           "wish_to_use_video_link": false
         },
-        "number": "2"
+        "number": 2
       },
       {
         "type": "PersonVictim",

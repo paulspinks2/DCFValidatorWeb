@@ -100,6 +100,7 @@
         "visually_recorded_interview": false
       }
     ],
+    "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
     "common_law_disclosure": {
       "type": "CommonLawNotForDisclosure",
       "reporting_officer": {

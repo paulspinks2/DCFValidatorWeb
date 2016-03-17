@@ -4,6 +4,11 @@
     <div class="jumbotron">
         <p class="lead">Welcome to the DCF Validation site. This sight contains the latest version of the DCF schema &amp; a suite of test files, including the JSON for the DCF Scenarios (available separately). </p>
             <p style="color: #008000">
+                16/03/2016
+                <br />
+                Updated with changes for 1.2.1.0
+            </p>
+        <p style="color: #008000">
                 17/02/2016
                 <br />
                 Corrected missing underscore in indictable_only_or_either_way_and_likely_to_be_heard_in_the_crown_court
@@ -29,12 +34,11 @@
         <a class="btn btn-default" href="#Capabilities">Learn more &raquo;</a>
     </div>
 
-    <h2>DCF Schema 1.2.0.2 Final</h2>
+    <h2>DCF Schema 1.2.1.0</h2>
     <p>
-        The 1.2.0 Schema is here.
-    </p>
+        The 1.2.1 Schema is here. </p>
     <p>
-        <a class="btn btn-default" href="Custom_Files/1.2.0/Combined First Hearing and BoB DCF Schema 120.json">Combined First Hearing and BoB DCF Schema 1.2.0 Final: &raquo;</a>
+        <a class="btn btn-default" href="Custom_Files/1.2.0/Combined First Hearing and BoB DCF Schema 120.json">Combined First Hearing and BoB DCF Schema 1.2.1.0: &raquo;</a>
     </p>
     <table>
         <tr>
