@@ -79,6 +79,7 @@
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 13 - Invalid Property Reference.json" target="_blank">Example 13: Invalid: Invalid Property Reference &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 14 - Welsh Characters Example UTF8.json" target="_blank">Example 14: Welsh Characters Example UTF8 &raquo;</a><br />
                     <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 15 - Welsh Characters Example Escaped.json" target="_blank">Example 15: Welsh Characters Example Escaped &raquo;</a><br />
+                    <a class="btn btn-default" href="Custom_Files/1.2.0/First Hearing Example 16 - Invalid Indictable Crown File build.json" target="_blank">Example 16: Invalid Indictable Crown File build &raquo;</a><br />
                 </p>
             </td>
         </tr>
