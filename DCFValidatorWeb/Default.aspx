@@ -3,7 +3,12 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
         <p class="lead">Welcome to the DCF Validation site. This sight contains the latest version of the DCF schema &amp; a suite of test files, including the JSON for the DCF Scenarios (available separately). </p>
-            <p style="color: #008000">
+        <p style="color: #008000">
+            22/03/2016
+                <br />
+            Minior fixes for PersonVictim &amp; multimedia_evidence_response 1.2.1.1
+        </p>
+        <p style="color: #008000">
                 16/03/2016
                 <br />
                 Updated with changes for 1.2.1.0
@@ -34,11 +39,11 @@
         <a class="btn btn-default" href="#Capabilities">Learn more &raquo;</a>
     </div>
 
-    <h2>DCF Schema 1.2.1.0</h2>
+    <h2>DCF Schema 1.2.1.1</h2>
     <p>
         The 1.2.1 Schema is here. </p>
     <p>
-        <a class="btn btn-default" href="Custom_Files/1.2.0/Combined First Hearing and BoB DCF Schema 120.json">Combined First Hearing and BoB DCF Schema 1.2.1.0: &raquo;</a>
+        <a class="btn btn-default" href="Custom_Files/1.2.0/Combined First Hearing and BoB DCF Schema 120.json">Combined First Hearing and BoB DCF Schema 1.2.1.1: &raquo;</a>
     </p>
     <table>
         <tr>
