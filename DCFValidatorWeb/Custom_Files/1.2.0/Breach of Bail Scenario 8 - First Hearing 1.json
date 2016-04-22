@@ -1,5 +1,5 @@
 ﻿{
-  "schema_version": "1.2.1",
+  "schema_version": "1.2.2",
   "case": {
     "pti_urn": "62CA1234515",
     "type": "FirstHearingDCF",
@@ -19,7 +19,6 @@
           "date_time": "2015-09-21T20:15Z",
           "comments_on_arrest_and_caution": "She inivited me around"
         },
-        "conditional_caution_considered": true,
         "cc_not_suitable_reasons": [ "offence_not_admitted" ],
         "offences": [
           {
@@ -59,7 +58,7 @@
           }
         ],
         "occupation": "Administrative Assistant",
-        "class_a_drug_test_provided": false,
+        "class_a_drug_test_provided": "not_requested",
         "has_eec_passports": false,
         "foreign_national_offender": false,
         "breach_of_order": false,
@@ -186,7 +185,7 @@
         ]
       }
     ],
-    "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
+    "likely_case_progression": "summary_only",
     "common_law_disclosure": {
       "type": "CommonLawNotForDisclosure",
       "reporting_officer": {

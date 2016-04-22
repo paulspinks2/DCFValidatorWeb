@@ -1,5 +1,5 @@
 ﻿{
-  "schema_version": "1.2.1",
+  "schema_version": "1.2.2",
   "case": {
     "pti_urn": "01AA9999915",
     "type": "FirstHearingDCF",
@@ -13,7 +13,6 @@
           "given_name": [ "Rhys" ]
         },
         "date_of_birth": "1995-04-26",
-        "conditional_caution_considered": true,
         "cc_not_suitable_reasons": [ "offence_not_one_in_dpps_guidance_for_conditional_caution" ],
         "offences": [
           {
@@ -128,7 +127,7 @@
       },
       "reporting_officer_signature_date": "2015-07-10"
     },
-    "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
+    "likely_case_progression": "summary_only",
     "multimedia_evidence": [
       {
         "id": "FL1",

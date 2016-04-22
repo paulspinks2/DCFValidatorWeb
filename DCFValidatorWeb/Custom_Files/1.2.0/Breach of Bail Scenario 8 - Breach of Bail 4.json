@@ -1,5 +1,5 @@
 ﻿{
-  "schema_version": "1.2.1",
+  "schema_version": "1.2.2",
   "case": {
     "pti_urn": "61JA6789015",
     "associated_case_urns": [ "62CA1234515" ],

@@ -1,5 +1,5 @@
 ﻿{
-  "schema_version": "1.2.1",
+  "schema_version": "1.2.2",
   "case": {
     "pti_urn": "01AA9999915",
     "type": "FirstHearingDCF",
@@ -19,7 +19,6 @@
           "date_time": "2015-09-19T19:06Z",
           "comments_on_arrest_and_caution": "She inivited me around"
         },
-        "conditional_caution_considered": true,
         "cc_not_suitable_reasons": [ "offence_not_admitted", "offence_whilst_on_bail", "reoffending_risk_offending_history" ],
         "offences": [
           {
@@ -283,7 +282,7 @@
         ]
       }
     ],
-    "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
+    "likely_case_progression": "summary_only",
     "multimedia_evidence": [
       {
         "id": "BWV/01",
@@ -306,7 +305,6 @@
         "total_duration": "00:01"
       }
     ],
-    "is_hearsay": false,
     "expert_evidence": true,
     "test_code": "threshold_test",
     "pca_cps": true,

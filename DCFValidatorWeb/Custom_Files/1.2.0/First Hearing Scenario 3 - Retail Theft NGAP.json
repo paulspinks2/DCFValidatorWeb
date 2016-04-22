@@ -1,5 +1,5 @@
 ﻿{
-  "schema_version": "1.2.1",
+  "schema_version": "1.2.2",
   "case": {
     "pti_urn": "01AA9999915",
     "type": "FirstHearingDCF",
@@ -18,7 +18,6 @@
           "date_time": "2015-09-05T09:58Z",
           "comments_on_arrest_and_caution": "You must be joking. I've been in bed all morning."
         },
-        "conditional_caution_considered": true,
         "cc_not_suitable_reasons": [ "offence_not_admitted" ],
         "offences": [
           {
@@ -195,7 +194,7 @@
         }
       }
     ],
-    "likely_case_progression": "summary_only_or_either_way_and_likely_to_remain_in_the_magistrates_court",
+    "likely_case_progression": "summary_only",
     "multimedia_evidence": [
       {
         "id": "RSW1",
@@ -208,7 +207,6 @@
         "total_duration": "00:05"
       }
     ],
-    "is_hearsay": false,
     "expert_evidence": false,
     "test_code": "full_code_test",
     "pca_cps": false,
