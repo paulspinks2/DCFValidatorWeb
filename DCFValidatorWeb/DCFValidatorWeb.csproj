@@ -249,6 +249,7 @@
     <Content Include="Custom_Files\1.2.0\First Hearing Example 15 - Welsh Characters Example Escaped.json" />
     <Content Include="Custom_Files\1.2.0\First Hearing Example 14 - Welsh Characters Example UTF8.json" />
     <Content Include="Custom_Files\1.2.0\First Hearing Example 16 - Invalid Indictable Crown File build.json" />
+    <Content Include="Custom_Files\1.2.0\First Hearing Example 17 - Valid Single Defendant - No Property value.json" />
     <None Include="Properties\PublishProfiles\DevDCFValidatorWeb.pubxml" />
     <None Include="RulesDataSet.xsd">
       <SubType>Designer</SubType>
